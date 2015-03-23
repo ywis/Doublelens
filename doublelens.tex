@@ -1,0 +1,183 @@
+\documentclass[useAMS,usenatbib]{mn2e}
+
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{lscape} % Allows landscape environment to be used
+
+\def\gtrsim{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
+
+
+\title[Lensing Distance]{
+Precision Scintillation Distance Measurements
+}
+\author[Liu et al]{Siqi Liu$^{1,3}$\thanks{E-mail:\ sqliu@cita.utoronto.ca}, Ue-Li
+  Pen$^{1,2}$\thanks{E-mail:\ pen@cita.utoronto.ca}, J-P Macquart,
+  Walter Brisken, Adam Deller\\
+ $^1$ Canadian Institute for Theoretical Astrophysics, University of Toronto, M5S 3H8 Ontario, Canada \\
+$^2$ Canadian Institute for Advanced Research, Program in Cosmology
+and Gravitation\\
+$^3$ Department of Astronomy and Astrophysics, University of Toronto, M5S 3H8, Ontario, Canada
+}
+\begin{document}
+
+
+\date{\today}
+
+\pagerange{\pageref{firstpage}--\pageref{lastpage}} 
+\pubyear{2015}
+
+\maketitle
+\label{firstpage}
+\begin{abstract}
+We show how interstellar scintillations, combined with VLBI
+measurements, can be used to measure pulsar distances.  Two lensing
+screens are needed.  We apply the technique to archival data on PSR
+B0834+06.  Rough distance estimates, consistent with direct parallax
+measurements, are obtained.  If observations over a two week period
+were available at that epoch, we anticipate a 1\% distance
+determination.   
+
+With longer ground-based baselines and wider frequency coverage, we
+speculate that distance determination perhaps as accurate as 0.1\%
+could be possible. This would enable coherent pulsar gravitational
+wave timing and imaging.
+\end{abstract}
+\begin{keywords}
+Pulsar
+\end{keywords}
+
+\newcommand{\be}{\begin{eqnarray}}
+\newcommand{\ee}{\end{eqnarray}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+
+\section{Introduction}
+
+Pulsars have long provided a rich source of astrophysical information
+due to their compact emission and predictable timing.   One of the
+weakest measurements for most pulsars is their direct geometric
+distance.  For some pulsars, timing parallax or VLBI parallax has
+resulted in direct distance determinations.  For most pulsars, the
+distance is a major uncertainty for precision timing interpretations,
+including mass, moment of inertia, and gravitational wave
+direction\citep{boyle2012}.
+
+Direct VLBI observation of PSR B0834+06 shows multiple images lensed
+by the interstellar plasma.  Combining the angular positions and
+scintillation delays, the authors published the derived effective
+distance\citep{2010ApJ...708..232B} of approximately $1168\pm 23$ pc.
+This represents a precise measurement compared to all other attempts
+to derive distances to this pulsar.  This effective distance is the
+harmonic sum (twice the harmonic mean) of pulsar-screen and
+earth-screen distances, and does not allow a separate determination of
+the individual distances.
+
+A second lensing screen breaks the degeneracy.
+
+\section{Lensing}
+
+\section{B0834+06}
+
+Our analysis is based on the reduced apex catalog from
+\citet{2010ApJ...708..232B}. Each identified apex includes a delay,
+delay rate, RA and Dec, one for each of 4 frequency bands.  We mapped
+a total of 9 apexes from the 0.4ms cluster, and 5 from the 1ms
+cluster, across the 4 frequency bands.  This results in an estimate
+for the mean value, and standard deviation.  These are listed in Table
+\ref{table:apex}.  A least squares effective distance results in
+$D_e^M=X\pm Y$ for the main 0.4ms cluster and $D_e^S = X \pm Y$ for
+the secondary 1ms cluster.  This seems to indicate that the secondary
+screen is closer to the pulsar.
+
+\section{Lens Solution}
+
+In order to interpret the data, we adopt the lensing model of
+\citet{2014MNRAS.442.3338P}.  In the absence of a lens model, the
+fringe rate, delay and angular position cannot be uniquely related. In
+this model, the lensing is due to projected fold caustics of a thin
+sheet closely aligned to the line of sight.
+
+\section{Discussion}
+
+The lens solution appears consistent with the premise of the inclined
+sheet lensing model\citep{2014MNRAS.442.3338P}.  The secondary lens
+only images a subset of the primary lens images.  This could happen if
+the secondary lens screen is just under the critical inclination
+angle, such that only $3-\sigma$ waves lead to a fold caustic.  If the
+primary lens were at a critical angle, the chance of encountering a
+somewhat less inclined system is of order unity.
+
+More surprising is the absence of a single deflection image of the
+pulsar, which is expected at position E.  This could happen if the
+maximum deflection angle is just below critical, such that only rays
+on the appropriately aligned double deflection can form images.  This
+scenario predicts that at lower frequencies, or a few days earlier in
+time, the pulsar should be seen at position E.
+
+\section{Possible Improvements}
+
+We discuss several strategies which can improve on the solution
+accuracy.  The single biggest improvement would be to monitor over a
+week, when the pulsar crosses each individual lens, including both
+lensing systems.
+
+Angular resolution can be improved using longer baselines, for example
+adding a GMRT-GBT baseline doubles the resolution.  Observing at
+multiple frequencies over a longer period allows for a more precise
+measurement: when the pulsar is between two lenses, the deflection
+angle is small, and one expects to see the lensing at higher
+frequency, where the resolution is higher, and distances between
+lenses positions can be measured to much higher accuracy.
+
+Holographic techniques\citep{2008MNRAS.388.1214W,2014MNRAS.440L..36P}
+may be able to measure delays, fringe rates, and VLBI positions
+sbstantially more accurately.  Combining these techniques, the
+interstellar lensing could conceivably achieve distance measurements
+an order of magnitude better than the current published effective
+distance errors.  This could bring most pulsar timing array targets
+into the coherent timing regime, enabling arc minute localization of
+gravitational wave sources, lifting any potential source confusion.
+
+\section{Conclusions}
+
+
+
+\section{Acknowledgements}
+
+We thank NSERC for support.
+
+
+\newcommand{\araa}{ARA\&A}   % Annual Review of Astronomy and Astrophys.
+\newcommand{\afz}{Afz}       % Astrofizica
+\newcommand{\aj}{AJ}         % Astronomical Journal
+\newcommand{\azh}{AZh}       % Astronomicekij Zhurnal
+\newcommand{\aaa}{A\&A}      % Astronomy and Astrophysics
+\newcommand{\aas}{A\&AS}     % Astronomy and Astrophys. Supplement Series
+\newcommand{\aar}{A\&AR}     % Astronomy and Astrophysics Review
+\newcommand{\apj}{ApJ}       % Astrophysical Journal
+\newcommand{\apjs}{ApJS}     % Astrophysical Journal Supplement Series
+\newcommand{\apjl}{ApJ}      % Astrophysical Journal Letters
+\newcommand{\apss}{Ap\&SS}   % Astrophysics and Space Science
+\newcommand{\baas}{BAAS}     % Bulletin of the American Astron. Society
+\newcommand{\jaa}{JA\&A}     % Journal of Astronomy and Astrophysics
+\newcommand{\mnras}{MNRAS}   % Monthly Notices of the Roy. Astron. Society
+\newcommand{\nat}{Nat}       % Nature
+\newcommand{\pasj}{PASJ}     % Publ. of the Astron. Society of Japan
+\newcommand{\pasp}{PASP}     % Publ. of the Astron. Society of the Pacific
+\newcommand{\paspc}{PASPC}   % Publ. Astron. Soc. Pacific Conf. Proc.
+\newcommand{\qjras}{QJRAS}   % Quart. Journal of the Royal Astron. Society
+\newcommand{\sci}{Sci}       % Science
+\newcommand{\solphys}{Solar Physics}       % 
+\newcommand{\sova}{SvA}      % Soviet Astronomy
+\newcommand{\aap}{A\&A}
+\newcommand\jcap{{J. Cosmology Astropart. Phys.}}%
+\newcommand{\prd}{Phys. Rev. D}
+
+
+\bibliography{distance}
+\bibliographystyle{mn2e}
+
+
+\label{lastpage}
+
+\end{document}
