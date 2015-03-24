@@ -85,9 +85,37 @@ a total of 9 apexes from the 0.4ms cluster, and 5 from the 1ms
 cluster, across the 4 frequency bands.  This results in an estimate
 for the mean value, and standard deviation.  These are listed in Table
 \ref{table:apex}.  A least squares effective distance results in
-$D_e^M=X\pm Y$ for the main 0.4ms cluster and $D_e^S = X \pm Y$ for
+$D_e^M=1071\pm 2.8$ for the main 0.4ms cluster and $D_e^S = 1243 \pm 64.1$ for
 the secondary 1ms cluster.  This seems to indicate that the secondary
 screen is closer to the pulsar.
+
+%table one for 1ms positions
+\begin{table}[h]
+\begin{tabular}{llllllll}
+f\_D(mHz)    & sigma\_fD(mHz) & tau(ms)      & sigma\_tau(ms)  & RA(mas)      & variance of the mean of RA =1/sum(1/err\_i)\textasciicircum 2)(mas) & dec(mas)     & variance of the mean of Dec =1/sum(1/err\_i)\textasciicircum 2)(mas) \\
+-35.06455819 & 0.5187476104   & 0.9495       & 0.001554563176  & -15.22907593 & 0.6901394891                                                        & -21.05544971 & 1.33666414                                                           \\
+-38.31418501 & 0.6392670282   & 0.9763333333 & 0.0008819171037 & -15.0160326  & 0.484920712                                                         & -20.74447327 & 0.2675465362                                                         \\
+-40.16745793 & 0.5530585412   & 1.0045       & 0.007899103325  & -14.14178243 & 0.6617411189                                                        & -22.27171937 & 0.4518666856                                                         \\
+-41.27389502 & 0.5388877434   & 1.037        & 0.003214550254  & -11.27794829 & 0.9278342532                                                        & -19.18239766 & 2.662965                                                             \\
+-43.08468723 & 0.4400015151   & 1.066333333  & 0.004977728174  & -8.409769    & 1.695503                                                            & -24.14474    & 2.001921387                                                         
+\end{tabular}
+\end{table}
+
+% table for 0.4ms positions
+\begin{table}[h]
+\begin{tabular}{llllllll}
+fD(mHz)      & sigma\_fD =sqrt(sum(x\_i-x\_ave)\textasciicircum 2/(n*n-1))(mHz) & tau(ms)     & sigma\_tau =sqrt(sum(x\_i-x\_ave)\textasciicircum 2/(n*n-1))(ms & RA(mas)  & variance of the mean of RA =1/sum(1/err\_i)\textasciicircum 2)(mas) & dec(mas)  & variance of the mean of ra =1/sum(1/err\_i)\textasciicircum 2) \\
+-1.29405E+01 & 0.1881931632                                                     & 8.45000E-02 & 5.00E-04                                                        & 2.87E+00 & 0.109494559                                                         & -8.20E+00 & 0.08786145608                                                  \\
+-1.67995E+01 & 0.2755249535                                                     & 1.41250E-01 & 8.54E-04                                                        & 3.86E+00 & 0.07025543098                                                       & -1.06E+01 & 0.05264246565                                                  \\
+-1.89214E+01 & 0.2348536779                                                     & 1.88000E-01 & 2.12E-03                                                        & 5.06E+00 & 0.1971607484                                                        & -1.06E+01 & 0.1307117843                                                   \\
+-2.04040E+01 & 0.4921494805                                                     & 2.22333E-01 & 2.89E-03                                                        & 5.55E+00 & 0.3018381295                                                        & -1.17E+01 & 0.2113757876                                                   \\
+-2.11733E+01 & 0.6066666667                                                     & 2.36333E-01 & 2.33E-03                                                        & 5.12E+00 & 0.4285489082                                                        & -1.26E+01 & 0.3095860855                                                   \\
+-2.23184E+01 & 0.4699408946                                                     & 2.63333E-01 & 3.33E-04                                                        & 6.16E+00 & 0.144851693                                                         & -1.42E+01 & 0.1002078081                                                   \\
+-2.46256E+01 & 0.4009792181                                                     & 3.26500E-01 & 2.53E-03                                                        & 6.49E+00 & 0.2882644315                                                        & -1.41E+01 & 0.200933017                                                    \\
+-2.49371E+01 & 0.4361546696                                                     & 3.37750E-01 & 2.50E-04                                                        & 8.29E+00 & 0.424703995                                                         & -1.44E+01 & 0.321225993                                                    \\
+-2.60870E+01 & 0.3600549727                                                     & 3.74250E-01 & 6.29E-04                                                        & 8.53E+00 & 0.5217622012                                                        & -1.57E+01 & 0.4187370815                                                  
+\end{tabular}
+\end{table}
 
 \section{Lens Solution}
 
