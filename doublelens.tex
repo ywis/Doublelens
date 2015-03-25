@@ -3,9 +3,18 @@
 \usepackage{epsfig}
 \usepackage{epstopdf}
 \usepackage{lscape} % Allows landscape environment to be used
-
+\usepackage{graphicx}
+\usepackage{multirow}
 \def\gtrsim{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
-
+\renewcommand\floatpagefraction{.9}
+\renewcommand\dblfloatpagefraction{.9} % for two column documents
+\renewcommand\topfraction{.9}
+\renewcommand\dbltopfraction{.9} % for two column documents
+\renewcommand\bottomfraction{.9}
+\renewcommand\textfraction{.1}   
+\setcounter{totalnumber}{50}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
 
 \title[Lensing Distance]{
 Precision Scintillation Distance Measurements
@@ -90,30 +99,43 @@ the secondary 1ms cluster.  This seems to indicate that the secondary
 screen is closer to the pulsar.
 
 %table one for 1ms positions
+
 \begin{table}[h]
-\begin{tabular}{llllllll}
-f\_D(mHz)    & sigma\_fD(mHz) & tau(ms)      & sigma\_tau(ms)  & RA(mas)      & variance of the mean of RA =1/sum(1/err\_i)\textasciicircum 2)(mas) & dec(mas)     & variance of the mean of Dec =1/sum(1/err\_i)\textasciicircum 2)(mas) \\
--35.06455819 & 0.5187476104   & 0.9495       & 0.001554563176  & -15.22907593 & 0.6901394891                                                        & -21.05544971 & 1.33666414                                                           \\
--38.31418501 & 0.6392670282   & 0.9763333333 & 0.0008819171037 & -15.0160326  & 0.484920712                                                         & -20.74447327 & 0.2675465362                                                         \\
--40.16745793 & 0.5530585412   & 1.0045       & 0.007899103325  & -14.14178243 & 0.6617411189                                                        & -22.27171937 & 0.4518666856                                                         \\
--41.27389502 & 0.5388877434   & 1.037        & 0.003214550254  & -11.27794829 & 0.9278342532                                                        & -19.18239766 & 2.662965                                                             \\
--43.08468723 & 0.4400015151   & 1.066333333  & 0.004977728174  & -8.409769    & 1.695503                                                            & -24.14474    & 2.001921387                                                         
+\centering
+\label{apex}
+\resizebox{!}{0.5cm}{
+\begin{tabular}{|*{8}{l|}}
+\hline
+Differential Frequency f\_D(mHz) & sample standard deviation\_fD(mHz) & Time delay tau(ms) & sample standard deviation\_tau(ms) & RA(mas) & population standard deviation of RA(mas) & dec(mas) & population standard deviation of Dec(mas) \\
+\hline
+-35.06                           & 0.52                               & 0.95               & 0.002                              & -15.23  & 0.69                                     & -21.06   & 1.34                                      \\
+\hline
+-38.31                           & 0.64                               & 0.976              & 0.0009                             & -15.02  & 0.485                                    & -20.74   & 0.27                                      \\
+\hline
+-40.17                           & 0.55                               & 1.005              & 0.0079                             & -14.14  & 0.662                                    & -22.27   & 0.452                                     \\
+\hline
+-41.27                           & 0.54                               & 1.037              & 0.003                              & -11.28  & 0.93                                     & -19.18   & 2.66                                      \\
+\hline
+-43.08                           & 0.44                               & 1.066              & 0.005                              & -8.41   & 1.7                                      & -24.14   & 2                                        
 \end{tabular}
+}
+\caption{1ms apex position}
 \end{table}
+
 
 % table for 0.4ms positions
 \begin{table}[h]
 \begin{tabular}{llllllll}
-fD(mHz)      & sigma\_fD =sqrt(sum(x\_i-x\_ave)\textasciicircum 2/(n*n-1))(mHz) & tau(ms)     & sigma\_tau =sqrt(sum(x\_i-x\_ave)\textasciicircum 2/(n*n-1))(ms & RA(mas)  & variance of the mean of RA =1/sum(1/err\_i)\textasciicircum 2)(mas) & dec(mas)  & variance of the mean of ra =1/sum(1/err\_i)\textasciicircum 2) \\
--1.29405E+01 & 0.1881931632                                                     & 8.45000E-02 & 5.00E-04                                                        & 2.87E+00 & 0.109494559                                                         & -8.20E+00 & 0.08786145608                                                  \\
--1.67995E+01 & 0.2755249535                                                     & 1.41250E-01 & 8.54E-04                                                        & 3.86E+00 & 0.07025543098                                                       & -1.06E+01 & 0.05264246565                                                  \\
--1.89214E+01 & 0.2348536779                                                     & 1.88000E-01 & 2.12E-03                                                        & 5.06E+00 & 0.1971607484                                                        & -1.06E+01 & 0.1307117843                                                   \\
--2.04040E+01 & 0.4921494805                                                     & 2.22333E-01 & 2.89E-03                                                        & 5.55E+00 & 0.3018381295                                                        & -1.17E+01 & 0.2113757876                                                   \\
--2.11733E+01 & 0.6066666667                                                     & 2.36333E-01 & 2.33E-03                                                        & 5.12E+00 & 0.4285489082                                                        & -1.26E+01 & 0.3095860855                                                   \\
--2.23184E+01 & 0.4699408946                                                     & 2.63333E-01 & 3.33E-04                                                        & 6.16E+00 & 0.144851693                                                         & -1.42E+01 & 0.1002078081                                                   \\
--2.46256E+01 & 0.4009792181                                                     & 3.26500E-01 & 2.53E-03                                                        & 6.49E+00 & 0.2882644315                                                        & -1.41E+01 & 0.200933017                                                    \\
--2.49371E+01 & 0.4361546696                                                     & 3.37750E-01 & 2.50E-04                                                        & 8.29E+00 & 0.424703995                                                         & -1.44E+01 & 0.321225993                                                    \\
--2.60870E+01 & 0.3600549727                                                     & 3.74250E-01 & 6.29E-04                                                        & 8.53E+00 & 0.5217622012                                                        & -1.57E+01 & 0.4187370815                                                  
+Differential frequency f\_D (mHz) & sigma\_fD & tau(ms) & sigma\_tau (ms) & RA(mas) & population standard deviation of RA(mas) & dec(mas) & population standard deviation of Dec(mas) \\
+-12.94                            & 0.19      & 0.0845  & 0.0005          & 2.87    & 0.11                                     & -8.2     & 0.09                                      \\
+-16.8                             & 0.28      & 0.14125 & 0.00085         & 3.86    & 0.07                                     & -10.6    & 0.05                                      \\
+-18.92                            & 0.23      & 0.188   & 0.002           & 5.06    & 0.2                                      & -10.6    & 0.13                                      \\
+-20.4                             & 0.49      & 0.222   & 0.003           & 5.55    & 0.3                                      & -11.7    & 0.21                                      \\
+-21.17                            & 0.61      & 0.236   & 0.002           & 5.12    & 0.43                                     & -12.6    & 0.31                                      \\
+-22.32                            & 0.47      & 0.2633  & 0.0003          & 6.16    & 0.14                                     & -14.2    & 0.1                                       \\
+-24.63                            & 0.4       & 0.3265  & 0.0025          & 6.49    & 0.29                                     & -14.1    & 0.2                                       \\
+-24.94                            & 0.44      & 0.33775 & 0.00025         & 8.29    & 0.42                                     & -14.4    & 0.32                                      \\
+-26.09                            & 0.36      & 0.37425 & 0.00063         & 8.53    & 0.52                                     & -15.7    & 0.42                                     
 \end{tabular}
 \end{table}
 
