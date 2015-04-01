@@ -98,7 +98,7 @@ delay rate, RA and Dec, one for each of 4 frequency bands.  We mapped
 a total of 9 apexes from the 0.4ms cluster, and 5 from the 1ms
 cluster, across the 4 frequency bands.  This results in an estimate
 for the mean value, and standard deviation.  These are listed in Table
-\ref{table:apex}.  A least squares effective distance results in
+\ref{table:apex}. The time is calculated with $2*{\tau}*f/{f_{D}}$, which is equivalent to pulsar moving at $640$pc plane from the original position to the lensed image angle with the velocity calculated. A least squares effective distance results in
 $D_e^M=1017\pm 2.8$ for the main 0.4ms cluster and $D_e^S = 1243 \pm 64.1$ for
 the secondary 1ms cluster.  This seems to indicate that the secondary
 screen is closer to the pulsar.  The error bars are large enough to
@@ -116,35 +116,35 @@ illustrates a robust interpretation of the data.
 %\resizebox{!}{1cm}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
-$f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & $\sigma_{RA}$(mas) & dec(mas) & $\sigma_{dec}$(mas) & time(s)\\
+$f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & $\sigma_{RA}$(mas) & dec(mas) & $\sigma_{dec}$(mas) & time(day)\\
 \hline
--12.94                            & 0.19      & 0.0845  & 0.0005          & 2.87    & 0.11                                     & -8.2     & 0.09      & 4.31e6                                \\
+-12.94                            & 0.19      & 0.0845  & 0.0005          & 2.87    & 0.11                                     & -8.2     & 0.09      & 49.9                                \\
 
--16.8                             & 0.28      & 0.14125 & 0.00085         & 3.86    & 0.07                                     & -10.6    & 0.05      &5.57e6                                \\
+-16.8                             & 0.28      & 0.14125 & 0.00085         & 3.86    & 0.07                                     & -10.6    & 0.05      &64.5                                \\
 
--18.92                            & 0.23      & 0.188   & 0.002           & 5.06    & 0.2                                      & -10.6    & 0.13      &6.43e6                         \\
+-18.92                            & 0.23      & 0.188   & 0.002           & 5.06    & 0.2                                      & -10.6    & 0.13      &74.4                        \\
 
--20.4                             & 0.49      & 0.222   & 0.003           & 5.55    & 0.3                                      & -11.7    & 0.21      &6.99e6                                \\
+-20.4                             & 0.49      & 0.222   & 0.003           & 5.55    & 0.3                                      & -11.7    & 0.21      &80.8                                \\
 
--21.17                            & 0.61      & 0.236   & 0.002           & 5.12    & 0.43                                     & -12.6    & 0.31      &7.20e6                                \\
+-21.17                            & 0.61      & 0.236   & 0.002           & 5.12    & 0.43                                     & -12.6    & 0.31      &83.4                                \\
 
--22.32                            & 0.47      & 0.2633  & 0.0003          & 6.16    & 0.14                                     & -14.2    & 0.1       &7.61e6                                \\
+-22.32                            & 0.47      & 0.2633  & 0.0003          & 6.16    & 0.14                                     & -14.2    & 0.1       &88.0                                \\
 
--24.63                            & 0.4       & 0.3265  & 0.0025          & 6.49    & 0.29                                     & -14.1    & 0.2       &8.47e6                                \\
+-24.63                            & 0.4       & 0.3265  & 0.0025          & 6.49    & 0.29                                     & -14.1    & 0.2       &98.0                                \\
 
--24.94                            & 0.44      & 0.33775 & 0.00025         & 8.29    & 0.42                                     & -14.4    & 0.32      &8.62e6                                \\
+-24.94                            & 0.44      & 0.33775 & 0.00025         & 8.29    & 0.42                                     & -14.4    & 0.32      &99.7                                \\
 
--26.09                            & 0.36      & 0.37425 & 0.00063         & 8.53    & 0.52                                     & -15.7    & 0.42      &9.07e6                               
+-26.09                            & 0.36      & 0.37425 & 0.00063         & 8.53    & 0.52                                     & -15.7    & 0.42      &105                               
 \\ \hline 
--35.06                           & 0.52                               & 0.95               & 0.002                              & -15.23  & 0.69                                     & -21.06   & 0.7   &1.75e7                                   \\
+-35.06                           & 0.52                               & 0.95               & 0.002                              & -15.23  & 0.69                                     & -21.06   & 0.7   &202                                   \\
 
--38.31                           & 0.64                               & 0.976              & 0.0009                             & -15.02  & 0.485                                    & -20.74   & 0.38  &1.64e7                                    \\
+-38.31                           & 0.64                               & 0.976              & 0.0009                             & -15.02  & 0.485                                    & -20.74   & 0.38  &190                                    \\
 
--40.17                           & 0.55                               & 1.005              & 0.0079                             & -14.14  & 0.662                                    & -22.27   & 0.62  &1.61e7                                   \\
+-40.17                           & 0.55                               & 1.005              & 0.0079                             & -14.14  & 0.662                                    & -22.27   & 0.62  &187                                   \\
 
--41.27                           & 0.54                               & 1.037              & 0.003                              & -11.28  & 0.93                                     & -19.18   & 1.1   &1.62e7                                   \\
+-41.27                           & 0.54                               & 1.037              & 0.003                              & -11.28  & 0.93                                     & -19.18   & 1.1   &188                                   \\
 
--43.08                           & 0.44                               & 1.066              & 0.005                              & -8.41   & 1.7                                      & -24.14   & 1.4   &1.60e7   
+-43.08                           & 0.44                               & 1.066              & 0.005                              & -8.41   & 1.7                                      & -24.14   & 1.4   &185   
                                   
 \label{table:apex}
 \end{tabular}
@@ -164,18 +164,18 @@ $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & 
 \begin{figure*}
 \centering
 %\epsscale{1.0}
-\includegraphics[width=0.8\textwidth, angle=0]{One_lens_392pc.png}
+\includegraphics[width=0.8\textwidth, angle=0]{One_lens_640_392_392.png}
 %\includegraphics{zN.eps}
-\caption{Fitted position of $1$ms and $0.4$ms data of one lens model and observation data. In both apexes regions, the position of the screen locate at $392.82$pc. Blue points on the left side are the points that fitted from the $f_D$ and $\tau$ of from the $0.4$ms observation. Blue line is the fitted line of $0.4$ms apex positions, with a $25.2$ degree west of the north. The points lie on the left side with errorbars, are the observation points together with their sample errors; while the transparent circles are plotted with population errors, where smaller transparent data are darker. Short solid lines between them are the matched positions of the apexes in $1ms$ region and $0.4ms$ region, which share the same $\theta_{\parallel}$. The points on the right side are the points that fitted from the $f_D$ and $\tau$ of the $1$ms observation with an avearage of four bandwidths. Solid line is the fitted line of these positions. Those points with errorbars nearby are the observation points together with their sample errors, while the transparent circles are plotted with population errors. The dotted line on the top right side is vertical to the solid line. Short solid lines connect the observation points and the fitted positions. Middle lines connect the $0.4$ms and $1$ms fitted positions with the same $\theta_{\parallel}$. The velocity of the pulsar is $188499$m/s, with a degree $0.144$ radian west of north, which is marked out at the top of the figure.  }
-\label{Onelens}
+\caption{Fitted position of $1$ms and $0.4$ms data of one lens model and observation data. In both apexes regions, the position of the screen locate at $392.82$pc. Blue points on the left side are the points that fitted from the $f_D$ and $\tau$ of from the $0.4$ms observation. Blue line is the fitted line of $0.4$ms apex positions, with a $25.2$ degree west of the north. The points lie on the left side with errorbars, are the observation points together with their sample errors; while the transparent circles are plotted with population errors, where smaller transparent data are darker. Short solid lines between them are the matched positions of the apexes in $1ms$ region and $0.4ms$ region, which share the same $\theta_{\parallel}$. The points on the right side are the points that fitted from the $f_D$ and $\tau$ of the $1$ms observation with an avearage of four bandwidths. Solid line is the fitted line of these positions. Those points with errorbars nearby are the observation points together with their sample errors, while the transparent circles are plotted with population errors. The dotted line on the top right side is vertical to the solid line. Short solid lines connect the observation points and the fitted positions. Middle lines connect the $0.4$ms and $1$ms fitted positions with the same $\theta_{\parallel}$. The velocity of the pulsar is $199981$m/s, with a degree $0.0007$ radian east of north, which is marked out at the top of the figure.  }
+\label{Onelens_392}
 \end{figure*}
 
 \begin{figure*}
 \centering
 %\epsscale{1.0}
-\includegraphics[width=0.8\textwidth, angle=0]{One_lens_392_422.png}
+\includegraphics[width=0.8\textwidth, angle=0]{One_lens_640_392_422.png}
 %\includegraphics{zN.eps}
-\caption{Same Observation data with the previous plot, this time we put the points iwith time delay lie in the range $1$ms at the screen that is $422.5$ pc away from us, which fitts better with the observation data.  }
+\caption{Same Observation data with the previous plot, this time we put the points iwith time delay lie in the range $1$ms at the screen that is $422.5$ pc away from us, which fitts better with the observation data. Velocity in this situation is $188499$m/s, with an angle $0.144147$ radian west of north. }
 \label{Onelens_392_422}
 \end{figure*}
 
@@ -184,7 +184,7 @@ $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & 
 \begin{figure*}
 \centering
 %\epsscale{1.0}
-\includegraphics[width=0.8\textwidth, angle=0]{Double_lens_640.png}
+\includegraphics[width=0.8\textwidth, angle=0]{Double_lens_640_392_422.png}
 \caption{Fitted position of $1$ms and $0.4$ms data of double lens model and observation data.In both apexes regions, the position of the screen locate at $392.82$pc and $422.5$pc. Blue points on the left side are the points that fitted from the $f_D$ and $\tau$ of from the $0.4$ms observation. Blue line is the fitted line of $0.4$ms apex positions, with a $25.2$ degree west of the north. The points lie on the left side with errorbars, are the observation points together with their sample errors; while the transparent circles are plotted with population errors, where smaller transparent data are darker. Short solid lines between them are the matched positions of the apexes in $1ms$ region and $0.4ms$ region, which share the same $\theta_{\parallel}$. The points on the right side are the points that fitted from the $f_D$ and $\tau$ of the $1$ms observation with an avearage of four bandwidths. Solid line is the fitted line of these positions. Those points with errorbars nearby are the observation points together with their sample errors, while the transparent circles are plotted with population errors. The dotted line on the top right side is vertical to the solid line. Short solid lines connect the observation points and the fitted positions. Middle lines connect the $0.4$ms and $1$ms fitted positions with the same $\theta_{\parallel}$. The velocity of the pulsar is $191440$m/s, with a degree $0.097$ radian west of north, is also marked out at the top of the figure.  }
 \label{Doublelens}
 \end{figure*}
