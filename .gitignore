@@ -1,6 +1,6 @@
 ## Core latex/pdflatex auxiliary files:
 #doublelens.pdf
-mn2e.*
+#mn2e.*
 *.aux
 *.lof
 *.log

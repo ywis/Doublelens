@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{hhline}
+\usepackage{amsmath}
 %\def\gtrsim{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
 %\renewcommand\floatpagefraction{.9}
 %\renewcommand\dblfloatpagefraction{.9} % for two column documents
@@ -87,30 +88,31 @@ allow a separate determination of the individual distances.
 A second lensing screen breaks the degeneracy.
 
 \section{Lensing}
-The previous result is that for $0.4$ms apexes data, the $D_{eff}=1168\+- 23$pc, and the $1$ms data , the $D_{eff}=1121+-59$pc, which is degenerate.
-To known the accurate position of the pulsar, we need to break this degeneracy.
+The previous result is that for $0.4$ms apexes data, the $D_{eff}=1168\pm 23$pc, and the $1$ms data , the $D_{eff}=1121\pm59$pc, which are degenerate.
+To know the accurate position of the pulsar and the screen, we need to break this degeneracy.
 
-this time, when we deal with the archival data.I need to define how I relate tau-D; fD-velovity.; 
+This time, when we deal with the archival data. How distance is related to the time delay and how velocity is related to the differential frequency is defined by the following equations:
 
-from tau, RA and dec
-we obtained the result that the positions of the pulsar is 
-$0.4$ms ,$D_{eff}=1017+-2.8$pc,
-$1$ms, $D_{eff}=1121\+-64$pc
-where the degeneracy is broken.
+\begin{align*}
+\tau &=\frac{D_{eff}{\theta}^2}{2c} \\
+f_D  &=f*\frac{\delta\tau}{dt}
+\end{align*} 
 
-This is how the result is obtained. Known the distance of the pulsar is $640$pc,
-$0.4$ms pile, $D_s$ is equivalent to $392.82$pc. 
-Theta is obtained from tau. Known the axis( -25.2deg) we get the ra and dec.
+From $\tau$, RA and dec, we obtained the result that the positions of the pulsar: 
+$0.4$ms ,$D_{eff}=1017\pm2.8$pc,
+$1$ms, $D_{eff}=1121\pm64$pc
+where the degeneracy is broken.Furthermore, if we know the distance of the pulsar is $640$pc by parallax,
+the screen where $0.4$ms scintellation points are deflected, $D_s$ is equivalent to $392.82$pc. Then with the angle of the axis 25.2 degree west of north, we get the calculated RA and dec.
 
-$1$ms pile, the $D_s$ is equivalent to $422.5$pc.
-We fit a line to the $1$ms observation positions. Lying on the fitted line, point 5 is obtained with equal theta_para as the farthest point in the 0.4ms pile. Knowing the fD of this point, we get vA5. Similarly, we obtained the v_parallel from the 0.4ms data. Thus, the total velocity of the pulsar is determined.
-Knowing tau, we can get the theta of the pulsar. Knowing the line and the differential frequency, we can get the ra and dec of the pulsar.
+Similarly, for $1$ms pile, the $D_s$ is equivalent to $422.5$pc and calulated the RA and dec.
+Then we fit a line to this five calculated points. Lying on the fitted line, point 5 is obtained with equal $\theta_{\parallel}$ as the farthest point in the 0.4ms pile. Knowing the fD of this point, we know the relative velocity of this point to the pulsar, which is called vA5. Similarly, we obtained the $v_{\parallel}$ from the 0.4ms data. Thus, the total velocity of the pulsar is determined.
+Knowing tau, we can get the angle of the screen image away from the pulsar. Knowing the line and the differential frequency, we can get the ra and dec of the pulsar.
 
-But accordign to Fermat's law, the distributions of the pile of 1ms points are not reasonable. If they are being reflected by one interstellar medius lens, they should be distributed along a line like the 0.4ms pile, just lie in the direction of the pulsar and point J in \ref{Doublelens}
+But accordign to Fermat's law, the distributions of the pile of 1ms points are not reasonable. If they are being reflected by one interstellar medium lens, they should be distributed along a line like the 0.4ms pile, just lie in the direction of the pulsar and point J in \ref{Doublelens}.
 
 One alternative explanation of this is: the 1ms pile of points are the result of double lens. First deflected and then reflected. Solved positions are plotted in \ref{Doublelens}. By Fermat's law, the velocity parallel to the lens plane should be equal. 
 
-We made a plot of the reflected velocity in the direction that is transverse to the first lens plane in \figure{vtrans}.
+We made a plot of the reflected velocity in the direction that is transverse to the first lens plane in \ref{vtrans}.
 
 
 \section{B0834+06}
@@ -139,7 +141,7 @@ nevertheless illustrates a robust interpretation of the data.
 
 \begin{table*}
 \centering
-\label{apex1ms}
+%\label{apex1ms}
 %\resizebox{!}{1cm}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
@@ -173,18 +175,10 @@ $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & 
 
 -43.08                           & 0.44                               & 1.066              & 0.005                              & -8.41   & 1.7                                      & -24.14   & 1.4   &185   
                                   
-\label{table:apex}
 \end{tabular}
+\label{table:apex}
 \caption{0.4ms and 1ms observation positions.}
 \end{table*}
-
-\begin{figure*}
-\centering
-%\epsscale{1.0}
-\includegraphics[width=1.0\textwidth, angle=0]{Theta_tau.png}
-\caption{${\theta}$ vs ${\sqrt{\tau}}$. The black line is the fitted line of the 0.4ms positions, where $k=28.51$. The blue lines are the fitted lines of the 1ms position, where $k=25.784$ with an error region of $\sigma_k=0.66$.
-}
-\end{figure*}
 
 
 
@@ -206,6 +200,25 @@ $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & 
 %\label{Onelens_392_422}
 %\end{figure*}
 
+\begin{figure*}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\textwidth, angle=0]{Theta_tau.png}
+\caption{${\theta}$ vs ${\sqrt{\tau}}$. The black line is the fitted line of the 0.4ms positions, where $k=28.51$. The blue lines are the fitted lines of the 1ms position, where $k=25.784$ with an error region of $\sigma_k=0.66$.
+}
+\end{figure*}
+
+
+
+
+
+\section{Lens Solution}
+
+In order to interpret the data, we adopt the lensing model of
+\citet{2014MNRAS.442.3338P}.  In the absence of a lens model, the
+fringe rate, delay and angular position cannot be uniquely related. In
+this model, the lensing is due to projected fold caustics of a thin
+sheet closely aligned to the line of sight.
 
 
 \begin{figure*}
@@ -220,19 +233,10 @@ $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & 
 
 \begin{figure*}
 \centering
-\includegraphics[width=1.0\textwidth,angle=0]{V_trans_theta_para.png}
-\caption{plot the relation of vtrans vs thetapara}
+\includegraphics[width=1.0\textwidth,angle=0]{Reflection_angle.png}
+\caption{Injection velocity minus reflected velocity over the speed of light. J specifically marked in the paper.}
 \label{vtrans}
 \end{figure*}
-
-
-\section{Lens Solution}
-
-In order to interpret the data, we adopt the lensing model of
-\citet{2014MNRAS.442.3338P}.  In the absence of a lens model, the
-fringe rate, delay and angular position cannot be uniquely related. In
-this model, the lensing is due to projected fold caustics of a thin
-sheet closely aligned to the line of sight.
 
 \section{Discussion}
 
