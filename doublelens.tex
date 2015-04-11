@@ -79,7 +79,7 @@ direction\citep{boyle2012}.
 Direct VLBI observation of PSR B0834+06 shows multiple images lensed
 by the interstellar plasma.  Combining the angular positions and
 scintillation delays, the authors published the derived effective
-distance\citep{2010ApJ...708..232B} of approximately $1168\pm 23$ pc.
+distance \citep{2010ApJ...708..232B} of approximately $1168\pm 23$ pc for apexes whose time delays range from $0.1$ ms to $0.4$ ms, and $1121\pm 59$ pc for $1$ ms apexes.
 This represents a precise measurement compared to all other attempts
 to derive distances to this pulsar.  This effective distance is a
 combination of pulsar-screen and earth-screen distances, and does not
@@ -88,31 +88,35 @@ allow a separate determination of the individual distances.
 A second lensing screen breaks the degeneracy.
 
 \section{Lensing}
-The previous result is that for $0.4$ms apexes data, the $D_{eff}=1168\pm 23$pc, and the $1$ms data , the $D_{eff}=1121\pm59$pc, which are degenerate.
-To know the accurate position of the pulsar and the screen, we need to break this degeneracy.
-
-This time, when we deal with the archival data. How distance is related to the time delay and how velocity is related to the differential frequency is defined by the following equations:
+To break the degeneracy of the result and know the accurate distance of the pulsar, we dealt with the archival data of B0834. We selected the apexes from four band, centering $314.5$ MHz, $322.5$ MHz, $328.5$MHz and $334.5$MHz, all with a bandwidth of $8$ MHz. Separating them into two piles, one with time delay ranges from $0.1$ ms to $0.4$ ms, the other with time delay of $1$ ms. Plotting those apex points on a $f_D$- $\tau$ plane, we match the points which are adjacent to each other. Thus we seleted 9 apex positions from the 1ms cluster, and 5 apex positions from the $0.4$ ms cluster. How distance is related to the time delay and how velocity is related to the differential frequency is defined by the following equations:
 
 \begin{align*}
-\tau &=\frac{D_{eff}{\theta}^2}{2c} \\
-f_D  &=f*\frac{\delta\tau}{dt}
+\tau &=\frac{D_{\rm e}{\theta}^2}{2c}, \\
+f_D  &=f\cdot\frac{\delta\tau}{dt},
 \end{align*} 
+where ${D_{\rm e}}$ is the effective distance, equivalent to the lens placing at the middle point of the pulsar: $D_{\rm e}={D_p D_s}/({D_p - D_s})$. 
 
 From $\tau$, RA and dec, we obtained the result that the positions of the pulsar: 
-$0.4$ms ,$D_{eff}=1017\pm2.8$pc,
-$1$ms, $D_{eff}=1121\pm64$pc
-where the degeneracy is broken.Furthermore, if we know the distance of the pulsar is $640$pc by parallax,
-the screen where $0.4$ms scintellation points are deflected, $D_s$ is equivalent to $392.82$pc. Then with the angle of the axis 25.2 degree west of north, we get the calculated RA and dec.
+for $0.4$ ms pile, $D_{\rm e}=1017\pm2.8$\ pc; 
+and for $1$ ms pile, $D_{\rm e}=1121\pm64$\ pc.
+Thus, the degeneracy is broken. Furthermore, if we know the distance of the pulsar is $640$ pc by parallax,
+the screen where $0.4$ ms scintellation points are deflected, $D_s$ is equivalent to $392.82$ pc. Then with the angle of the axis 25.2 degree west of north, we get the calculated RA and dec.
 
-Similarly, for $1$ms pile, the $D_s$ is equivalent to $422.5$pc and calulated the RA and dec.
-Then we fit a line to this five calculated points. Lying on the fitted line, point 5 is obtained with equal $\theta_{\parallel}$ as the farthest point in the 0.4ms pile. Knowing the fD of this point, we know the relative velocity of this point to the pulsar, which is called vA5. Similarly, we obtained the $v_{\parallel}$ from the 0.4ms data. Thus, the total velocity of the pulsar is determined.
-Knowing tau, we can get the angle of the screen image away from the pulsar. Knowing the line and the differential frequency, we can get the ra and dec of the pulsar.
+Similarly, for $1$ ms pile, the $D_s$ is equivalent to $422.5$ pc and is calulated the RA and dec.
 
-But accordign to Fermat's law, the distributions of the pile of 1ms points are not reasonable. If they are being reflected by one interstellar medium lens, they should be distributed along a line like the 0.4ms pile, just lie in the direction of the pulsar and point J in \ref{Doublelens}.
+Then we fit a line to this five calculated points. Lying on the fitted line, point 5 is obtained with equal $\theta_{\parallel}$ as the farthest point in the $0.4$ ms pile. Knowing the differential frequency ${f_D}$ of this point, we know the relative velocity of this point to the pulsar, called vA5, which is in the direction away from the screen image opposite to the position of the pulsar. Similarly, we obtained the $v_{\parallel}$ from the $0.4$ ms data. Thus, the total velocity of the pulsar is determined.
+Knowing ${\tau}$ , we can get the angle of the screen image away from the pulsar. Knowing the line and the differential frequency, we can get the ra and dec of the pulsar.
 
-One alternative explanation of this is: the 1ms pile of points are the result of double lens. First deflected and then reflected. Solved positions are plotted in \ref{Doublelens}. By Fermat's law, the velocity parallel to the lens plane should be equal. 
+That is one lens model fitting.
+
+But according to Fermat's law, the distributions of the pile of 1ms points are not reasonable. If they are being reflected by one interstellar medium lens, they should be distributed along a line like the $0.4$\ ms pile, just lie in the direction of the pulsar and point J in \ref{Doublelens}.
+
+We calculated the $\theta_{\parallel}$ of the respective RA and dec positions to the 0.4ms axis. And we got five matched positions, which is marked on \ref{Doublelens}. 
+
+One alternative explanation of this is: the $1$ ms pile of points are the result of double lens. First deflected and then reflected. Solved positions are plotted in \ref{Doublelens}. By Fermat's law, the velocity parallel to the lens plane should be equal. 
 
 We made a plot of the reflected velocity in the direction that is transverse to the first lens plane in \ref{vtrans}.
+From our calculation, it takes $22$ days for the injectioned image of the puslar on the far screen to move to the first apex position, and it takes $44$ days of the injected image of the pulsar on the far screen from J to move to the fifth apex position.
 
 
 \section{B0834+06}
@@ -252,7 +256,7 @@ More surprising is the absence of a single deflection image of the
 pulsar, which is expected at position J.  This could happen if the
 maximum deflection angle is just below critical, such that only rays
 on the appropriately aligned double deflection can form images.  This
-scenario predicts that at frequencies just below 300 MHz, or a few
+scenario predicts that at frequencies just below $300$ MHz, or a few
 weeks earlier in time, the pulsar should be seen at position J.
 
 \section{Possible Improvements}
