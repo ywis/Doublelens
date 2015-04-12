@@ -88,8 +88,18 @@ allow a separate determination of the individual distances.
 A second lensing screen breaks the degeneracy.
 
 \section{Lensing}
+\subsection{B0834+06}
 
-To break the degeneracy of the result and know the accurate distance of the pulsar, we dealt with the archival data of B0834. We selected the apexes from four bands, centering $314.5$ MHz, $322.5$ MHz, $328.5$MHz and $334.5$MHz, all with a bandwidth of $8$ MHz. Then we separate them into two piles, one with time delay ranges from $0.1$ ms to $0.4$ ms, the other with time delay of about $1$ ms. Plotting those apex points on a $f_D$- $\tau$ plane, we match the points which are adjacent to each other. Thus we seleted 9 apex positions from the 1ms cluster, and 5 apex positions from the $0.4$ ms cluster. How distance of the pulsar is related to the time delay and how velocity is related to the differential frequency is defined by the following equations:
+Our analysis is based on the reduced apex catalog from
+\citet{2010ApJ...708..232B}. Each identified apex includes a delay,
+delay rate, RA and dec, one for each of 4 frequency bands, centering $314.5$ MHz, $322.5$ MHz, $328.5$ MHz and $334.5$ MHz, all with a bandwidth of $8$ MHz.  We mapped
+a total of 9 apexes from the 0.4ms cluster, and 5 from the 1ms
+cluster, across the 4 frequency bands. This results in an estimate
+for the mean value, and standard deviation.  These are listed in Table
+\ref{table:apex}. The time is calculated with $2{\tau}f/{f_{D}}$,
+which is equivalent to pulsar moving at $640$pc plane from the
+original position to the lensed image position with the velocity
+calculated. How distance of the pulsar is related to the time delay and how velocity is related to the differential frequency is defined by the following equations:
 
 \begin{align*}
 \tau &=\frac{D_{\rm e}{\theta}^2}{2c}, \\
@@ -97,26 +107,16 @@ f_D  &=f\cdot\frac{\delta\tau}{dt},
 \end{align*} 
 where ${D_{\rm e}}$ is the effective distance, equivalent to the lens placing at the middle point of the pulsar: $D_{\rm e}={D_p D_s}/({D_p - D_s})$. 
 
-\subsection{B0834+06}
-
-Our analysis is based on the reduced apex catalog from
-\citet{2010ApJ...708..232B}. Each identified apex includes a delay,
-delay rate, RA and dec, one for each of 4 frequency bands.  We mapped
-a total of 9 apexes from the 0.4ms cluster, and 5 from the 1ms
-cluster, across the 4 frequency bands.  This results in an estimate
-for the mean value, and standard deviation.  These are listed in Table
-\ref{table:apex}. The time is calculated with $2{\tau}f/{f_{D}}$,
-which is equivalent to pulsar moving at $640$pc plane from the
-original position to the lensed image angle with the velocity
-calculated. A least squares effective distance results in
+A least squares effective distance results in
 $D_e^M=1017\pm 2.8$ for the main 0.4ms cluster and
-$D_e^S = 1243 \pm 64.1$ for the secondary 1ms cluster.  This seems to
-indicate that the secondary screen is closer to the pulsar.  The error
+$D_e^S = 1243 \pm 64.1$ for the secondary 1ms cluster. This seems to
+indicate that the secondary screen is closer to the pulsar. The error
 bars are large enough to allow them to be at the same distance, or
 perhaps a reverse distance ordering.  In this paper, we present two
 analyses for comparison: equidistant, and at the best fit distances.
 In the first case, no direct distance measurement is possible, but it
 nevertheless illustrates a robust interpretation of the data.
+
 
 \subsection{Lens Solution}
 
@@ -126,27 +126,45 @@ fringe rate, delay and angular position cannot be uniquely related. In
 this model, the lensing is due to projected fold caustics of a thin
 sheet closely aligned to the line of sight.
 
-From time delay $\tau$ and the angular position of the pulsar, we obtained the effective distance of the pulsar as follows: 
-for $0.4$ ms pile, $D_{\rm e}=1017\pm2.8$\ pc; 
-and for $1$ ms pile, $D_{\rm e}=1121\pm64$\ pc.
+%From time delay $\tau$ and the angular position of the pulsar, we obtained the effective distance of the pulsar as follows: 
+%for $0.4$ ms pile, $D_{\rm e}=1017\pm2.8$\ pc; 
+%and for $1$ ms pile, $D_{\rm e}=1121\pm64$\ pc.
 Thus, the degeneracy is broken. Furthermore, if we know the distance of the pulsar is $640$ pc by parallax,
 the screen where $0.4$ ms scintellation points are deflected, $D_s$ is equal to $392.82$ pc. Then with the angle of the axis 25.2 degree west of north, we get the calculated positions.
 Similarly, for $1$ ms pile, the $D_s$ is equal to $422.5$ pc and the corresponding calculated positions.
 
 Then we fit a line to this five calculated points. Lying on the fitted line, point 5 share the same $\theta_{\parallel}$ as the point with the largest $\theta_{\parallel}$ in the $0.4$ ms pile. Solving the differential frequency ${f_D}$ of this point, we can calculate the relative velocity of this point to the pulsar, called vA5, which is in the plane that is perpendicular to our line of sight with a direction pointing from point 5 to the position of the pulsar. With the same method, we obtained the $v_{\parallel}$ from the $0.4$ ms data. Thus, the total velocity of the pulsar is determined.
 
-That is one lens model fitting. Knowing time delay${\tau}$ , we can get the distance of the screen; knowing the line and the differential frequency ${f_D}$, we can get the velocity of the pulsar.
+That is one lens model fitting. Knowing time delay ${\tau}$ , we can get the distance of the screen; knowing the line and the differential frequency ${f_D}$, we can get the velocity of the pulsar.
+\subsection{Discussion of one lens model}
 
-However, the distributions of the pile of $1$ ms points are not reasonable. According to Fermat's Law, the parallel velocity to the plane should be equal. Thus on the plane which is perpendicular to our line of sight, the injection line should be in agree with the reflection line . If the light of the pulsar are being reflected by one interstellar medium lens, they should be distributed along a line like the axis of the $0.4$\ ms pile, and we already know that all $1$ ms lensed images lie on the magenta line in Figure \ref{Doublelens} the only possible position will be J ,which is the pedal of the position of the pulsar to the screen line. 
+The lens solution appears consistent with the premise of the inclined
+sheet lensing model\citep{2014MNRAS.442.3338P}.  The secondary lens
+only images a subset of the primary lens images.  This could happen if
+the secondary lens screen is just under the critical inclination
+angle, such that only $3-\sigma$ waves lead to a fold caustic.  If the
+primary lens were at a critical angle, the chance of encountering a
+somewhat less inclined system is of order unity.
 
-Therefore, we consider another model candidate: the double lens model. Respective calculation shows that the light is first deflected by the far screen and then reflected by the near screen. 
+More surprising is the absence of a single deflection image of the
+pulsar, which is expected at position J.  This could happen if the
+maximum deflection angle is just below critical, such that only rays
+on the appropriately aligned double deflection can form images.  This
+scenario predicts that at frequencies just below $300$ MHz, or a few
+weeks earlier in time, the pulsar should be seen at position J. We made a plot of the reflected velocity in the direction that is transverse to the first lens plane in Figure \ref{vtrans}.
+From our calculation, it takes $22$ days for the injected image of the puslar on the far screen from J to move to the first apex position, and it takes $44$ days of the injected image of the pulsar on the far screen from J to move to the fifth apex position.
 
-The first step is to find the matched positions of the far screen and near screen. We calculated the $\theta_{\parallel}$ of the respective positions to the 0.4ms axis. And we got five matched lines, which are marked in Figure \ref{Doublelens}. They are the second screen lines, where the light got deflected. Those pairs matched the possible pairs of the lens screen. We calculated with the distance of the screen which is calculated in the one lens model, and then move the distance of the far screen little by little to make the calculated time delay match the observation result.
+\subsection{Double lens model}
+However, the distributions of the pile of $1$ ms points are not reasonable. According to Fermat's Law, the parallel velocity to the plane should be equal. Thus on the plane which is perpendicular to our line of sight, the injection line should be in agree with the reflection line . If the light of the pulsar are being reflected by one interstellar medium lens, they should be distributed along a line like the axis of the $0.4$\ ms pile, and we already know that all $1$ ms lensed images lie on the magenta line in Figure \ref{Doublelens}, the only possible position will be J, which is the pedal of the position of the pulsar to the screen line.
 
-The solved positions in two lens model are plotted in Figure \ref{Doublelens}. According to Fermat's law, the velocity parallel to the lens plane should be equal; therefore we obtained the solution to the double lens model. 
+Therefore, we consider another model candidate: the double lens model. Respective calculation shows that the light is first refracted by the far screen and then reflected by the near screen. 
 
-We made a plot of the reflected velocity in the direction that is transverse to the first lens plane in Figure \ref{vtrans}.
-From our calculation, it takes $22$ days for the injectioned image of the puslar on the far screen from J to move to the first apex position, and it takes $44$ days of the injected image of the pulsar on the far screen from J to move to the fifth apex position.
+The first step is to find the positions of the far lens and the near lens. As has been discussed previously, the magenta line is considered to be the far lens, where the positions have a larger effective distance. And the near lens is considered to be the lines that is perpendicular to the $0.4$ ms pile axis. 
+
+The second step is to find the matched pair of those two lenses. We calculated the $\theta_{\parallel}$ of the respective $1$ ms pile observation positions. Here we define the parallel axis to be the axis of the $0.4$ ms pile positions. And we got five matched lines, which are marked in Figure \ref{Doublelens}. They are the second screen lines, where the light got reflected. Those pairs matched the possible pairs of the lens screen. We calculated with the distance of the screen which is calculated in the one lens model, and then move the distance of the far screen little by little to make the calculated time delay match the observation result.
+
+The solved positions in two lens model are plotted in Figure \ref{Doublelens}.  
+
 
 
 %table one for 1ms positions
@@ -244,22 +262,7 @@ $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & 
 \label{vtrans}
 \end{figure*}
 
-\section{Discussion}
 
-The lens solution appears consistent with the premise of the inclined
-sheet lensing model\citep{2014MNRAS.442.3338P}.  The secondary lens
-only images a subset of the primary lens images.  This could happen if
-the secondary lens screen is just under the critical inclination
-angle, such that only $3-\sigma$ waves lead to a fold caustic.  If the
-primary lens were at a critical angle, the chance of encountering a
-somewhat less inclined system is of order unity.
-
-More surprising is the absence of a single deflection image of the
-pulsar, which is expected at position J.  This could happen if the
-maximum deflection angle is just below critical, such that only rays
-on the appropriately aligned double deflection can form images.  This
-scenario predicts that at frequencies just below $300$ MHz, or a few
-weeks earlier in time, the pulsar should be seen at position J.
 
 \section{Possible Improvements}
 
