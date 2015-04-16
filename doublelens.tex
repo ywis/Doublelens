@@ -26,21 +26,21 @@
 Scintillation Distance Measurements
 }
 
-\author{J.~D.~Emberson\altaffilmark{1,2}, Takeshi~Kobayashi\altaffilmark{1,3} \& Marcelo~A.~Alvarez\altaffilmark{1}}
-\altaffiltext{1}{Canadian Institute for Theoretical Astrophysics,
-  University of Toronto, 60 St.George St., Toronto, ON M5S 3H8, Canada} 
-\altaffiltext{2}{Department of Astronomy and Astrophysics, University
-  of Toronto, 50 St. George, Toronto, ON M5S 3H4, Canada} 
-\altaffiltext{3}{Perimeter Institute for Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada}
-\email{emberson@astro.utoronto.ca}
+%\author{J.~D.~Emberson\altaffilmark{1,2}, Takeshi~Kobayashi\altaffilmark{1,3} \& Marcelo~A.~Alvarez\altaffilmark{1}}
+%\altaffiltext{1}{Canadian Institute for Theoretical Astrophysics,
+%  University of Toronto, 60 St.George St., Toronto, ON M5S 3H8, Canada} 
+%\altaffiltext{2}{Department of Astronomy and Astrophysics, University
+%  of Toronto, 50 St. George, Toronto, ON M5S 3H4, Canada} 
+%\altaffiltext{3}{Perimeter Institute for Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada}
+%\email{emberson@astro.utoronto.ca}
 
-%\author{Siqi Liu\altaffilmark{1,3}, Ue-Li~Pen\altaffilmark{1,2}, J-P~Macquart\altaffilmark{4},Walter Brisken\altaffilmark{5}, Adam Deller\altaffilmark{6}\\
-%\altaffiltext{1}{Canadian Institute for Theoretical Astrophysics, University of Toronto, M5S 3H8 Ontario, Canada} 
-%\altaffiltext{2} {Canadian Institute for Advanced Research, Program in Cosmology and Gravitation}
-%\altaffiltext{3} {Department of Astronomy and Astrophysics, University of Toronto, M5S 3H4, Ontario, Canada}
-%\altaffiltext{4} {ICRAR-Curtin University of Technology, Department of Imaging and Applied Physics, GPO Box U1978, Perth, Western Australia 6102, USA}
-%\altaffiltext{5} {National Radio Astronomy Observatory, P.O. Box O, Socorro, NM 87801, USA}
-%\altaffiltext{6} {ASTRON, the Netherlands Institute for Radio Astronomy, Postbus 2, 7990 AA, Dwingeloo, The Netherlands}
+\author{Siqi Liu\altaffilmark{1,3}, Ue-Li~Pen\altaffilmark{1,2}, J-P~Macquart\altaffilmark{4}, Walter Brisken\altaffilmark{5}, Adam Deller\altaffilmark{6}}
+\altaffiltext{1}{Canadian Institute for Theoretical Astrophysics, University of Toronto, M5S 3H8 Ontario, Canada} 
+\altaffiltext{2} {Canadian Institute for Advanced Research, Program in Cosmology and Gravitation; pen@cita.utoronto.ca}
+\altaffiltext{3} {Department of Astronomy and Astrophysics, University of Toronto, M5S 3H4, Ontario, Canada; sqliu@cita.utoronto.ca}
+\altaffiltext{4} {ICRAR-Curtin University of Technology, Department of Imaging and Applied Physics, GPO Box U1978, Perth, Western Australia 6102, USA; J.Macquart@curtin.edu.au}
+\altaffiltext{5} {National Radio Astronomy Observatory, P.O. Box O, Socorro, NM 87801, USA; wbrisken@aoc.nrao.edu}
+\altaffiltext{6} {ASTRON, the Netherlands Institute for Radio Astronomy, Postbus 2, 7990 AA, Dwingeloo, The Netherlands; deller@astron.nl}
 
 
 
@@ -61,9 +61,9 @@ conformal distance degeneracy exists which allows a rescaling of the
 absolute distance scale.  This degeneracy is broken if the pulsar resides in a
 binary system, which is the case for many PTA targets.
 \end{abstract}
-\begin{keywords}
-Pulsar
-\end{keywords}
+%\begin{keywords}
+%Pulsar
+%\end{keywords}
 
 \newcommand{\be}{\begin{eqnarray}}
 \newcommand{\ee}{\end{eqnarray}}
@@ -174,7 +174,7 @@ The first step is to find the positions of the far lens and the near lens. As ha
 
 The second step is to find the matched pair of those two lenses. We calculated the $\theta_{\parallel}$ of the respective $1$ ms pile observation positions. Here we define the parallel axis to be the axis of the $0.4$ ms pile positions. And we got five matched lines, which are marked in Figure \ref{Doublelens}. They are the second screen lines, where the light got reflected. Those pairs matched the possible pairs of the lens screen. We calculated with the distance of the screen which is calculated in the one lens model, and then move the distance of the far screen little by little to make the calculated time delay match the observation result.
 
-The solved positions in two lens model are plotted in Figure \ref{Doublelens}.  
+The solved positions in two lens model are plotted in Figure \ref{Doublelens}, and respective results are listed in Table \ref{table:double_lens_compare}.  
 
 
 
@@ -184,7 +184,7 @@ The solved positions in two lens model are plotted in Figure \ref{Doublelens}.
 \centering
 %\label{apex1ms}
 %\resizebox{!}{1cm}{
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{ccccccccc}
 \hline
 $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & $\sigma_{RA}$(mas) & dec(mas) & $\sigma_{dec}$(mas) & time(day)\\
 \hline
@@ -214,8 +214,8 @@ $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & 
 
 -41.27                           & 0.54                               & 1.037              & 0.003                              & -11.28  & 0.93                                     & -19.18   & 1.1   &188                                   \\
 
--43.08                           & 0.44                               & 1.066              & 0.005                              & -8.41   & 1.7                                      & -24.14   & 1.4   &185   
-                                  
+-43.08                           & 0.44                               & 1.066              & 0.005                              & -8.41   & 1.7                                      & -24.14   & 1.4   &185   \\
+ \hline                                 
 \end{tabular}
 \label{table:apex}
 \caption{0.4ms and 1ms observation positions.}
@@ -223,16 +223,18 @@ $f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & 
 
 \begin{table*}
 %\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|}
+\centering
+\begin{tabular}{ccccc}
 \hline
-observation tau & calculated tau & theta\_para & fDobs        & fD\_cal \\ \hline
-0.950          & 0.944       & 13.443      & -35.06 & 36.86 \\ \hline
-0.950          & 0.955         & 13.8599    & -35.06 & 37.44 \\ \hline
-0.9763    & 0.9763       & 14.6302  & -38.31 & 38.53 \\ \hline
-1.0045          & 1.0272        & 16.2906 & -40.17 & 40.86 \\ \hline
-1.037           & 1.036        & 16.5689 & -41.27 & 41.26 \\ \hline
-1.066     & 1.066         & 17.4412 & -43.08 & 43.1414 \\ \hline
+$\theta_{\parallel}$ & Observation $\tau$ & Calculated $\tau$(ms) & Observation $f_D$(mHz)        & Calculated $f_D$(mHz) \\ \hline
+13.443   &    0.950     & 0.944       & -35.06 & -36.86 \\ 
+14.6302  &    0.9763    & 0.9763       & -38.31 & -38.53 \\ 
+16.2906  &    1.0045    & 1.0272      & -40.17 & -40.86 \\ 
+16.5689  &    1.037     & 1.036        & -41.27 & -41.26 \\ 
+17.4413  &    1.066     & 1.066         & -43.08 & -43.14 \\ \hline
 \end{tabular}
+\label{table:double_lens_compare}
+\caption{comparison of the observation time delay and the differential frequency of the observation data and the calculated result of double lens model.}
 \end{table*}
 %\end{table}
 
@@ -282,7 +284,7 @@ observation tau & calculated tau & theta\_para & fDobs        & fD\_cal \\ \hlin
 \centering
 %\epsscale{1.0}
 \includegraphics[width=1.0\textwidth, angle=0]{Double_lens_xy.png}
-\caption{Observation data and calculated positions of $1$ms and $0.4$ms data of double lens model. In both apexes regions, the position of the screen locate at $392.82$pc and $425$pc. Blue points on the left side are the points that fitted from the $f_D$ and $\tau$ of from the $0.4$ms observation. Blue line is the fitted line of $0.4$ms apex positions, with a $25.2$ degree west of the north. The points lie on the left side with errorbars, are the observation points together with their sample errors; while the transparent circles are plotted with population errors, where smaller transparent data are darker. Short solid lines between them are the matched positions of the apexes in $1ms$ region and $0.4ms$ region, which share the same $\theta_{\parallel}$. The points on the right side are the points that fitted from the $f_D$ and $\tau$ of the $1$ms observation with an avearage of four bandwidths. Solid line is the fitted line of these positions. Those points with errorbars nearby are the observation points together with their sample errors, while the transparent circles are plotted with population errors. The dotted line on the top right side is vertical to the solid line. Short solid lines connect the observation points and the fitted positions. Middle lines connect the $0.4$ms and $1$ms fitted positions with the same $\theta_{\parallel}$. The velocity of the pulsar is $193.4$km/s, with a degree $5.56$ degree west of north, is also marked out at the top of the figure.  }
+\caption{Observation data and calculated positions of $1$ms and $0.4$ms data of double lens model. In both apexes regions, the position of the screen locate at $392.82$pc and $425$pc. Blue points on the left side are the points that fitted from the $f_D$ and $\tau$ of from the $0.4$ms observation. Blue line is the fitted line of $0.4$ms apex positions, with a $25.2$ degree west of the north. The points lie on the left side with errorbars, are the observation points together with their sample errors; while the transparent circles are plotted with population errors, where smaller transparent data are darker. Short solid lines between them are the matched positions of the apexes in $1ms$ region and $0.4ms$ region, which share the same $\theta_{\parallel}$. The points on the right side are the points that fitted from the $f_D$ and $\tau$ of the $1$ms observation with an avearage of four bandwidths. Solid line is the fitted line of these positions. Those points with errorbars nearby are the observation points together with their sample errors, while the transparent circles are plotted with population errors. The dotted line on the top right side is vertical to the solid line. Short solid lines connect the observation points and the fitted positions. Middle lines connect the $0.4$ms and $1$ms fitted positions with the same $\theta_{\parallel}$. The velocity of the pulsar is $193.4$km/s, with an angle $0.07$ degree west of north, is also marked out at the top of the figure.  }
 \label{Doublelens}
 \end{figure*}
 
