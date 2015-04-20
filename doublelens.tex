@@ -114,17 +114,24 @@ quantify the lensing screen.
 
 \section{Lensing}
 \subsection{B0834+06}
-
+\label{21}
 Our analysis is based on the reduced apex catalog from
 \citet{2010ApJ...708..232B}. Other information from each identified apex includes delay,
-delay rate, RA and dec, one for each of $4$ $8$ MHz wide sub-bands, centering $314.5$ MHz, $322.5$ MHz, $328.5$ MHz and $334.5$ MHz.  We mapped
+delay rate, RA and dec, one for each of four $8$ MHz wide sub-bands, centering $314.5$ MHz, $322.5$ MHz, $328.5$ MHz and $334.5$ MHz.  We mapped
 a total of $9$ apexes from the $0.4$ ms group, and $5$ from the $1$ ms
 group. This results in an estimation
 for the mean value and standard deviation, which are listed in Table
 \ref{table:apex}. The time is calculated with $2{\tau}f/{f_{D}}$,
 which is equivalent to pulsar moving at $640$pc plane from the
 original position to the lensed image position with the velocity
-calculated. How distance of the pulsar is related to the time delay and how velocity is related to the differential frequency is defined by the following equations:
+calculated.
+
+The way we used to calculate error of time delay $\tau$ and differential frequency $f_D$ is by the following equation:
+\begin{align*}
+\sigma = \sqrt{\sum^i{\frac{1}{{\sigma_i}^2}}}
+\end{align*}
+
+How distance of the pulsar is related to the time delay and how velocity is related to the differential frequency are defined by the following equations:
 
 \begin{align*}
 \tau &=\frac{D_{\rm e}{\theta}^2}{2c}, \\
@@ -205,7 +212,12 @@ The first step is to calculate the position of J. We calculated the position of 
 The second step is to find the matched pairs of those two lenses. By try and error, we found that the 5 points in $0.4$ ms group that have the largest $\theta$ should be the candidates where the near lens lie.  These five matched lines are marked with dot dash lines in Figure \ref{Doublelens} and their values are listed in Table \ref{table:double_lens_compare} the first two columns. They are the secondary screens, at a distance $392.8$ pc away from us. 
 %We calculated with the distance of the screen which is calculated in the one lens model, and then move the distance of the far screen little by little to make the calculated time delay match the observation resul
 
-By using the refraction law, we solve the solutions in double lens model.And the solved positions are plotted in Figure \ref{Doublelens}, and respective time delays and differential frequencies are listed in Table \ref{table:double_lens_compare}.  Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how light are being refracted on the first lens plane and the second lens plane, with $\theta_{\parallel}$ equal to $-17.44$ mas of the secondary lens plane position.
+By using the refraction law, we solve the solutions in double lens model.And the solved positions are plotted in Figure \ref{Doublelens}, and respective time delays and differential frequencies are listed in Table \ref{table:double_lens_compare}. 
+\begin{equation}
+\sigma = \sqrt{\sigma_1^2+\sigma_2^2}
+\end{equation}
+
+Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how light are being refracted on the first lens plane and the second lens plane, with $\theta_{\parallel}$ equal to $-17.44$ mas of the secondary lens plane position.
 
 
 
@@ -217,7 +229,7 @@ By using the refraction law, we solve the solutions in double lens model.And the
 %\resizebox{!}{1cm}{
 \begin{tabular}{llllllllll}
 \hline
-$\theta_{\parallel}$(mas) &$f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & $\sigma_{RA}$(mas) & dec(mas) & $\sigma_{dec}$(mas) & time(day)\\
+$\theta_{1\parallel}$(mas) &$f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & RA(mas) & $\sigma_{RA}$(mas) & dec(mas) & $\sigma_{dec}$(mas) & time(day)\\
 \hline
  -8.29   & -12.94                            & 0.19      & 0.0845  & 0.0005          & 2.87    & 0.11                                     & -8.201     & 0.088      & 49.9                                \\
 
@@ -249,7 +261,7 @@ $\cdots$ & -43.08                           & 0.44                              
  \hline                                 
 \end{tabular}
 \label{table:apex}
-\caption{0.4ms and 1ms observation positions.}
+\caption{$0.4$ ms and $1$ ms observation data and derived data. The upper part of the table list the $0.4$ ms observation data. Observation data include the differential frequency $f_D$, time delay $\tau$ from scintillation measurement; RA and dec from the VLBI measurement. The method of how to calculate the error of time delay, differential frequency and the last column time is mentioned in Section \ref{21}. $\theta_{1\parallel}$, the angle of the $0.4$ ms group with the component in the axis defined by $\alpha$, are derived from the $\theta-\tau$ relation plotted in Figure \ref{thetatau}.}
 \end{table*}
 
 \begin{table*}
@@ -257,16 +269,16 @@ $\cdots$ & -43.08                           & 0.44                              
 \resizebox{\linewidth}{!}{
 \begin{tabular}{llllllll}
 \hline
-Lens 1 $\theta_{\parallel}(mas)$ & Lens 2 $\theta_{\parallel}$(mas) & Observation $\tau$(ms) & $\sigma_\tau$(ms)  & Calculated $\tau$(ms) & Observation $f_D$(mHz)  &$\sigma_{f_D}$(mHz)      & Calculated $f_D$(mHz) \\ \hline
--13.86  & -12.71 &   0.950     &0.002    & 0.955       & -35.06     &0.52 & -37.22 \\ 
--14.63  & -14.69 &  0.9763    &0.0009   & 0.9763       & -38.31 &0.64   & -38.31 \\ 
--16.29  & -15.78 &  1.005    &0.008   & 1.0272      & -40.17 &0.55    & -40.64 \\ 
--16.57  & -16.35 &   1.037     &0.003    & 1.036        & -41.27 &0.54   & -41.04 \\ 
--17.44  & -17.44 & 1.066     &0.005    & 1.066         & -43.08 &0.44  &-42.26 \\ \hline
+Lens 1 $\theta_{1\parallel}$ (mas) & Lens 2 $\theta_{2\parallel}$(mas) & Observation $\tau$(ms) & $\sigma_\tau$(ms)  & Calculated $\tau$(ms) & Observation $f_D$(mHz)  &$\sigma_{f_D}$(mHz)      & Calculated $f_D$(mHz) \\ \hline
+-13.86  & -12.71 &   0.950     &0.003    & 0.955       & -35.06     &0.80 & -37.22 \\ 
+-14.63  & -14.69 &  0.9763    &0.0009   & 0.9763       & -38.31 &0.79   & -38.31 \\ 
+-16.29  & -15.78 &  1.005    &0.008   & 1.0272      & -40.17 &0.68    & -40.64 \\ 
+-16.57  & -16.35 &   1.037     &0.003    & 1.036        & -41.27 &0.69   & -41.04 \\ 
+-17.44  & -17.44 & 1.066     &0.005    & 1.066         & -43.08 &0.57  &-42.26 \\ \hline
 \end{tabular}
 }
 \label{table:double_lens_compare}
-\caption{comparison of the observation time delay and the differential frequency of the observation data and the calculated result of double lens model.}
+\caption{Comparison of the observation time delay $\tau$ and the differential frequency $f_D$ of the observation data and the calculated result in double lens model. $\theta_{1\parallel}$ is the angle of the $0.4$ ms group with the component in the axis defined by $\alpha$. $\theta_{2\parallel}$ is the angle of the $1$ ms group with the component in the axis defined by $\alpha$. }
 \end{table*}
 %\end{table}
 
