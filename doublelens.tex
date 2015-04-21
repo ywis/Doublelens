@@ -127,14 +127,14 @@ original position to the lensed image position with the calculated proper motion
 
 The method we use to calculate the error of time delay $\tau$ and differential frequency $f_D$ is by the following equation:
 \begin{align*}
-\sigma = \sqrt{\frac{1}{\sum^n_{i=1}{\frac{1}{{\sigma_i}^2}}}},
-\end{align*}
-, where in $0.4$ ms group, i ranges from 1 to 5, and in $1$ ms group, i ranges from 1 to 9. This is also how we calcualte the population error of RA and dec, marked with circles in Figure \ref{Doublelens}.
-The way we use to calculate the sample error of RA and dec, is defined by following equation:
-\begin{align*}
 \sigma = \sqrt{\frac{\sum^n_{i=1}(x_i-\bar{x})^2}{n(n-1)}},
 \end{align*}
-and they are marked with errorbars in Figure \ref{Doublelens}.
+, where in $0.4$ ms group, i ranges from 1 to 5, and in $1$ ms group, i ranges from 1 to 9. This is also how we calcualte the sample error of RA and dec, marked with errorbars in Figure \ref{Doublelens}.
+The way we use to calculate the population error of RA and dec, is defined by following equation:
+\begin{align*}
+\sigma = \sqrt{\frac{1}{\sum^n_{i=1}{\frac{1}{{\sigma_i}^2}}}},
+\end{align*}
+where the i ranges from 1 to 4, representing four sub-bands. They are marked with circles in Figure \ref{Doublelens}.
 
 How distance of the pulsar is related to the time delay and how velocity is related to the differential frequency are defined by the following equations:
 \begin{align*}
