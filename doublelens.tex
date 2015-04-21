@@ -118,21 +118,21 @@ quantify the lensing screen.
 Our analysis is based on the reduced apex catalog from
 \citet{2010ApJ...708..232B}. Information from each identified apex includes delay $\tau$,
 delay rate (differential frequency $f_D$), RA and dec. Data of each apex are collected from four $8$ MHz wide sub-bands centering $314.5$ MHz, $322.5$ MHz, $328.5$ MHz and $334.5$ MHz. We mapped
-a total of $9$ apexes from the $0.4$ ms group, and $5$ from the $1$ ms
+a total of $9$ apexes from the $0.4$ ms group, and $5$ apexes from the $1$ ms
 group. This results in an estimation
-for the average value and standard deviation among four sub-bands, we list the average value in $f=322.5$ MHz in Table
+for the average value and standard deviation among four sub-bands. The average value in $f=322.5$ MHz in Table
 \ref{table:apex}. The time is calculated with $2{\tau}f/{f_{D}}$,
 equivalent to pulsar moving at $640$ pc plane from the
-original position to the lensed image position with the calculated proper motion of the pulsar.
+original position to the lensed image position with the calculated proper motion of the pulsar in one lens model.
 
-The way we use to calculate the error of time delay $\tau$ and differential frequency $f_D$ is by the following equation:
+The method we use to calculate the error of time delay $\tau$ and differential frequency $f_D$ is by the following equation:
 \begin{align*}
-\sigma = \sqrt{\sum^i{\frac{1}{{\sigma_i}^2}}},
+\sigma = \sqrt{\frac{1}{\sum^n_{i=1}{\frac{1}{{\sigma_i}^2}}}},
 \end{align*}
-which is also how we calcualte the population error of RA and dec, marked with circles in Figure \ref{Doublelens}.
+, where in $0.4$ ms group, i ranges from 1 to 5, and in $1$ ms group, i ranges from 1 to 9. This is also how we calcualte the population error of RA and dec, marked with circles in Figure \ref{Doublelens}.
 The way we use to calculate the sample error of RA and dec, is defined by following equation:
 \begin{align*}
-\sigma = \sqrt{\frac{\sum^n_{i=1}(x_i-\mu)^2}{n(n-1)}},
+\sigma = \sqrt{\frac{\sum^n_{i=1}(x_i-\bar{x})^2}{n(n-1)}},
 \end{align*}
 and they are marked with errorbars in Figure \ref{Doublelens}.
 
@@ -160,13 +160,13 @@ In order to interpret the data, we adopt the lensing model of
 \citet{2014MNRAS.442.3338P}.  In the absence of a lens model, the
 fringe rate, delay and angular position cannot be uniquely related. In
 this model, the lensing is due to projected fold caustics of a thin
-sheet closely aligned to the line of sight.
+sheet closely aligned to the line of sight. The light path is shown in Figure \ref{OneLensLightPath}.
 
 %From time delay $\tau$ and the angular position of the pulsar, we obtained the effective distance of the pulsar as follows: 
 %for $0.4$ ms group, $D_{\rm e}=1017\pm2.8$\ pc; 
 %and for $1$ ms group, $D_{\rm e}=1121\pm64$\ pc.
 Furthermore, if we know the distance of the pulsar is $640$ pc by parallax,
-the screen, named lens 1, where $0.4$ ms scintillation points are refracted, $D_s^1$ is equal to $392.8$ pc. We know the position of the axis angle, with an $\alpha$ $-25.2$ degree away from the north axis (if the east direction is set to be the positive direction), and the positions of the $0.4$ ms group are calculated:
+the screen, named lens 1, where $0.4$ ms scintillation points are refracted, $D_s^1$ is equal to $392.8$ pc. We know the position of the axis angle, with an $\alpha$ $-25.2$ degree away from the north axis (if the east direction is set to be the positive direction). The positions of the $0.4$ ms group are calculated:
 \begin{align*}
 {\rm RA}&=-\theta \cdot {\rm sin}\alpha, \\
 {\rm dec}&=-\theta \cdot {\rm cos}\alpha.
@@ -174,18 +174,20 @@ the screen, named lens 1, where $0.4$ ms scintillation points are refracted, $D_
 They are marked out with the scatter points on the left side of Figure \ref{Doublelens}.
 For $1$ ms apexes, the distance of lens 2 $D_s^2$, is equal to $422.5$ pc. Thus, the degeneracy of the distance of the screen is broken.
 
-We calculate the positions of the $1$ ms apexes in following steps. First, matching the $\theta$-$\tau$ relation, which is plotted in Figure \ref{thetatau}, we calculate the $\theta$ from observation $\tau$. Note that we define the velocity that is in the direction of the pulsar. Second, we consider the point with the largest $\theta$ among this $1$ ms group, named 5, share the same $\theta_{\parallel}$ with the point with the largest $\theta$ among the $0.4$ ms group, named 6. $\theta_{\bot}$ is calculated by $\theta_{\bot}=\sqrt{\theta^2-\theta_{\parallel} ^2} $. Then, by using a rotation matrix defined by $\alpha$, the position of point 5 is determined. 
+We calculate the positions of the $1$ ms apexes in following steps. First, matching the $\theta$-$\tau$ relation, which is plotted in Figure \ref{thetatau}, we calculate the $\theta$ from observation $\tau$. Note that we define the velocity that is in the direction of the pulsar. Second, we consider the point with the largest $\theta$ among this $1$ ms group, named 5, share the same $\theta_{\parallel}$ with the point with the largest $\theta$ among the $0.4$ ms group, named 6. $\theta_{\bot}$ is calculated by $\theta_{\bot}=\sqrt{\theta^2-\theta_{\parallel} ^2} $. Then, by using a rotation matrix defined by $\alpha$, the position of point 5 is determined: $(-10.78,-24.35)$ mas. 
 
-Third, to determine the position of the rest points $1-4$, we need to know the velocity of the pulsar, and then to fit the RA and dec to get the same differential frequency with the observation. To know the velocity of the pulsar, we calculated the velocity component in two directions: $v_{\parallel}$ according to the differential frequency of point $6$ in $0.4$ ms group; and $v_{\rm A5}$ (in the direction pointing from point 5 to A) according to the differential frequency of point $5$. More specifically, to solve two equations: 
+Third, to determine the position of the rest points $1-4$, we need to know the velocity of the pulsar, and then to fit the RA and dec to get the same differential frequency with the observation. To know the velocity of the pulsar, we calculated the velocity component in two directions: $v_{\parallel}$ according to the differential frequency of point $6$ in $0.4$ ms group and $v_{\bot}$, the parallel direction is defined by the the axis that is $\alpha$ away from dec. $v_{\rm A5}$ (in the direction pointing from point 5 to A), which has the component in the transverse direction of the velocity can be calculated withe the differential frequency of point $5$. More specifically, to solve two equations: 
 \begin{align*}
-\tau(t=0{\rm s})-\tau(t=6500{\rm s},v_{\parallel})&=f_{D6}/f\cdot{\rm dt},\\
-\tau(t=0 {\rm s}) -\tau(t=6500 {\rm s}, v_{A5}) & = f_{D5} /f\cdot{\rm dt},
+\tau(t=0{\rm s})-\tau(t=6500~{\rm s},v_{\parallel})&=f_{D6}/f\cdot{\rm dt},\\
+\tau(t=0 {\rm s}) -\tau(t=6500~{\rm s}, v_{\rm A5}) & = f_{D5} /f\cdot{\rm dt},
 \end{align*}
-where $f=322.5$ MHz. Then we know the $v_{\bot}$ component by $v_{A5}$, and furthermore, the total velocity of the pulsar $v_{tot}$ and its angle to the north axis $\delta$, note that the east direction is the positive direction.
+where $f=322.5$ MHz. Then we know the $v_{\bot}$ component by $v_{\rm A5}$, and furthermore, the total velocity of the pulsar $v_{\rm tot}$ and its angle to the north axis $\delta$, note that the east direction is the positive direction. The result is $v_{\parallel}=180.3$ km/s and $v_{\rm A5}=159.6$ km/s, thus the total velocity is $188.5$ km/s and with $\delta=-8.25$ degree away from the dec axis.
+
+The example of how the lensed image changes with the moving of the pulsar is plotted in Figure \ref{OneLensReflect}. 
 
 Fourth, we fit the position of the rest four points, with known proper motion of the pulsar. For example, point 4:
 \begin{align*}
-\tau(t=0 {\rm s}) -\tau(t=6500 {\rm s}, v_{A4}) = f_{D4} /f\cdot{\rm dt},\\
+\tau(t=0 {\rm s}) -\tau(t=6500~{\rm s}, v_{\rm A4}) = f_{D4} /f\cdot{\rm dt},\\
 v_{\rm tot}\cdot {\rm cos[ atan(RA,dec)+\pi/2-\delta]} =v_{A4},\\
 \theta_4^2 ={\rm RA}^2+{\rm dec}^2
 \end{align*}
@@ -193,6 +195,23 @@ We fit a line to this five calculated points, to describe these the positions of
 %Lying on the fitted line, point 5 share the same $\theta_{\parallel}$ as the point with the largest $\theta_{\parallel}$ in the $0.4$ ms apexes. Solving the differential frequency ${f_D}$ of this point, we can calculate the relative velocity of this point to the pulsar, called vA2, which is in the plane that is perpendicular to our line of sight with a direction pointing from point 5 to the position of the pulsar. With the same method, we obtained the $v_{\parallel}$ from the $0.4$ ms data. Thus, the total velocity of the pulsar is determined.
 
 That is one lens model fitting. Knowing time delay ${\tau}$, we can get the distance of the screen; knowing the position of point 5 and the differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation diffferential frequency, we can get the position of points $1-4$.
+
+\begin{figure}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\linewidth, angle=0]{One_lens_reflection.png}
+\caption{$A_1$ is the original position of the pulsar, $A_2$ is the position of the pulsar after 650000s (7.5 days). Dash line is the line of the incoming line. Dot dash line is the place where lens 1 lies. $D_2$ is the place where the lensed image lie when the pulsar moved to $A_2$.}
+\label{OneLensReflect}
+\end{figure}
+
+\begin{figure}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\linewidth, angle=0]{One_lens_light_path.png}
+\caption{This shows the light path of lensed/ unlensed image. The solid line on the right is the light directly emits from the pulsar to the observer. The two solid lines on the left are the lensed path. The curved line in the middle is the where lens 1 lie. X axis represents the distance in declination direction, and y axis represents the radial distance.}
+\label{OneLensLightPath}
+\end{figure}
+
 
 \subsection{Discussion of one lens model}
 
