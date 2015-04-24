@@ -139,7 +139,7 @@ The method we use to calculate the error of time delay $\tau$ or differential fr
 \end{align*}
 and $i=4$ because there are four sub-bands. This is also how we calculate the sample error of $\alpha$ and $\delta$, marked with errorbars in Figure \ref{Doublelens}.
 
-The way we use to calculate the population error of $\alpha$ and $\delta$, which is the $\sigma_{\alpha}$ and $\sigma_{\delta}$ listed in Table \ref{table:apex}, is defined by following equation:
+The way we use to calculate the population error of $\alpha$ and $\delta$, which is the $\sigma_{\alpha}$ and $\sigma_{\delta}$ listed in Table \ref{table:apex}, is related by following equation:
 \begin{align*}
 (\frac{1}{\sigma_{\rm \alpha, \delta}})^2 = \sum\limits^n_{i=1}{\frac{1}{{ \rm \sigma_i}^2}},
 \end{align*}
@@ -151,51 +151,54 @@ In the absence of a lens model, the
 fringe rate, delay and angular position cannot be uniquely related. To interpret the data, we adopt the lensing model of
 \citep{2014MNRAS.442.3338P}.  In this model, the lensing is due to projected fold caustics of a thin sheet closely aligned to the line of sight. 
 
-How distance of the pulsar is related to the time delay $\tau$ and angle $\theta$, and how velocity is related to the differential frequency $f_D$ are defined by the following equations:
+How distance of the pulsar is related to the time delay $\tau$ and angle $\theta$, and how velocity is related to the differential frequency $f_D$ are related by the following equations:
 \begin{align*}
 \tau &=\frac{D_{\rm e}{\theta}^2}{2c}, \\
 f_D  &=f\cdot\frac{\rm d\tau}{\rm dt},
 \end{align*} 
-where ${D_{\rm e}}$ is the effective distance. If we name the distance of the pulsar $D_{\rm po}$, the distance of the lens $D_{\rm so}$, the effective distance is equivalent to the distance of the lens placed at the middle point of the pulsar: $D_{\rm e}={D_{\rm po} D_{\rm so}}/({D_{\rm po} - D_{\rm so}})$. 
+where ${D_{\rm e}}$ is the effective distance. If we represent the distance of the pulsar $D_{\rm p}$, the distance of the lens $D_{\rm s}$, the effective distance is equivalent to the distance of the lens placed at the middle point of the pulsar: $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm s}})$. 
 
 We make a plot describing the relation of $\theta-\sqrt{\tau}$ in Figure \ref{thetatau}. A least square effective distance results in
 $D_e^1=1017.1\pm 2.8$ for the  0.4\ ms apexes on lens 1 and
 $D_e^2 = 1243 \pm 64$ for the 1\ ms apexes on lens 2. This indicates that the lens 1 is closer to the pulsar. 
 %The error bars are large enough to allow them to be at the same distance, or perhaps a reverse distance ordering.  In this paper, we present two analyses for comparison: equidistant, and at the best fit distances. In the first case, no direct distance measurement is possible, but it nevertheless illustrates a robust interpretation of the data.
 
-Take $D_e^1=1017.1$ pc, combined with the VLBI measured distance of the pulsar $640$ pc, the distance of lens 1 $D_{1o}$, where $0.4$ ms scintillation points are refracted, is equal to $392.8$ pc. 
+Take $D_e^1=1017.1$ pc, combined with the VLBI measured distance of the pulsar $640$ pc, the distance of lens 1 $D_{1}$, where $0.4$ ms scintillation points are refracted, is equal to $392.8$ pc. 
 For $1$ ms apexes, the distance of lens 2 is equal to $422.5$ pc. Thus, the degeneracy of the distance of the screen is broken.
 %From time delay $\tau$ and the angular position of the pulsar, we obtained the effective distance of the pulsar as follows: 
 %for $0.4$ ms group, $D_{\rm e}=1017\pm2.8$\ pc; 
 %and for $1$ ms group, $D_{\rm e}=1121\pm64$\ pc.
 
 \subsubsection{Angular position of $0.4$ ms points}
-We fit a line to the observed angular positions of the $0.4$ ms group, which has an positive angle of $\gamma=-25.2\degree$ (east of the declination axis). We use this axis to define $\theta_{\parallel}$ and define $\theta_{\bot}$ by a $90\degree$ clockwise rotation from it. 
+We fit a line to the observed angular positions of the $0.4$ ms group, which has an positive angle of $\gamma=-25.2\degree$ (east of the declination axis). We use this axis to define ${\parallel}$ and define ${\bot}$ by a $90\degree$ clockwise rotation from it. 
 
-We calculate $\theta$ from the $\theta-\sqrt{\tau}$ relation and observed $\tau$. Because all of the $\theta$ here lie on the $\theta_{\parallel}$ direction onThen the angular positions of the $0.4$ ms group are calculated:
+We calculate $\theta$ from the $\theta-\sqrt{\tau}$ relation and observed $\tau$. Because all of the $\theta$ here lie on the axis defined by $\gamma$ on lens 1, so they are also denoted $\theta_{1\parallel}$ listed in the first column in Table \ref{table:apex}. Then the angular positions of the $0.4$ ms group are calculated:
 \begin{align*}
 {\alpha}&=-\theta \cdot {\rm sin}\gamma, \\
 {\delta}&=-\theta \cdot {\rm cos}\gamma.
 \end{align*}
-They are marked out with the scatter points on the left side in Figure \ref{Doublelens}.
+These angular positions of the $0.4$ ms data are marked out with the scatter points on the left side in Figure \ref{Doublelens}.
 
 
 \subsubsection{Angular positions of $1$ ms group}
-We calculate the positions of the $1$ ms apexes in following steps. First, matching the $\theta$-$\tau$ relation, which is plotted in Figure \ref{thetatau}, we calculate the $\theta$ from observation $\tau$. Note that we define the velocity that is in the direction of the pulsar. Second, we consider the point with the largest $\theta$ among this $1$ ms group, named 5, share the same $\theta_{\parallel}$ with the point with the largest $\theta$ among the $0.4$ ms group, named 6. $\theta_{\bot}$ is calculated by $\theta_{\bot}=\sqrt{\theta^2-\theta_{\parallel} ^2} $. Then, by using a rotation matrix defined by $\gamma$, the position of point 5 is determined: $(-10.78,-24.35)$ mas. 
+We calculate the positions of the $1$ ms apexes in following steps. First, matching the $\theta-\sqrt{\tau}$ relation, which is plotted in Figure \ref{thetatau}, we calculate the $\theta$ from observation $\tau$. 
+%Note that we define the velocity that is in the direction of the pulsar. 
 
-Third, to determine the position of the rest points $1-4$, we need to know the velocity of the pulsar, and then fit the $\alpha$ and $\delta$ to get the same differential frequency with the observation. To know the velocity of the pulsar, we calculated the velocity component in two directions: $v_{\parallel}$ according to the differential frequency of point $6$ in $0.4$ ms group and $v_{\bot}$, the parallel direction is defined by the the axis that is $\gamma$ away from declination axis. $v_{\rm A5}$ (in the direction pointing from point 5 to A), which has the component in the transverse direction of the velocity can be calculated withe the differential frequency of point $5$. More specifically, in a time period of $6500$ s ($\rm dt=6500$ s), we will solve two equations: 
+Second, we consider the point with the largest $\theta$ among this $1$ ms group, represented as 5, share the same $\theta_{\parallel}$ with the point with the largest $\theta$ among the $0.4$ ms group, represented as 6. $\theta_{\bot}$ is calculated by $\theta_{\bot}=\sqrt{\theta^2-\theta_{\parallel} ^2} $. Then, by using a rotation matrix defined by $\gamma$, the position of point 5 is determined: $(-10.78,-24.35)$ mas. 
+
+Third, to determine the position of the rest points $1-4$, we need to know the velocity of the pulsar, and then fit the $\alpha$ and $\delta$ to get the same differential frequency with the observation. To know the velocity of the pulsar, we calculated the velocity component in two directions: ${v_\parallel}$ according to the differential frequency of point $6$ in $0.4$ ms group and ${v_\bot}$.
+%, the parallel direction is defined by the the axis that is $\gamma$ away from declination axis. 
+$v_{\rm A5}$ (in the direction pointing from point 5 to A), which has the component in the transverse direction of the velocity can be used to calculate $v_{\bot}$, with the differential frequency $f_D$ of point $5$. The example of how the lensed image changes with the moving of the pulsar is plotted in Figure \ref{OneLensReflect}. More specifically, in a time period of $6500$ s ($\rm dt=6500$ s), we will solve two equations: 
 \begin{align*}
 {\rm d\tau}&=\tau(t=0{\rm s})-\tau(t=6500~{\rm s},v_{\parallel})&=f_{\rm D6}/f\cdot{\rm dt},\\
 {\rm d\tau}&=\tau(t=0 {\rm s}) -\tau(t=6500~{\rm s}, v_{\rm A5}) & = f_{\rm D5} /f\cdot{\rm dt},
 \end{align*}
-where $f=322.5$ MHz. Then we know the $v_{\bot}$ component by $v_{\rm A5}$, and furthermore, the total velocity of the pulsar $v_{\rm tot}$ and its angle to the north axis $\epsilon$, note that the east direction is the positive direction. The result is $v_{\parallel}=180.3$ km/s and $v_{\rm A5}=159.6$ km/s. Thus the total velocity is $188.5$ km/s and with $\epsilon=-8.25\degree$  away from the declination axis.
-
-The example of how the lensed image changes with the moving of the pulsar is plotted in Figure \ref{OneLensReflect}. 
+where $f=322.5$ MHz. With the calculated $v_{\rm A5}$, we can calculate the $v_{\bot}$. Combining the $v_{\parallel}$, the total velocity of the pulsar $v_{\rm tot}$ and its angle with the north (declination) axis $\epsilon$. The result is $v_{\parallel}=180.3$ km/s and $v_{\rm A5}=159.6$ km/s. Thus the total velocity is $188.5$ km/s and $\epsilon=-8.25\degree$.
 
 Fourth, we fit the position of the rest four points, with known proper motion of the pulsar. For example, point 4:
 \begin{align*}
 \tau(t=0 {\rm s}) -\tau(t=6500~{\rm s}, v_{\rm A4}) &= f_{\rm D4} /f\cdot{\rm dt},\\
-v_{\rm tot}\cdot {\rm sin)( tan^{-1}(\alpha,\delta))-\gamma]} &=v_{\rm A4},\\
+v_{\rm tot}\cdot[ { \sin( {\tan}^{-1}(\alpha,\delta))\cos(\gamma)}-\cos({\tan}^{-1}(\alpha,\delta))\sin(\gamma)] &=v_{\rm A4},\\
 {\alpha}^2+{\delta}^2 &= {\theta}^2
 \end{align*}
 We fit a line to this five calculated points, to describe these the positions of these 5 points. 
@@ -257,7 +260,7 @@ lens plane caustic south of image 1 are double lensed.
 \label{doublelensmodel}
 \subsubsection{Solving the double lens model}
 %The $v_{\parallel}$ to the plane should be equal. While for the calculated positions of $1$ ms apexes, they do not. 
-We name the position of the pulsar point A, position of the lensed image on lens 2 point H, position of the lensed image on lens 1 point B, position of the observer point O, pedal from the pulsar to line HJ point J, the pedal from point H to line BD point F, and the pedal from point B to line HJ point G, for easier discussion.
+We denote the position of the pulsar point A, position of the lensed image on lens 2 point H, position of the lensed image on lens 1 point B, position of the observer point O, pedal from the pulsar to line HJ point J, the pedal from point H to line BD point F, and the pedal from point B to line HJ point G, for easier discussion.
 %As what Figure \ref{first_reflect} shows, AH should be perpendicular to HE, lens 2. 
 %The plane where the light was refracted should be transverse to the line that connects the pulsar and the lensed image. 
 Because points $1-4$ share the approximately same time delay with point $5$, the lens where the image formed should be at the same distance away from us. The only reasonable position of screen (line HJ) that fits all these five points, marked with a solid line in Figure \ref{Doublelens}.  
@@ -275,7 +278,7 @@ The second step is to find the matched pairs of those two lenses. By try and err
 \begin{align*}
 D_{p2}&=640~{\rm pc}-425.0~{\rm pc} =215.0~{\rm pc},\\
 D_{12}&=425~{\rm pc}-392.8~{\rm pc} =32.2~{\rm pc},\\
-D_{1O}&=392.8~{\rm pc}- 0~{\rm pc} = 392.8~{\rm pc}, 
+D_{1}&=392.8~{\rm pc}- 0~{\rm pc} = 392.8~{\rm pc}, 
 \end{align*} 
 where $D_{p2}$ is the distance from the pulsar to lens 2, $D_{12}$ is the distance from lens 2 to lens 1, and $D_{10}$ is the distance from lens 1 to the observer.
 %We calculated with the distance of the screen which is calculated in the one lens model, and then move the distance of the far screen little by little to make the calculated time delay match the observation resul
@@ -283,7 +286,7 @@ where $D_{p2}$ is the distance from the pulsar to lens 2, $D_{12}$ is the distan
 Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how light are being refracted on the first lens plane and the second lens plane. We specifically chose the point with $\theta_{1\parallel}$ equal to $-17.44$ mas on lens $1$ for instance. We solve the solutions in double lens model by following equations:
 \begin{align*}
 \frac{\rm JH}{D_{p2}}&=\frac{\rm HG}{D_{12}},\\
-\frac{\rm FB}{D_{12}}&=\frac{\rm BD}{D_{1O}}.
+\frac{\rm FB}{D_{12}}&=\frac{\rm BD}{D_{1}}.
 \end{align*}
 
 The solved positions are plotted in Figure \ref{Doublelens}, and respective time delays and differential frequencies are listed in Table \ref{table:double_lens_compare}. For the error of time delay $\tau$, we just use the following equation: 
