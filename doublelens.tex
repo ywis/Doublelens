@@ -28,21 +28,6 @@
 Pulsar Lensing Geometry
 }
 
-%\author{J.~D.~Emberson\altaffilmark{1,2}, Takeshi~Kobayashi\altaffilmark{1,3} \& Marcelo~A.~Alvarez\altaffilmark{1}}
-%\altaffiltext{1}{Canadian Institute for Theoretical Astrophysics,
-%  University of Toronto, 60 St.George St., Toronto, ON M5S 3H8, Canada} 
-%\altaffiltext{2}{Department of Astronomy and Astrophysics, University
-%  of Toronto, 50 St. George, Toronto, ON M5S 3H4, Canada} 
-%\altaffiltext{3}{Perimeter Institute for Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada}
-%\email{emberson@astro.utoronto.ca}
-
-%\author{Siqi Liu\altaffilmark{1,3}, Ue-Li~Pen\altaffilmark{1,2}, J-P~Macquart\altaffilmark{4}, Walter Brisken\altaffilmark{5}, Adam Deller\altaffilmark{6}}
-%\altaffiltext{1}{Canadian Institute for Theoretical Astrophysics, University of Toronto, M5S 3H8 Ontario, Canada} 
-%\altaffiltext{2} {Canadian Institute for Advanced Research, Program in Cosmology and Gravitation; pen@cita.utoronto.ca}
-%\altaffiltext{3} {Department of Astronomy and Astrophysics, University of Toronto, M5S 3H4, Ontario, Canada; sqliu@cita.utoronto.ca}
-%\altaffiltext{4} {ICRAR-Curtin University of Technology, Department of Imaging and Applied Physics, GPO Box U1978, Perth, Western Australia 6102, USA; J.Macquart@curtin.edu.au}
-%\altaffiltext{5} {National Radio Astronomy Observatory, P.O. Box O, Socorro, NM 87801, USA; wbrisken@aoc.nrao.edu}
-%\altaffiltext{6} {ASTRON, the Netherlands Institute for Radio Astronomy, Postbus 2, 7990 AA, Dwingeloo, The Netherlands; deller@astron.nl}
 \author[Liu et al]{Siqi Liu$^{1,3}$\thanks{E-mail:\ sqliu@cita.utoronto.ca}, Ue-Li
   Pen$^{1,2}$\thanks{E-mail:\ pen@cita.utoronto.ca}, J-P Macquart$^{4}$\thanks{E-mail:J.Macquart@curtin.edu.au},
   Walter Brisken$^{5}$\thanks{Email:wbrisken@aoc.nrao.edu}, Adam Deller$^{6}$\thanks{E-mail:deller@astron.nl}\\
@@ -117,36 +102,40 @@ thus the small number of parameters that need to be measured to
 quantify the lensing screen. 
 
 \section{Lensing}
-\subsection{B0834+06}
+\subsection{Archival data of B0834+06}
 \label{21}
-Our analysis is based on the reduced apex catalog from
-\citep{2010ApJ...708..232B}. Information from each identified apex includes delay $\tau$,
-delay rate (differential frequency $f_D$), Relative Right Ascension $\Delta\alpha$, Relative declination $\Delta\delta$, error of $\Delta\alpha$ $\sigma_{\alpha}$ and error of $\Delta\delta$ $\sigma_{\delta}$. Data of each apex are collected from four dual circular polarization $8$ MHz wide sub-bands spanning the frequency range $310.5-342.5$ MHz. 
+%Our analysis is based on the reduced apex catalog from
+Our analysis is based on the apex data selected from the secondary spectrum of pulsar B0834+06 in \citep{2010ApJ...708..232B}. 
+Information from each identified apex includes delay $\tau$,
+delay rate (differential frequency $f_D$), relative Right Ascension $\Delta\alpha$, relative declination $\Delta\delta$, error of $\Delta\alpha$ $\sigma_{\alpha}$ and error of $\Delta\delta$ $\sigma_{\delta}$. Data of each apex are collected from four dual circular polarization $8$ MHz wide sub-bands spanning the frequency range $310.5-342.5$ MHz. 
 
-We divide the apex data into two groups according to the time delay, one group ranges from $0.1$ ms to $0.4$ ms and the other group has time delay at about $1$ ms. The statistics of the positions of the points are: for $0.4$ ms group, there are $10$ apexes in the first two sub-bands, and $14$ apexes in the last two sub-bands; for $1$ ms group, there are $5$ apexes in the first sub-band, $6$ apexes in the second sub-band, $5$ apexes in the third sub-band, and $4$ apexes in the last sub-band. 
+We divide the apex data with negative differential frequency into two groups: in one group time delay ranges from $0.1$ ms to $0.4$ ms, which we call $0.4$ ms group later, and in the other group time, delay at about $1$ ms, which we call $1$ ms group. The statistics of the positions of the points are: for $0.4$ ms group, there are $10$ apexes in the first two sub-bands, and $14$ apexes in the last two sub-bands; for $1$ ms group, there are $5$, $6$, $5$ and $4$ apexes in the four sub-bands subsequently. 
 
-To match the same apexes in different sub-bands, we convert the differential frequency in different sub-bands to the one in $322.5$ MHz, by $f_D/f_{\rm band}\cdot322.5$ MHz. Then we map
+Next we want to select the same apexes from four sub-bands. To match the same apexes in different sub-bands, we convert the differential frequency in different sub-bands to the one in $322.5$ MHz, by $f_D/f_{\rm band}\cdot322.5$ MHz. We map
 a total of $9$ apexes from the $0.4$ ms group, and $5$ apexes from the $1$ ms
 group. This results in an estimation
 for the average value in $f=322.5$ MHz and standard deviation among four sub-bands. They are listed in Table
-\ref{table:apex}. The $f_D$ and $\tau$ are the arithmetic mean value of the four sub-bands $\bar{x}={\sum\limits^{n=4}_{i=1}{x_i}}/{4}$, x is for $f_D$ or $\tau$.
-The mean value of $\Delta\alpha$ and $\Delta\delta$ are the weighted mean, calculated by following equation:
-\begin{align*}
-x=\sum\limits^{n=4}_{i=1}\frac{x_i}{{\sigma_i}^2},
-\end{align*}
-Here x is for $\Delta\alpha$ or $\Delta\delta$. The angle of the scintillation image away from the pulsar is defined as ${\theta}^2=({\Delta\alpha}\cdot\cos(\delta))^2+{\Delta\delta}^2$. 
+\ref{table:apex}. The $f_D$ and $\tau$ are the arithmetic mean value of the four sub-bands. 
+%$\bar{x}={\sum\limits^{n=4}_{i=1}{x_i}}/{4}$, x is for $f_D$ or $\tau$.
+The mean value of $\Delta\alpha$ and $\Delta\delta$ are the weighted mean.
+% calculated by following equation:
+%\begin{align*}
+%x=\sum\limits^{n=4}_{i=1}\frac{x_i}{{\sigma_i}^2},
+%\end{align*}
+%Here x is for $\Delta\alpha$ or $\Delta\delta$. 
+The anglular offset of the scintillation image away from the central emission is calculated as ${\theta}^2=({\Delta\alpha}\cdot\cos(\delta))^2+{\Delta\delta}^2$. 
 
-The method we use to calculate the error of time delay $\tau$ or differential frequency $f_D$ is by following equation:
+The method we use to calculate the error of time delay $\tau$ or differential frequency $f_D$, which is the $\sigma_{\tau}$ and $\sigma_{f_D}$ listed in Table \ref{table:apex}, is by following equation:
 \begin{align*}
 {\sigma^2_{\rm \tau, f_D}} = \frac{\sum\limits^{n=4}_{i=1}(x_i-\bar{x})^2}{n\cdot(n-1)},
 \end{align*}
-and $n=4$ because there are four sub-bands. This is also how we calculate the sample error of $\Delta\alpha$ and $\Delta\delta$, marked with errorbars in Figure \ref{Doublelens}.
+and $n=4$ for four sub-bands. This is also how we calculate the sample error of $\Delta\alpha$ and $\Delta\delta$, marked with errorbars in Figure \ref{Doublelens}.
 
-The way we use to calculate the population error of $\Delta\alpha$ and $\Delta\delta$, which is the $\sigma_{\alpha}$ and $\sigma_{\delta}$ listed in Table \ref{table:apex}, is related by following equation:
+For the circles in Figure \ref{Doublelens}, they are calculated by following equation:
 \begin{align*}
-(\frac{1}{\sigma_{\rm \alpha, \delta}})^2 = \sum\limits^n_{i=1}{\frac{1}{{ \rm \sigma_i}^2}},
+(\frac{1}{\sigma_{\rm \alpha, \delta}})^2 = \sum\limits^{n=4}_{i=1}{\frac{1}{{ \rm \sigma_i}^2}}.
 \end{align*}
-where i ranges from 1 to 4, for four sub-bands, and $\rm \sigma_i$ is the error of the data in each sub-band. They are marked with circles in Figure \ref{Doublelens}.
+%where $\rm \sigma_i$ is the error of the data in each sub-band. They are marked with circles in Figure \ref{Doublelens}.
 
 \subsection{Solution in one lens model}
 \subsubsection{Distance of the lens}
@@ -154,42 +143,43 @@ In the absence of a lens model, the
 fringe rate, delay and angular position cannot be uniquely related. To interpret the data, we adopt the lensing model of
 \citep{2014MNRAS.442.3338P}.  In this model, the lensing is due to projected fold caustics of a thin sheet closely aligned to the line of sight. 
 
-How distance of the pulsar is related to the time delay $\tau$ and angle $\theta$, and how velocity is related to the differential frequency $f_D$ are related by the following equations:
+How the distance of the pulsar $D_p$ and the time delay $\tau$ and angular offset $\theta$ are matched, and how velocity and the differential frequency $f_D$ are matched, are related by the following equations:
 \begin{align*}
 \tau &=\frac{D_{\rm e}{\theta}^2}{2c}, \\
 f_D  &=f\cdot\frac{\rm d\tau}{\rm dt},
 \end{align*} 
-where ${D_{\rm e}}$ is the effective distance. If we represent the distance of the pulsar $D_{\rm p}$, the distance of the lens $D_{\rm s}$, the effective distance is equivalent to the distance of the lens placed at the middle point of the pulsar: $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm s}})$. 
+where ${D_{\rm e}}$ is the effective distance. If we denote the distance of the pulsar $D_{\rm p}$, the distance of the lens $D_{\rm s}$, the effective distance is equivalent to the distance of the lens placed at the middle point of the pulsar: $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm s}})$. 
 
-We make a plot describing the relation of $\theta-\sqrt{\tau}$ in Figure \ref{thetatau}. A least square effective distance results in
-$D_e^1=1023\pm 27$ for the  0.4\ ms apexes on lens 1 and
-$D_e^2 = 1281 \pm 82$ for the 1\ ms apexes on lens 2. This indicates that the lens 1 is closer to the pulsar. 
+We plot the values of $\theta$ vs square root of $\tau$ in Figure \ref{thetatau}. A least square analysis of the effective distance results in
+$D_e^1=1023\pm 27$ for the  $0.4$\ ms group, distance of lens 1, and
+$D_e^2 = 1281 \pm 82$ for the $1$\ ms group, distance of lens 2. This indicates that the lens 1 is closer to the pulsar. 
 %The error bars are large enough to allow them to be at the same distance, or perhaps a reverse distance ordering.  In this paper, we present two analyses for comparison: equidistant, and at the best fit distances. In the first case, no direct distance measurement is possible, but it nevertheless illustrates a robust interpretation of the data.
-
-Take $D_e^1=1023$ pc, combined with the VLBI measured distance of the pulsar $640$ pc, the distance of lens 1 $D_{1}$, where $0.4$ ms scintillation points are refracted, is equal to $393.7$ pc. 
-For $1$ ms apexes, the distance of lens 2 is equal to $426.7$ pc. Thus, the degeneracy of the distance of the screen is broken.
+Take $D_e^1=1023$ pc, combined with the VLBI measured distance of the pulsar $640$ pc, the distance of lens 1 $D_{1}$, where $0.4$ ms scintillation points are refracted, is equal to $393.7$ pc. For $1$ ms apexes, the distance of lens 2 is equal to $426.7$ pc. Lens 2 should be closer to the pulsar, thus,the degeneracy of the distance of the screen is broken.
 %From time delay $\tau$ and the angular position of the pulsar, we obtained the effective distance of the pulsar as follows: 
 %for $0.4$ ms group, $D_{\rm e}=1017\pm2.8$\ pc; 
 %and for $1$ ms group, $D_{\rm e}=1121\pm64$\ pc.
 
-\subsubsection{Angular position of $0.4$ ms points}
-We fit a line to the observed angular positions of the $0.4$ ms group, which has an positive angle of $\gamma=-25.2\degree$ (east of the declination axis). We use this axis to define ${\parallel}$ and define ${\bot}$ by a $90\degree$ clockwise rotation from it. 
+\subsubsection{Angular positions of $0.4$ ms group}
+We plot the observed relative angular positions in Figure \ref{Doublelens}. We fit a line to the angular positions of the $0.4$ ms group, which has an positive angle of $\gamma=-25.2\degree$ (east of the declination axis). We use this axis to define ${\parallel}$ and define ${\bot}$ by a $90\degree$ clockwise rotation from it. 
 
-We calculate $\theta$ from the $\theta-\sqrt{\tau}$ relation and observed $\tau$. Because all of the $\theta$ here lie on the axis defined by $\gamma$ on lens 1, so they are also denoted $\theta_{1\parallel}$ listed in the first column in Table \ref{table:apex}. Then the angular positions of the $0.4$ ms group are calculated:
+We calculate $\theta$ from the $\theta-\sqrt{\tau}$ relation and observed $\tau$. Because all of the $\theta$ here lie on the axis defined by $\gamma$ on lens 1, so they are also denoted $\theta_{1\parallel}$ listed in the first column in Table \ref{table:apex}. Then the calculated angular positions of the $0.4$ ms group are calculated:
 \begin{align*}
-{\alpha}&=-\theta \cdot {\rm sin}\gamma, \\
-{\delta}&=-\theta \cdot {\rm cos}\gamma.
+{\Delta\alpha_C}&=-\theta \cdot {\rm sin}\gamma, \\
+{\Delta\delta_C}&=-\theta \cdot {\rm cos}\gamma,
 \end{align*}
-These angular positions of the $0.4$ ms data are marked out with the scatter points on the left side in Figure \ref{Doublelens}.
+which are marked out with the scatter points on the left side in Figure \ref{Doublelens}.
 
 
 \subsubsection{Angular positions of $1$ ms group}
-We calculate the positions of the $1$ ms apexes in following steps. First, matching the $\theta-\sqrt{\tau}$ relation, which is plotted in Figure \ref{thetatau}, we calculate the $\theta$ from observation $\tau$. 
+To calculate the angular positions of the $1$ ms group, we do it in following steps. 
+
+First, with observed $\tau$ and matching the $\theta-\sqrt{\tau}$ relation, which is plotted in Figure \ref{thetatau}, the angular offset $\theta$ is obtained. 
 %Note that we define the velocity that is in the direction of the pulsar. 
 
-Second, we consider the point with the largest $\theta$ among this $1$ ms group, represented as 5, share the same $\theta_{\parallel}$ with the point with the largest $\theta$ among the $0.4$ ms group, represented as 6. $\theta_{\bot}$ is calculated by $\theta_{\bot}=\sqrt{\theta^2-\theta_{\parallel} ^2} $. Then, by using a rotation matrix defined by $\gamma$, the position of point 5 is determined: $(-10.78,-24.35)$ mas. 
+Second, we consider the point with the largest $\theta$ among this $1$ ms group, denoted as 5, shareing the same $\theta_{\parallel}$ with the point with the largest $\theta$ among the $0.4$ ms group, represented as 6. $\theta_{\bot}$ is calculated by $\theta_{\bot}=\sqrt{\theta^2-\theta_{\parallel} ^2} $. Then, by using a rotation matrix defined by $\gamma$, the position of point 5 is determined: $(-10.78,-24.35)$ mas. 
 
-Third, to determine the position of the rest points $1-4$, we need to know the velocity of the pulsar, and then fit the $\Delta\alpha$ and $\Delta\delta$ to get the same differential frequency with the observation. To know the velocity of the pulsar, we calculated the velocity component in two directions: ${v_\parallel}$ according to the differential frequency of point $6$ in $0.4$ ms group and ${v_\bot}$.
+Third, to determine the position of the rest points $1-4$, we need to know the velocity of the pulsar, and then fit the calculated $\Delta\alpha_C$ and $\Delta\delta_C$ to get the same differential frequency with the observation. To know the velocity of the pulsar, we calculated the velocity component in two directions: ${v_\parallel}$ according to the differential frequency of point $6$ in $0.4$ ms group and ${v_\bot}$.
+
 %, the parallel direction is defined by the the axis that is $\gamma$ away from declination axis. 
 $v_{\rm A5}$ (in the direction pointing from point 5 to A), which has the component in the transverse direction of the velocity can be used to calculate $v_{\bot}$, with the differential frequency $f_D$ of point $5$. The example of how the lensed image changes with the moving of the pulsar is plotted in Figure \ref{OneLensReflect}. More specifically, in a time period of $6500$ s ($\rm dt=6500$ s), we will solve two equations: 
 \begin{align*}
@@ -200,26 +190,25 @@ where $f=322.5$ MHz. With the calculated $v_{\rm A5}$, we can calculate the $v_{
 
 Fourth, we fit the position of the rest four points, with known proper motion of the pulsar. For example, point 4:
 \begin{align*}
-f_{\rm D4} /f\cdot{\rm dt}&=\tau(t=0 {\rm s}) -\tau(t=6500~{\rm s}, v_{\rm A4}) ,\\
-v_{\rm A4} &=v_{\rm tot}\cdot[\frac{\Delta\alpha\cdot\sin{\gamma}}{\sqrt{\Delta\alpha\cos^2(\delta)+(\Delta\delta)^2}}+\frac{\Delta\delta\cdot\cos{\gamma}}{(\Delta\alpha\cdot\cos^2(\delta)+(\Delta\delta)^2}]
-%\cdot[ { \sin( {\tan}^{-1}(\alpha,\delta))\cos(\gamma)}-\cos({\tan}^{-1}(\alpha,\delta))\sin(\gamma)] \\
+\frac{f_{\rm D4}}{f}&=\frac{\tau(t=0 {\rm s})-\tau(t=6500~{\rm s}, v_{\rm A4})}{\rm dt} ,\\
+\frac{v_{\rm A4}}{v_{\rm tot} }&=\frac{\Delta\alpha\cdot\sin{\gamma}}{\sqrt{(\Delta\alpha)^2\cos^2(\delta)+(\Delta\delta)^2}}+\frac{\Delta\delta\cdot\cos{\gamma}}{\sqrt{((\Delta\alpha)^2\cdot\cos^2(\delta)+(\Delta\delta)^2}}
+%\cdot[ { \sin( {\tan}^{-1}(\alpha,\delta))\cos(\gamma)}-\cos({\tan}^{-1}(\alpha,\delta))\sin(\gamma)]. \\
 %{\alpha}^2+{\delta}^2 &= {\theta}^2
 \end{align*}
-We fit a line to this five calculated points, to describe these the positions of these 5 points. 
+We fit a line to this five calculated points to describe the the positions of these 5 points. 
 %Lying on the fitted line, point 5 share the same $\theta_{\parallel}$ as the point with the largest $\theta_{\parallel}$ in the $0.4$ ms apexes. Solving the differential frequency ${f_D}$ of this point, we can calculate the relative velocity of this point to the pulsar, called vA2, which is in the plane that is perpendicular to our line of sight with a direction pointing from point 5 to the position of the pulsar. With the same method, we obtained the $v_{\parallel}$ from the $0.4$ ms data. Thus, the total velocity of the pulsar is determined.
 
 The time in last column of Table \ref{table:apex} is calculated with $-2{\tau}f/{f_{D}}$,
 equivalent to pulsar moving at $640$ pc plane from the
 original position to the lensed image position with the calculated velocity of the pulsar in that direction in one lens model.
 
-
-That is one lens model fitting. Knowing time delay ${\tau}$, we can get the distance of the screen; knowing the position of point 5 and the differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation diffferential frequency, we can get the position of points $1-4$. %While this one lens does not fit the data, we will abandon the velocity calculated in this model.
+That is one lens model fitting. Knowing time delay ${\tau}$, we can calculate the distance of the screen; knowing the angular position of point 5 and its differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation differential frequency, we can get the position of points $1-4$. %While this one lens does not fit the data, we will abandon the velocity calculated in this model.
 
 \begin{figure}
 \centering
 %\epsscale{1.0}
 \includegraphics[width=1.0\linewidth, angle=0]{One_lens_reflection.png}
-\caption{The moving of the lensed image with the moving of the pulsar. x axis and y axis are the relative distance to the position of the pulsar. $A_1$ is the original position of the pulsar, and $A_2$ is the position of the pulsar after 650000s (7.5 days). Dash line is the line of the incoming light. Dot dash line is the place where lensed image on lens 1 lies. $D_2$ is the place where the lensed image lie when the pulsar moved to $A_2$.}
+\caption{The moving of the lensed image with the moving of the pulsar. x axis and y axis are the relative distance to the central emission of the pulsar. $A_1$ is the original position of the pulsar, and $A_2$ is the position of the pulsar after 650000s (7.5 days). Dashed line describes the incoming light. Dotted line is the place where lensed image on lens 1 lies. $D_2$ is the place where the lensed image lie when the pulsar moved to $A_2$.}
 \label{OneLensReflect}
 \end{figure}
 
@@ -251,9 +240,8 @@ images.  This scenario predicts that at frequencies just below $300$
 MHz, or a few weeks earlier in time, the pulsar should be seen at
 position J. We made a plot of the refraction angle $\beta$ in the
 direction that is transverse to the first lens plane in Figure
-\ref{vtrans}.  From our calculation, it takes $22$ days for the puslar
-to move from point 1 on lens 1 to J, and it takes $44$ days
-for the pulsar to move from point 5 on lens 1 to J.  The data
+\ref{vtrans}.  From our calculation, $38$ days before the lensed pulsar
+ image to locate at J, it was at point 1; and $50$ days before the lensed pulsar image to locaaate at J, it was at point 5.  The data
 spans about 10\% in frequency, making it unlikely that single lens
 image J would not be seen due to the larger required refraction
 angle.  Instead, we speculate that the fold caustic could have formed
@@ -278,7 +266,7 @@ Therefore, we consider another model candidate: the double lens model. Respectiv
 The first step is to calculate the position of J. We make an estimate of the distance of J by the $1$ ms $\theta-\tau$ relation, and then we calculated the position of J by matching the time delay of point 2 and point 5. The result shows that lens 2 is $425$ pc away from us. And its position is marked in Figure \ref{Doublelens}. Because J is the pedal to lens 2, we made a line that is perpendicular to AJ, the solid line in Figure \ref{Doublelens}. This is lens 2.
 %calculate the position of the far lens (lens $1$) and the near lens (lens $2$). As what has been discussed previously, the solid line is considered to be the far lens, where the positions have a larger effective distance. And the near lens is considered to be the lines that is perpendicular to the $0.4$ ms group axis. 
 
-The second step is to find the matched pairs of those two lenses. By try and error, we found that the 5 points in $0.4$ ms group that have the largest $\theta$ should be the candidates where lens 1 lie.  These five matched lines are marked with dot dash lines in Figure \ref{Doublelens} and their values are listed in the first two columns in Table \ref{table:double_lens_compare}. They are the located at a distance $392.8$ pc away from us. Here we define three distances:
+The second step is to find the matched pairs of those two lenses. By trial and error, we found that the 5 points in $0.4$ ms group that have the largest $\theta$ should be the candidates where lens 1 lie.  These five matched lines are marked with dot dash lines in Figure \ref{Doublelens} and their values are listed in the first two columns in Table \ref{table:double_lens_compare}. They are the located at a distance $393.7$ pc away from us. Here we define three distances:
 \begin{align*}
 D_{p2}&=640~{\rm pc}-426.7~{\rm pc} =213.3~{\rm pc},\\
 D_{12}&=426.7~{\rm pc}-393.7~{\rm pc} =33.0~{\rm pc},\\
@@ -293,21 +281,23 @@ Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how l
 \frac{\rm FB}{D_{12}}&=\frac{\rm BD}{D_{1}}.
 \end{align*}
 
-The solved positions are plotted in Figure \ref{Doublelens}, and respective time delays and differential frequencies are listed in Table \ref{table:double_lens_compare}. For the error of time delay $\tau$, we just use the following equation: 
+The solved positions are plotted in Figure \ref{Doublelens}, and respective time delays and differential frequencies are listed in Table \ref{table:double_lens_compare}. For the error of time delay $\tau$, we use the following equation: 
 \begin{align*}
 (\frac{\sigma_{\rm tot}}{\tau_2})^2 = (\frac{\sigma_{\tau1}}{\tau_1})^2+(\frac{\sigma_{\tau2}}{\tau_2})^2,
 %\frac{\sigma_{\rm tot}}{\tau_2} = (\frac{\sigma_{\rm 1sample}}{\tau_1})^2+(\frac{\sigma_{\rm 2sample}}{\tau_2})^2,
 \end{align*}
-where $\sigma_{\tau1}$ represents the sample error from the $0.4$ ms group on lens $1$, and $\sigma_{\tau2}$ represents the sample error from respective $1$ ms group on lens 2, $\tau_1$ is the time delay from $0.4$ ms group, and $\tau_2$ is the time delay from respective $1$ ms group.
+where $\tau$ and $\sigma_{\tau1}$ represent the time delay and its error from the $0.4$ ms group on lens $1$, and $\tau$ and $\sigma_{\tau2}$ represent the time delay and its error from respective $1$ ms group on lens 2.
+% $\tau_1$ is the time delay from $0.4$ ms group, and $\tau_2$ is the time delay from respective $1$ ms group.
 
-\subsubsection{Comparing calculated result in double lens model and observation data}
+\subsubsection{Comparing calculated result in double lens model and observation}
 Comparing $\tau$, we time delay for these five points, and list the results in Table \ref{table:double_lens_compare}. For point 2 and 5, they fit perfectly because these are the two points that we use these to calculate the position of J; for the rest three points, all of the calculated results are still within $3-\sigma$ region of the observation time delays.
 
 To compare differential frequency $f_D$, we need to calculate the velocity of the pulsar and the velocity of the lens. We consider lens 1 to be relative static, both the velocity of the pulsar and the velocity of lens 2 mentioned later are the relative velocities to lens 1.
 %the veloicity calculated here are the velocity of the pulsar that is relative to the lens 1, and we consider the velocity of lens 2 is also the relative value to lens 1. 
 To calculate the velocity of the pulsar, we need two components, the $v_{\parallel}$ in $\theta_{\parallel}$ direction, and $v_{\bot}$ in $\theta_{\bot}$ direction. For $v_{\parallel}$, we still use the velocity that is calculated in $0.4$ ms group in one lens model, that is $180.3$ km/s. For the velocity of lens 2, because it is a line, and we do not consider radial velocity, so it could only be in the direction of AJ. However, by calculation, the $\angle$DAH is $98\degree$ by calculation, that means $v_{\bot}$ and $v_{\rm lens2}$ are nearly degenerate. In the following discussion, we consider lens 2 to be static and only take $v_{\bot}$ into account.
 
-To calculate $v_{\bot}$, we choose the point 2, which has the smallest errorbar of differential frequency. In a time period of $6500$ s, we solved that the $v_{\bot}$ should be $6.93$ km/s, in the direction pointing from B to D, to make the calculated $f_{D2}$ match the observation $f_D$. Thus the $v_{\rm tot}$ is solved to be $193.1$ km/s, with an angle $\epsilon=4.44\degree$ west of north, which is also $\mu_\alpha=-4.01$ mas/year and $\mu_delta=63.3$ mas/year. The error region of the velocity, which is determined by the error region of $f_D$ is $187.3-198.9$ km/s, the angular velocity region is $\mu_a=-4.3--4.57$ mas/year and $\mu_d=61.4-65.2$ mas/year. The direction of the velocity is marked on the top of the star in Figure \ref{Doublelens}.
+To calculate $v_{\bot}$, we choose the point 2, which has the smallest errorbar of differential frequency. In a time period of $6500$ s, the $v_{\bot}$ is calculated to be $6.93$ km/s, in the direction pointing from B to D, to make the calculated $f_{D2}$ match the observation $f_D$. Thus the $v_{\rm tot}$ is solved to be $193.1$ km/s, with an angle $\epsilon=4.01\degree$ west of north, which is also $\mu_\alpha=-4.47$ mas/year and $\mu_\delta=63.5$ mas/year on equatorial plane. In galactic coordinate system the velocity is $\mu_l=42.66$ mas/year, and $\mu_b=63.02$ mas/year. %note this part should be the (\mu_\alpha*cos(delta))^2+(\mu_delta)^2 should be the same.
+The error region of the velocity, which is determined by the error region of $f_D$ is $187.3-198.9$ km/s, the angular velocity region is $\mu_a=-4.30$-$-4.57$ mas/year and $\mu_d=61.4$-$65.2$ mas/year. The direction of the velocity is marked on the top of the star in Figure \ref{Doublelens}.
 
 With this velocity of the pulsar, we calculate the differential frequency of point 1,3,4 and 5. Results are listed in Table \ref{table:double_lens_compare}. The calculated results all lie in the $3-\sigma$ region of the observation data. 
 
@@ -320,34 +310,34 @@ However, if the lens 1 lines are not parallel, there is still possibility that t
 %\resizebox{!}{1cm}{
 \begin{tabular}{llllllllll}
 \hline
-$\theta_{1\parallel}$(mas) &$f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau_1$(ms) & $\sigma_{\tau1}$(ms) & $\Delta\alpha$(mas) & $\sigma_{\alpha}$(mas) & $\Delta\delta$(mas) & $\sigma_{\delta}$(mas) & $t_i$(day)\\
+$\theta_{1\parallel}$(mas) &$f_D$(mHz) & $\sigma_{f_D}$(mHz) & $\tau$(ms) & $\sigma_{\tau}$(ms) & $\Delta\alpha$(mas) & $\sigma_{\alpha}$(mas) & $\Delta\delta$(mas) & $\sigma_{\delta}$(mas) & $t_i$(day)\\
 \hline
- -8.29   & -12.94                            & 0.19      & 0.0845  & 0.0005          & 2.87    & 0.11                                     & -8.201     & 0.088      & -49.9                                \\
+ -8.29   & -12.94                            & 0.19      & 0.0845  & 0.0005          & 2.87    & 0.30                                     & -8.201     & 0.37      & -48.7                                \\
 
--10.71   &-16.80                             & 0.28      & 0.14123 & 0.0009         & 3.86    & 0.07                                     & -10.563    & 0.053      &-64.5                                \\
+-10.71   &-16.80                             & 0.28      & 0.14123 & 0.0009         & 3.86    & 0.62                                     & -10.563    & 0.35      &-62.8                                \\
 
--12.36   &-18.92                            & 0.23      & 0.188   & 0.002           & 5.06    & 0.20                                      & -10.58    & 0.13      &-74.4                        \\
+-12.36   &-18.92                            & 0.23      & 0.188   & 0.002           & 5.06    & 0.59                                      & -10.58    & 0.64      &-74.2                        \\
 
--13.44 & -20.40                             & 0.49      & 0.222   & 0.003           & 5.55    & 0.30                                      & -11.73    & 0.21      &-80.8                                \\
+-13.44 & -20.40                             & 0.49      & 0.222   & 0.003           & 5.55    & 0.33                                      & -11.734    & 0.083      &-81.2                                \\
 
--13.86 &-21.17                            & 0.61      & 0.236   & 0.002           & 5.12    & 0.43                                     & -12.56    & 0.31      &-83.4                                \\
+-13.86 &-21.17                            & 0.61      & 0.236   & 0.002           & 5.12    & 0.36                                   & -12.56    & 0.47      &-83.2                                \\
 
--14.63   &-22.32                            & 0.47      & 0.2633  & 0.0003          & 6.16    & 0.14                                     & -14.15    & 0.10       &-88.0                                \\
+-14.63   &-22.32                            & 0.47      & 0.2633  & 0.0003          & 6.16    & 0.34                                     & -14.15    & 0.72       &-88.1                                \\
 
--16.29   &-24.63                            & 0.40       & 0.327  & 0.003          & 6.49    & 0.29                                     & -14.06    & 0.20       &-98.0                                \\
+-16.29   &-24.63                            & 0.40       & 0.327  & 0.003          & 6.49    & 0.63                                     & -14.06    & 0.37       &-99.0                                \\
 
--16.57  &-24.94                            & 0.44      & 0.338 & 0.0003         & 8.29    & 0.42                                     & -14.37    & 0.32      &-99.7                                \\
+-16.57  &-24.94                            & 0.44      & 0.338 & 0.0003         & 8.29    & 0.44                                     & -14.37    & 0.73      &-101                                \\
 
--17.44   &-26.09                            & 0.36      & 0.3743 & 0.0006         & 8.53    & 0.52                                     & -15.74    & 0.42      &-105                               
+-17.44   &-26.09                            & 0.36      & 0.3743 & 0.0006         & 8.53    & 0.31                                     & -15.74    & 0.27      &-107                               
 \\ \hline
-$\cdots$&         -35.06                           & 0.52                               & 0.9495               & 0.0016                              & -15.23  & 0.69                                     & -21.06   & 0.70   &-202                                   \\
+$\cdots$&         -35.06                           & 0.52                               & 0.9495               & 0.0016                              & -15.23  & 1.4                                     & -21.06   & 1.3   &-202                                   \\
 
-$\cdots$ & -38.31                           & 0.64                               & 0.97633              & 0.00088                             & -15.02  & 0.48                                    & -20.74   & 0.38  &-190                                    \\
-$\cdots$ & -40.17                           & 0.55                               & 1.0045              & 0.0079                             & -14.14  & 0.66                                    & -22.27   & 0.62  &-187                                   \\
+$\cdots$ & -38.31                           & 0.64                               & 0.97633              & 0.00088                             & -15.02  & 1.3                                    & -20.74   & 0.27  &-190                                    \\
+$\cdots$ & -40.17                           & 0.55                               & 1.0045              & 0.0079                             & -14.14  & 1.3                                    & -22.27   & 0.45  &-187                                   \\
 
-$\cdots$ & -41.27                           & 0.54                               & 1.0370              & 0.0032                              & -11.28  & 0.93                                     & -19.2   & 1.1   &-188                                   \\
+$\cdots$ & -41.27                           & 0.54                               & 1.0370              & 0.0032                              & -11.28  & 1.0                                     & -19.2   & 2.7   &-188                                   \\
 
-$ \cdots$ & -43.08                           & 0.44                               & 1.0663              & 0.0050                              & -8.4   & 1.7                                      & -24.1   & 1.4   &-185   \\
+$ \cdots$ & -43.08                           & 0.44                               & 1.0663              & 0.0050                              & -8.4   & 3.3                                      & -24.1   & 2.0   &-185   \\
  \hline                                 
 \end{tabular}
 \caption{ $0.4$ ms and $1$ ms observation data and calculated data. 
@@ -363,14 +353,16 @@ Observation data include the differential frequency $f_D$, time delay $\tau$ fro
 \begin{tabular}{llllllll}
 \hline
 $\theta_{1\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm tot}$(ms)  & $\tau_C$(ms) & $f_D$(mHz)  &$\sigma_{f_D}$(mHz)      &  $f_{DC}$(mHz)& $t_j$(day) \\ \hline
--13.86  &    0.9495     &0.0095    & 0.955       & -35.1     &1.3 & -37.22 & -22\\ 
--14.63  &   0.9763    &0.0015   & 0.9763*       & -38.3 &1.0   & -38.31$\dagger$ & 0\\ 
--16.29  &   1.005    &0.011   & 1.0272      & -40.17 &0.86    & -40.64 & 0\\ 
--16.57  &    1.0370     &0.0033    & 1.036        & -41.27 &0.90   & -41.04 & 0\\ 
--17.44  &  1.0663     &0.0052    & 1.066*        & -43.08 &0.74  &-42.26 & -44\\ \hline
+-13.86  &    0.9495     &0.0017    & 0.955       & -35.1     &0.64    & -37.22          & -38\\ 
+-14.63  &   0.9763    &0.00098   & 0.9763*       & -38.3     &0.70    & -38.31$\dagger$ & -40\\ 
+-16.29  &   1.005    &0.0080   & 1.0272          & -40.17    &0.60   & -40.64          & -46\\ 
+-16.57  &    1.0370     &0.0032    & 1.036       & -41.27    &0.60   & -41.04          & -47\\ 
+-17.44  &  1.0663     &0.0050    & 1.0663*        & -43.08    &0.49   & -42.26           & -50\\ \hline
 \end{tabular}
 }
-\caption{Comparison of time delay $\tau$ and the differential frequency $f_D$ of the observation data and the calculated result in double lens model. $\theta_{1\parallel}$ is the angle of the $0.4$ ms group with the component in the axis defined by $\gamma$. $\theta_{2\parallel}$ is the angle of the $1$ ms group with the component in the axis defined by $\gamma$. The values with star symbols on them are the points that we use to calculate the position of J and the point with a $\dagger$ symbol is the point that we use to calculate the velocity of the pulsar $v_{\rm A2}$. The $\chi^2$ of differential frequency is 4.7 and the $\chi^2$ of time delay $tau$ is 4.5.}
+\caption{Comparison of time delay $\tau$ and the differential frequency $f_D$ of the observation and the calculated result in double lens model. $\theta_{1\parallel}$ is the angle of the $0.4$ ms group with the component in the axis defined by $\gamma$. 
+%$\theta_{2\parallel}$ is the angle of the $1$ ms group with the component in the axis defined by $\gamma$. 
+The values with star symbols on them are the points that we use to calculate the position of J and the point with a $\dagger$ symbol is the point that we use to calculate the velocity of the pulsar $v_{\rm A2}$. The $\chi^2$ of differential frequency $f_D$ is $14$ and the $\chi^2$ of time delay $\tau$ is $4.7$.}
 \label{table:double_lens_compare}
 \end{table*}
 %\end{table}
@@ -398,7 +390,7 @@ $\theta_{1\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm tot}$(ms)  & $\tau_C$
 \centering
 %\epsscale{1.0}
 \includegraphics[width=1.0\linewidth, angle=0]{Theta_tau.png}
-\caption{${\theta}$ vs ${\sqrt{\tau}}$. Two separate lines through the origin were fitted to the points sampled among the $0.4$ ms group and $1$ ms group. The solid line is the fitted line of the 0.4ms positions, where $k=28.51$ with an error region of $\sigma_k=0.04$. The dashed lines are the fitted lines of the 1ms position, where $k=25.78$ with an error region of $\sigma_k=0.66$.
+\caption{${\theta}$ vs ${\sqrt{\tau}}$. Two separate lines through the origin were fitted to the points sampled among the $0.4$ ms group and $1$ ms group. The solid line is the fitted line of the $0.4$ ms positions, where $k=-28.43$ with an error region of $\sigma_k=0.37$. The dashed lines are the fitted lines of the $1$ ms position, where $k=-25.40$ with an error region of $\sigma_k=0.81$.
 }
 \label{thetatau}
 \end{figure}
@@ -422,7 +414,7 @@ $\theta_{1\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm tot}$(ms)  & $\tau_C$
 \centering
 %\epsscale{1.0}
 \includegraphics[width=1.0\textwidth, angle=0]{Double_lens_xy.png}
-\caption{Observed and calculated angular positions of $0.4$ ms and $1$ ms data in double lens model. x axis and y axis are the relative distance to the position of the pulsar in Right Ascension direction and declination direction, on a 2D plane that is transverse to the line of sight. The position of the screen locate at $392.8$ pc and $425.0$ pc respectively. Scatter points on the left side, marked with letter D, are the calculated positions from the $0.4$ ms apexes observation. Dash line is the fitted line of $0.4$ ms apexes positions, with a angle $\gamma=-25.2\degree$  east of north. The points lie on the left side with errorbars, are the observation points with their sample errors; while the circles are plotted with population errors. Short solid lines between them are the matched positions of the observation positions and the calculated positions. The scatter points on the right side, marked with letter B, are the calculated lensed image on lens 1 from $1$ ms group. The short solid line connects the lensed image one lens 1(observable) and lensed image 2(unobservable), marked with letter H. Long solid line is the fitted line of these positions. Those points with errorbars nearby are the observation points with their sample errors, while the circles are plotted with population errors. The dotted line on the top right side is vertical to the solid line, and the pedal is called J. Short light solid lines connect the observation points and the calculated positions in $1$ ms group. Middle dot dash lines connect the $0.4$ ms and $1$ ms calculated positions with the same $\theta_{1\parallel}$, which are lens 1. The proper motion of the pulsar is $193.1$ km/s, with an angle $\epsilon=-4.01\degree$ east of north, is marked with an arrow from the star, point A the position of the pulsar, at the top of the figure.}
+\caption{Observed and calculated angular positions of $0.4$ ms and $1$ ms data in double lens model. x axis and y axis are the relative distance to central emission of pulsar in Right Ascension direction and declination direction, on a 2D plane that is transverse to the line of sight. The position of the screen locate at $393.7$ pc and $425.0$ pc respectively. Scatter points on the left side, marked with letter D, are the calculated positions from the $0.4$ ms apexes observation. Dash line is the fitted line of $0.4$ ms apexes positions, with a angle $\gamma=-25.2\degree$  east of north. The points lie on the left side with errorbars, are the observation points with their sample errors; while the circles are plotted with population errors. Short solid lines between them are the matched positions of the observation and the calculated positions. The scatter points on the right side, marked with letter B, are the calculated lensed image on lens 1 from $1$ ms group. The short solid line connects the lensed image one lens 1(observable) and lensed image 2(unobservable), marked with letter H. Long solid line is the fitted line of these positions. Those points with errorbars nearby are the observation points with their sample errors, while the circles are plotted with population errors. The dotted line on the top right side is vertical to the solid line, and the pedal is called J. Short light solid lines connect the observation points and the calculated positions in $1$ ms group. Middle dot dash lines connect the $0.4$ ms and $1$ ms calculated positions with the same $\theta_{1\parallel}$, which are lens 1. The proper motion of the pulsar is $193.1$ km/s, with an angle $\epsilon=-4.44\degree$ east of north, is marked with an arrow from the star, point A the position of the pulsar, at the top of the figure.}
 \label{Doublelens}
 \end{figure*}
 
