@@ -313,12 +313,18 @@ Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how l
 The solved positions are plotted in Figure \ref{Doublelens}, and respective time delays and differential frequencies are listed in Table \ref{table:double_lens_compare}. For the error of time delay $\tau$ in double lens model, we use the following equation: 
 \begin{equation}
 \begin{aligned}
-(\frac{\sigma_{\rm tot}}{\tau_2})^2 = (\frac{\sigma_{\tau1}}{\tau_1})^2+(\frac{\sigma_{\tau2}}{\tau_2})^2 + (\frac{\sigma_{\tau22}}{\tau_{22}})^2,
+(\frac{\sigma_{\tau\rm tot}}{\tau_2})^2 = (\frac{\sigma_{\tau1}}{\tau_1})^2+(\frac{\sigma_{\tau2}}{\tau_2})^2 + (\frac{\sigma_{\tau22}}{\tau_{22}})^2,
 %\frac{\sigma_{\rm tot}}{\tau_2} = (\frac{\sigma_{\rm 1sample}}{\tau_1})^2+(\frac{\sigma_{\rm 2sample}}{\tau_2})^2,
 \end{aligned}
 \end{equation}
 where $\tau_1$ and $\sigma_{\tau1}$ represent the time delay and its error from the $0.4$ ms group on lens $1$, $\tau_2$ and $\sigma_{\tau2}$ represent the time delay and its error from respective $1$ ms group on lens 2, and $\tau_22$ is the $\tau_2$ for the point in the second row in Table \ref{table:double_lens_compare} and $\sigma_{\tau22}$ is its error.
 % $\tau_1$ is the time delay from $0.4$ ms group, and $\tau_2$ is the time delay from respective $1$ ms group.
+For the error of differential frequency $f_D$, we use the following equation:
+\begin{equation}
+\begin{aligned}
+(\frac{\sigma_{f_D\rm tot}}{f_D})^2=(\frac{\sigma_{f_D}}{f_D})^2+(\frac{\sigma_{f_D2}}{f_{D2}})^2
+\end{aligned}
+\end{equation}
 
 \subsubsection{Comparing calculated result in double lens model and observation}
 Comparing $\tau$, we calculated time delay $\tau_C$ for these five points, and list the results in Table \ref{table:double_lens_compare}. For point 2 and 5, they fit perfectly because these are the two points that we use these to calculate the position of J; for the rest three points, all of the calculated results are still within $3-\sigma$ region of the observation time delays.
@@ -386,7 +392,7 @@ Observation data include the differential frequency $f_D$, time delay $\tau$ fro
 \resizebox{\linewidth}{!}{
 \begin{tabular}{llllllll}
 \hline
-$\theta_{1\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm tot}$(ms)  & $\tau_C$(ms) & $f_D$(mHz)  &$\sigma_{f_D}$(mHz)      &  $f_{DC}$(mHz)& $t_j$(day) \\ \hline
+$\theta_{1\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau tot}$(ms)  & $\tau_C$(ms) & $f_D$(mHz)  &$\sigma_{f_D \rm tot}$(mHz)      &  $f_{DC}$(mHz)& $t_j$(day) \\ \hline
 -13.82  &    0.9495     &0.0094    & 0.9550       & -35.1     &0.81    & -37.22          & -37\\ 
 -14.59  &   0.9763    &0.00088   & 0.9763*       & -38.3     &0.64    & -38.31$\dagger$ & -40\\ 
 -16.24  &   1.005    &0.011   & 1.0272          & -40.17    &0.87   & -40.64          & -46\\ 
@@ -401,7 +407,7 @@ The values with star symbols on them are the points that we use to calculate the
 \end{table*}
 %\end{table}
 
-
+%test
 %\begin{figure*}
 %\centering
 %\epsscale{1.0}
