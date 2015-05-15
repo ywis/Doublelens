@@ -142,7 +142,7 @@ and $n=4$ for four sub-bands.
 %\end{equation}
 %where $\rm \sigma_i$ is the error of the data in each sub-band. They are marked with circles in Figure \ref{Doublelens}.
 
-\subsection{One lens model}
+\subsection{Solution in one lens model}
 \subsubsection{Distance of the lens}
 In the absence of a lens model, the
 fringe rate, delay and angular position cannot be uniquely related. To interpret the data, we adopt the lensing model of
@@ -227,7 +227,19 @@ which are marked out with the scatter points on the left side in Figure \ref{Dou
 %We fit a line to this five calculated points to describe the the positions of these 5 points. 
 %Lying on the fitted line, point 5 share the same $\theta_{\parallel}$ as the point with the largest $\theta_{\parallel}$ in the $0.4$ ms apexes. Solving the differential frequency ${f_D}$ of this point, we can calculate the relative velocity of this point to the pulsar, called vA2, which is in the plane that is perpendicular to our line of sight with a direction pointing from point 5 to the position of the pulsar. With the same method, we obtained the $v_{\parallel}$ from the $0.4$ ms data. Thus, the total velocity of the pulsar is determined.
 
-%While this one lens does not fit the data, we will abandon the velocity calculated in this model.
+%The time in last column of Table \ref{table:apex} is calculated with $-2{\tau}f/{f_{D}}$,
+%equivalent to pulsar moving at $640$ pc plane from the
+%original position to the lensed image position with the calculated velocity of the pulsar in that direction in one lens model.
+
+%That is one lens model fitting. Knowing time delay ${\tau}$, we can calculate the distance of the screen; knowing the angular position of point 5 and its differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation differential frequency, we can get the position of points $1-4$. %While this one lens does not fit the data, we will abandon the velocity calculated in this model.
+
+\begin{figure}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\linewidth, angle=0]{One_lens_reflection.png}
+\caption{The moving of the lensed image with the moving of the pulsar. x axis and y axis are the relative distance to the central emission of the pulsar. $A_1$ is the original position of the pulsar, and $A_2$ is the position of the pulsar after 650000s (7.5 days). Dashed line describes the incoming light. Dotted line is the place where lensed image on lens 1 lies. $D_2$ is the place where the lensed image lie when the pulsar moved to $A_2$.}
+\label{OneLensReflect}
+\end{figure}
 
 %\begin{figure}
 %\centering
@@ -238,25 +250,32 @@ which are marked out with the scatter points on the left side in Figure \ref{Dou
 %\end{figure}
 
 
-\subsubsection{Discussion of one lens model}
+\subsection{Discussion of one lens model}
 
 The $0.4$ ms group lens solution appears consistent with the premise of the inclined
 sheet lensing model \citep{2014MNRAS.442.3338P}.
 
-The time in last column of Table \ref{table:apex}, which we denote as $t_0$, is calculated with $-2{\tau}f/{f_{D}}$,
-equivalent to pulsar moving at $640$ pc plane from the
-original position to the lensed image position with the calculated velocity of the pulsar in that direction in one lens model.
-
-That is one lens model fitting. Knowing time delay ${\tau}$, we can calculate the distance of the screen; knowing the angular position of point 5 and its differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation differential frequency, we can get the position of points $1$-$4$. 
-
-\begin{figure}
-\centering
-%\epsscale{1.0}
-\includegraphics[width=1.0\linewidth, angle=0]{One_lens_reflection.png}
-\caption{The moving of the lensed image with the moving of the pulsar. x axis and y axis are the relative distance to the central emission of the pulsar. $A_1$ is the original position of the pulsar, and $A_2$ is the position of the pulsar after 650000s (7.5 days). Dashed line describes the incoming light. Dotted line is the place where lensed image on lens 1 lies. $D_2$ is the place where the lensed image lie when the pulsar moved to $A_2$.}
-\label{OneLensReflect}
-\end{figure}
-
+For $1$ ms group, lens 2
+only images a subset of the lens 1 images.  This could happen if
+lens 1 screen is just under the critical inclination
+angle, such that only $3-\sigma$ waves lead to a fold caustic.  If the lens 2 was at a critical angle, the chance of encountering a
+somewhat less inclined system is of order unity.
+%For the $0.4$ ms apexes, the one lens model could perfectly interpret the observation. 
+More surprising is the absence of a single refraction
+image of the pulsar, which is expected at position J.  This could
+happen if the maximum refraction angle is just below critical, such
+that only rays on the appropriately aligned double refraction can form
+images.  This scenario predicts that at frequencies just above $300$
+MHz, or a few weeks earlier in time, the pulsar should be seen at
+position J. We made a plot of the refraction angle $\beta$ in the
+direction that is transverse to the first lens plane in Figure
+\ref{vtrans}.  We denote $t_j$ as the time period for the reflected image on lens 2 of the position of the pulsar moves from point $j$ to point J, where $j$ is for points $1,2,3,4,5$. From our calculation, $37$ days before the lensed pulsar
+ image to locate at J, it was at point 1; and $50$ days before the lensed pulsar image to locate at J, it was at point 5.  The data
+spans about 10\% in frequency, making it unlikely that single lens
+image J would not be seen due to the larger required refraction
+angle.  Instead, we speculate that the fold caustic could have formed
+near double lens image 1, and thus only intersections with the closer
+lens plane caustic south of image 1 are double lensed.
 
 \subsection{Double lens model}
 \label{doublelensmodel}
@@ -298,11 +317,11 @@ Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how l
 The solved positions are plotted in Figure \ref{Doublelens}, and respective time delays and differential frequencies are listed in Table \ref{table:double_lens_compare}. For the error of time delay $\tau$ in double lens model, we use the following equation: 
 \begin{equation}
 \begin{aligned}
-(\frac{\sigma_{\tau_M}}{\tau_{M}})^2 = (\frac{\sigma_{\tau1i}}{\tau_{1i}})^2+(\frac{\sigma_{\tau2i}}{\tau_{2i}})^2 + (\frac{\sigma_{\tau2j}}{\tau_{2j}})^2,
+(\frac{\sigma_{\tau_M}}{\tau_{M}})^2 = (\frac{\sigma_{\tau1i}}{\tau_{1i}})^2+(\frac{\sigma_{\tau2i}}{\tau_{2i}})^2 + (\frac{\sigma_{\tau22}}{\tau_{22}})^2,
 %\frac{\sigma_{\rm tot}}{\tau_2} = (\frac{\sigma_{\rm 1sample}}{\tau_1})^2+(\frac{\sigma_{\rm 2sample}}{\tau_2})^2,
 \end{aligned}
 \end{equation}
-where $\tau_1$ and $\sigma_{\tau1}$ represent the time delay and its error from the $0.4$ ms group on lens $1$, $\tau_2$ and $\sigma_{\tau2}$ represent the time delay and its error from respective $1$ ms group on lens 2. And $\tau_{2j}$ is the $\tau_2$ for the nearest point in reference in Table \ref{table:double_lens_compare} and $\sigma_{\tau2j}$ is its error: for point $i=1,3$, $j=2$; for point $i=4$, $j=5$.
+where $\tau_1$ and $\sigma_{\tau1}$ represent the time delay and its error from the $0.4$ ms group on lens $1$, $\tau_2$ and $\sigma_{\tau2}$ represent the time delay and its error from respective $1$ ms group on lens 2, and $\tau_{22}$ is the $\tau_2$ for the point in the second row in Table \ref{table:double_lens_compare} and $\sigma_{\tau22}$ is its error. $i=1,3,4,5$ for the subscription.
 % $\tau_1$ is the time delay from $0.4$ ms group, and $\tau_2$ is the time delay from respective $1$ ms group.
 
 For the error of differential frequency $f_D$, we use the following equation:
@@ -311,7 +330,7 @@ For the error of differential frequency $f_D$, we use the following equation:
 (\frac{\sigma_{f_M}}{f_M})^2=(\frac{\sigma_{f_{Di}}}{f_{Di}})^2+(\frac{\sigma_{f_{D2}}}{f_{D2}})^2
 \end{aligned}
 \end{equation}
-where $f_{D2}$ and $\sigma_{f_{D2}}$ are the differential frequency and its error of the point in the second row in Table \ref{table:double_lens_compare}. $i=1,3,4,5$ for the subscription.
+where $f_{D2}$ and $\sigma_{f_D2}$ are the differential frequency and its error of the point in the second row in Table \ref{table:double_lens_compare}. $i=1,3,4,5$ for the subscription.
 
 \subsubsection{Comparing calculated result in double lens model and observation}
 Comparing $\tau$, we calculated time delay $\tau_M$ for these five points, and list the results in Table \ref{table:double_lens_compare}. For point 2 and 5, they fit perfectly because these are the two points that we use these to calculate the position of J; for the rest three points, all of the calculated results are still within $3-\sigma$ region of the observation time delays.
@@ -331,32 +350,6 @@ The reduced ${\chi}^2$ for time delay $\tau$ is $1.5$ for $3$ degrees of freedom
 However, if the lens 1 lines are not parallel, there is still possibility that the differential frequency lie within the error region. Take point 4 for example, $\gamma$, the lie perpendicular to the sheet of lens 1, should lie within the region 
 %$\-25.2^{+0.0013}_{-0.0006}\degree$.
 %table one for 1ms positions
-
-\subsubsection{Discussion of double lens model}
-For $1$ ms group, lens 2
-only images a subset of the lens 1 images.  This could happen if
-lens 1 screen is just under the critical inclination
-angle, such that only $3-\sigma$ waves lead to a fold caustic.  If the lens 2 was at a critical angle, the chance of encountering a
-somewhat less inclined system is of order unity.
-%For the $0.4$ ms apexes, the one lens model could perfectly interpret the observation. 
-More surprising is the absence of a single refraction
-image of the pulsar, which is expected at position J.  This could
-happen if the maximum refraction angle is just below critical, such
-that only rays on the appropriately aligned double refraction can form
-images.  
-%This scenario predicts that at frequencies just below $300$
-%MHz, or a few weeks earlier in time, the pulsar should be seen at
-%position J. 
-We made a plot of the refraction angle $\beta$ in the
-direction that is transverse to the first lens plane in Figure
-\ref{vtrans}. We denote the time that the lensed image on lens 2 to move from point H to point J, time $t_1$. From our calculation, $56$ days before the lensed pulsar
- image to locate at J, it was at point 1; and $75$ days before the lensed pulsar image to locate at J, it was at point 5.  The data
-spans about 10\% in frequency, making it unlikely that single lens
-image J would not be seen due to the larger required refraction
-angle.  Instead, we speculate that the fold caustic could have formed
-near double lens image 1, and thus only intersections with the closer
-lens plane caustic south of image 1 are double lensed.
-
 
 \begin{table*}
 \centering
@@ -406,11 +399,11 @@ Observation data include the differential frequency $f_D$, time delay $\tau$ fro
 \begin{tabular}{llllllll}
 \hline
 $\theta_{1\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau_M}$(ms)  & $\tau_M$(ms) & $f_D$(mHz)  &$\sigma_{f_M}$(mHz)      &  $f_M$(mHz)& $t_1$(day) \\ \hline
--13.82  &    0.9495     &0.0094    & 0.9550       & -35.1     &0.81    & -37.22          & -56\\ 
--14.59  &   0.9763    &0.00088   & 0.9763*       & -38.3     &0.64    & -38.31$\dagger$ & -60\\ 
--16.24  &   1.005    &0.011   & 1.027          & -40.17    &0.87   & -40.64          & -69\\ 
--16.52  &    1.0370     &0.0059    & 1.0363       & -41.27    &0.88   & -41.04          & -70\\ 
--17.39  &  1.0663     &0.0050    & 1.0663*        & -43.08    &0.84   & -42.27           & -75\\ \hline
+-13.82  &    0.9495     &0.0094    & 0.9550       & -35.1     &0.81    & -37.22          & -37\\ 
+-14.59  &   0.9763    &0.00088   & 0.9763*       & -38.3     &0.64    & -38.31$\dagger$ & -40\\ 
+-16.24  &   1.005    &0.011   & 1.0272          & -40.17    &0.87   & -40.64          & -46\\ 
+-16.52  &    1.0370     &0.0034    & 1.0363       & -41.27    &0.88   & -41.04          & -47\\ 
+-17.39  &  1.0663     &0.0050    & 1.0663*        & -43.08    &0.84   & -42.27           & -50\\ \hline
 \end{tabular}
 }
 \caption{Comparison of time delay $\tau$ and the differential frequency $f_D$ of the observation and the calculated result in double lens model. $\theta_{1\parallel}$ denotes the angular offset of lens 1. 
@@ -520,8 +513,8 @@ $D_{{\rm e}{12}}=D_{1{\rm e}}D_{2{\rm e}}/(D_{2{\rm e}}-D_{1{\rm e}})$.
 %additional constraints.
 
 In this archival data set the direct single lens from the further
-plane at position J is missing.  It would have been visible $56$ days
-earlier. The difference in time delays to image J and the double
+plane at position J is missing.  It would have been visible $37$ days
+earlier. We denote the time that the lensed image on lens 2 to move from point $j$, $j=1,2,3,4,5$ to point J, time $t_1$. The difference in time delays to image J and the double
 reflection images would allow a direct determination of the effective
 distance to lens plane 2.  Due to the close to 90 degree angle $\angle$DAJ
 between lenses, the effect would be about a factor of 10 ill
