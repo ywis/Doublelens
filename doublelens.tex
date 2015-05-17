@@ -48,7 +48,7 @@ $^6$ ASTRON, the Netherlands Institute for Radio Astronomy, Postbus 2, 7990 AA, 
 \maketitle
 \label{firstpage}
 \begin{abstract}
-We analyze archival data on PSR
+We analyze archival VLBI data of PSR
 B0834+06, concluding that for this example the plasma lenses can be
 precisely modelled using the \citep{2014MNRAS.442.3338P} inclined sheet model,
 resulting in two distinct lens planes.  This data strongly favours the
@@ -56,8 +56,10 @@ grazing sheet model over turbulence as the primary source of
 pulsar scattering.  The simple 1-D structure of the lenses opens up
 the possibility of using interstellar lenses as precision probes for
 pulsar lens mapping, and new opportunities for removing scattering.
-
-A global conformal distance degeneracy exists which allows a rescaling
+We describe the parameters and observable of this double screen
+system.  While relative screen distances can in principle be
+accurately determined,
+a global conformal distance degeneracy exists which allows a rescaling
 of the absolute distance scale.  This degeneracy is broken if the
 pulsar resides in a binary system, which is the case for most
 precision timing targets.
@@ -105,7 +107,12 @@ quantify the lensing screen.
 \subsection{Archival data of B0834+06}
 \label{21}
 %Our analysis is based on the reduced apex catalog from
-Our analysis is based on the apex data selected from the secondary spectrum of pulsar B0834+06 in \citep{2010ApJ...708..232B}, which was observed as part of a global VLBI project on 2005 November 12. 
+Our analysis is based on the apex data selected from the secondary
+spectrum of pulsar B0834+06 in \citep{2010ApJ...708..232B}, which was
+observed as part of a global VLBI project on 2005 November 12, with
+GBT, Arecibo, Lovell and Westerbork telescopes.  The GB-AR and AR-WB
+baselines are close to orthogonal and of comparable lengths, resulting
+in relatively isotropic astrometric positions.
 Information from each identified apex includes delay $\tau$,
 delay rate (differential frequency $f_D$), relative Right Ascension $\Delta\alpha$, relative declination $\Delta\delta$, error of $\Delta\alpha$ $\sigma_{\alpha}$ and error of $\Delta\delta$ $\sigma_{\delta}$. Data of each apex are collected from four dual circular polarization $8$ MHz wide sub-bands spanning the frequency range $310.5$--$342.5$ MHz. 
 
@@ -244,10 +251,9 @@ The $0.4$ ms group lens solution appears consistent with the premise of the incl
 sheet lensing model \citep{2014MNRAS.442.3338P}.
 
 The time in last column of Table \ref{table:apex}, which we denote as $t_0$, is calculated with $-2{\tau}f/{f_{D}}$,
-equivalent to pulsar moving at $640$ pc plane from the
-original position to the lensed image position with the calculated velocity of the pulsar in that direction in one lens model.
-
-That is one lens model fitting. Knowing time delay ${\tau}$, we can calculate the distance of the screen; knowing the angular position of point 5 and its differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation differential frequency, we can get the position of points $1$--$4$. 
+corresponds to the time required for the pulsar to intersect a given
+lens caustic.
+Knowing time delay ${\tau}$, we can calculate the distance of the screen; knowing the angular position of point 5 and its differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation differential frequency, we can get the position of points $1$--$4$. 
 
 %\begin{figure}
 %\centering
@@ -360,8 +366,8 @@ To calculate $v_{\bot}$, we choose the point 2, which has the smallest errorbar 
 \hline
 Parameter & $\mu_{\alpha}$(mas/year) & $\mu_{\delta}$(mas/year) & $\mu_{l}$(mas/year) & $\mu_b$ (mas/year)\\
 \hline
-calculated velocity of the pulsar to earth & $-4.84\pm 0.12$ & $63.4\pm 1.6$ & $41.87\pm 1.06$ & $60.09\pm 1.60$ \\
-pulsar proper motion (relative to sun) & $2.14 \pm 0.21$ & $51.64\pm 0.13$ & $45.32\pm 0.49$ & $46.51 \pm 0.20$\\
+model pulsar-screen velocity & $-4.84\pm 0.12$ & $63.4\pm 1.6$ & $41.87\pm 1.06$ & $60.09\pm 1.60$ \\
+VLBI pulsar proper motion & $2.14 \pm 0.21$ & $51.64\pm 0.13$ & $45.32\pm 0.49$ & $46.51 \pm 0.20$\\
 pulsar proper motion (relative to earth) & $-7.52$ &  $53.5$ & $28.99$  & $52.1$ \\
 %l=45.3157,44.8243,45.8071
 %b=46.5138,46.3109,46.7166
