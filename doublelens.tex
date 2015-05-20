@@ -106,11 +106,11 @@ quantify the lensing screen.
 
 \section{Lensing}
 
-In this section we map the data onto the folded sheet model.  The
-folded sheet model is qualitatively analogous to a reflection of a
-light on a lake as seen from the other shore.  In the absence of
-waves, exactly one image forms at the point where the angle of
-incidence is equal to the angle of reflection.  In the presence of
+In this section we map the data onto the grazing incidence sheet
+model.  The folded sheet model is qualitatively analogous to a
+reflection of a light on a lake as seen from the other shore.  In the
+absence of waves, exactly one image forms at the point where the angle
+of incidence is equal to the angle of reflection.  In the presence of
 waves, one generically sees a line of images above and below the
 unperturbed image.  A similar effect occurs when the observer is below
 the surface.  Two major distinctions arise: 1. the waves can deform
@@ -121,6 +121,30 @@ surface could be caused be reconnection
 sheets\citep{2015MNRAS.450.3201B}, which have finite widths to
 regularize these singularities. Diffusive structures have Gaussian
 profiles, which was analyzed in \citet{2012MNRAS.421L.132P}.
+
+The generic interstellar electron density is insufficient to deflect
+radio waves by the observed $\sim$ mas bending angles. At grazing
+incidence, Snell's law results in an enhanced bending angle, which
+formally diverges.  Magnetic discontinuities generically propagate
+transverse surface waves, whose restoring force is the change in Alven
+speed on the two sides of the discontinuity. This completes the
+analogy to waves on a lake: for sufficiently inclined sheets the waves
+will appear to fold back onto themselves in projection on the sky.  At
+each fold caustic, Snell's law diverges, leading to enhanced
+refractive lensing.  The divergence is cut off by a finite width of
+the sheet.  The generic consequence is a series of collinear images.
+Each fold of the wave results in two density caustics.  Each density
+caustic leads to two geometric lensing images, for a total of 4 images
+for each inflection.  The two geometric image in each caustic are
+separated by the characteristic width of the sheet, if this is smaller
+than the Fresnel scale, the two images become effectively
+indistinguishable. 
+
+A large number of sheets might intersect the line of sight to any
+pulsar. Only those sufficiently inclined would lead to caustic
+formation. Emprically, some pulsar scattering appears dominated by a
+single sheet, leading to the prominent inverted
+arclets\citep{2001ApJ...549L..97S}.
 
 \subsection{Archival data of B0834+06}
 \label{21}
@@ -325,6 +349,22 @@ Observation data include the differential frequency $f_D$, time delay $\tau$ fro
 
 \subsection{Double lens model}
 \label{doublelensmodel}
+
+The apparent offset of the 1ms group can be explained by a second lens
+screen.  The small number of apexes at 1ms suggests that the second
+lens screen involves a single caustic at a different distance.  In the
+primary lens system, the inclination appears such that typical waves
+form caustics.  The number of sheets at more shallow inclination
+increases as the square of the small angle.  A 3 times less inclined
+sheet occurs 9 times as often.  If a 1-$\sigma$ wave forms a caustic
+in the primary lens, a 3 times less inclined surface only forms
+caustics for 3-$\sigma$ waves, which occur two hundred times less
+often.  Thus, one expects such sheets to only form isolated caustics,
+which we expect to see occasionally.  Three free parameters describe a
+second caustic: distance, angle, and angular separation.  We fix the
+distance from the effective VLBI distance, and fit the angular
+separaton and angle using the 5 delays of the 1ms group.
+
 \subsubsection{Solving the double lens model}
 %The $v_{\parallel}$ to the plane should be equal. While for the calculated positions of $1$ ms apexes, they do not. 
 We denote the position of the pulsar point A, position of the lensed image on lens 2 point H, position of the lensed image on lens 1 point B, position of the observer point O, pedal from the pulsar to line HJ point J, the pedal from point H to line BD point F, and the pedal from point B to line HJ point G, for easier discussion.
@@ -332,11 +372,11 @@ We denote the position of the pulsar point A, position of the lensed image on le
 %The plane where the light was refracted should be transverse to the line that connects the pulsar and the lensed image. 
 Because points $1-4$ share the approximately same time delay with point $5$, the lens where the image formed should be at the same distance away from us. The only reasonable position of screen (line HJ) that fits all these five points, marked with a solid line in Figure \ref{Doublelens}.  
 %However, in this senario, the screens cross each other, which means HE crosses with each other. 
-That is unrealistic for the structure of the interstellar medium. 
+%That is unrealistic for the structure of the interstellar medium. 
 %Thus, on the plane which is perpendicular to our line of sight, the incoming line should be in agree with the refraction line.
 % If the light of the pulsar are being refracted by one interstellar medium lens, they should be distributed along a line like the axis of the $0.4$\ ms group, and we already know that all $1$ ms lensed images lie on the solid line in Figure \ref{Doublelens}, the only possible position will be J, which is the pedal of the position of the pulsar to the screen. 
 
-Therefore, we consider another model candidate: the double lens model. Respective calculation shows that the light is first refracted by lens 2 and then refracted by lens 1. 
+%Therefore, we consider another model candidate: the double lens model. Respective cal%culation shows that the light is first refracted by lens 2 and then refracted by lens 1. 
 
 The first step is to calculate the position of J. We make an estimate of the distance of J by the $1$ ms $\theta$--$\sqrt{\tau}$ relation, and then we calculated the position of J by matching the time delay of point 2 and point 5. The result shows that lens 2 is $426.7$ pc away from us. And its position is marked in Figure \ref{Doublelens}. Because J is the pedal to lens 2, we made a line that is perpendicular to AJ, the solid line in Figure \ref{Doublelens} to denote lens 2.
 %calculate the position of the far lens (lens $1$) and the near lens (lens $2$). As what has been discussed previously, the solid line is considered to be the far lens, where the positions have a larger effective distance. And the near lens is considered to be the lines that is perpendicular to the $0.4$ ms group axis. 
