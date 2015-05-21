@@ -236,7 +236,21 @@ k{\sum\limits_{i=1}^n\frac{1}{\sigma_{ki}^2}}&=\sum\limits_{i=1}^n\frac{\theta/\
 \frac{1}{\sigma_k^2}&=\sum\limits_{i=1}^n\frac{1}{\sigma_{ki}^2},
 \end{aligned}
 \end{equation}
-where $k$ is denoted as the slope in Figure \ref{thetatau}, and $\sigma_{ki}$ as the error of the slope. $\sigma_{ki}=\sigma_{\theta i}/\sqrt{\tau}$, $\sigma_{\theta}=\sqrt{(\sigma_{\Delta\alpha}{\cos(\delta)})^2+\sigma_{\Delta\delta}^2}$. $n=9$ for $1$ ms group, and $n=4$ for $0.4$ ms group. 
+where $k$ is denoted as the slope in Figure \ref{thetatau}, and
+$\sigma_{ki}$ as the error of the slope. $\sigma_{ki}=\sigma_{\theta
+  i}/\sqrt{\tau}$,
+$\sigma_{\theta}=\sqrt{(\sigma_{\Delta\alpha}{\cos(\delta)})^2+\sigma_{\Delta\delta}^2}$. $n=9$
+for $1$ ms group, and $n=4$ for $0.4$ ms group. 
+
+\begin{figure}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\linewidth, angle=0]{Theta_tau.png}
+\caption{${\theta}$ vs ${\sqrt{\tau}}$. Two separate lines through the origin were fitted to the points sampled among the $0.4$ ms group and $1$ ms group. The solid line is the fitted line of the $0.4$ ms positions, where $k=-28.43$ with an error region of $\sigma_k=0.37$. The dashed lines are the fitted lines of the $1$ ms position, where $k=-25.40$ with an error region of $\sigma_k=0.81$.
+}
+\label{thetatau}
+\end{figure}
+
 
 From this $\theta$--$\sqrt{\tau}$ relation, the effective distance can
 be calculated as $D_{\rm e}=2c/k^2$. We find
@@ -254,8 +268,8 @@ consequences of alternate interpretations in section \ref{sec:degeneracy}.
 %possible, but it nevertheless illustrates a robust interpretation of
 %the data.
 The pulsar distance was directly measured using VLBI parallax to be
-$D_{\rm [} = 625 \pm 59$ pc.  For modelling purposes, we will use
-$D_{\rm [} = 640$ pc, consistent with the direct measurement.  Similarly,
+$D_{\rm p} = 625 \pm 59$ pc.  For modelling purposes, we will use
+$D_{\rm p} = 640$ pc, consistent with the direct measurement.  Similarly,
 we take $D_{1{\rm e}}=1023$ pc,  and the distance of lens 1 $D_{1}$,
 where $0.4$ ms scintillation points are refracted, is equal to $393.7$
 pc. For $1$ ms apexes, the distance of lens 2 is taken as $426.7$ pc,
@@ -457,7 +471,7 @@ To compare differential frequency $f_D$, we need to calculate the velocity of th
 To calculate the velocity of the pulsar, we need two components, the
 $v_{\parallel}$ in ${\parallel}$ direction, and $v_{\bot}$ in ${\bot}$
 direction.%, which is defined in Section \ref{subsec:angularpos}. 
-For $v_{\parallel}$, we still use the velocity that is calculated in $0.4$ ms group in one lens model, that is $179.8$ km/s. For the velocity of lens 2, because it is a line, and we do not consider radial velocity, so it could only be in the direction of AJ. However, by calculation, the $\angle$DAH is $82\degree$ by calculation, that means $v_{\bot}$ and $v_{\rm lens2}$ are nearly degenerate. In the following discussion, we consider lens 2 to be static and only take $v_{\bot}$ into account.
+For $v_{\parallel}$, we still use the velocity that is calculated in $0.4$ ms group in one lens model, that is $179.8$ km/s. For the velocity of lens 2, because it is a line, and we do not consider radial velocity, so it could only be in the direction of AJ. However, $\angle$DAH is $82\degree$ so $v_{\bot}$ and $v_{\rm lens2}$ are nearly degenerate. In the following discussion, we consider lens 2 to be static and only take $v_{\bot}$ into account.
 
 To calculate $v_{\bot}$, we choose the point 2, which has the smallest errorbar of differential frequency. In a time period of $6500$ s, the $v_{\bot}$ is calculated to be $6.85$ km/s, in the direction pointing from B to D, to make the calculated $f_{D2}$ match the observation $f_D$. Thus the $v_{\rm tot}$ is solved to be $192.4\pm 5.0$ km/s, with an angle $\epsilon=4.34\degree$ west of north. The velocity calculations are all listed in Table \ref{Table:velocity}. The direction of the velocity is marked on the top of the star in Figure \ref{Doublelens}.
 
@@ -486,18 +500,22 @@ With this velocity of the pulsar, we calculate the differential frequency $f_M$ 
 
 The reduced chi-square ${\chi}^2_{\nu}$ for time delay $\tau$ is $1.5$
 for $3$ degrees of freedom
-and $2.0$ for $f_D$ for $4$ degrees of freedom.  This is consistent with
- expected noise.
+and $2.0$ for $f_D$ for $4$ degrees of freedom.  This is consistent
+with the model.
 
-However, if the lines describing lens 1 are not parallel, there is
-still possibility that the differential frequency lie within the error
-region. For point 4 in double lens model, the angle between the axis
-of the $0.4$ ms group and the declination axis $\gamma$, should lie
-within the region 
+%However, if the lines describing lens 1 are not parallel, there is
+%still possibility that the differential frequency lie within the error
+%region. For point 4 in double lens model, the angle between the axis
+%of the $0.4$ ms group and the declination axis $\gamma$, should lie
+%within the region 
 
+Within this lensing model, we can test for the parallelness of the
+caustics.  Using the lag error range of double lensed point 4 (the best
+constrained), we find a $1-\sigma$ allowed angle of 0.4 degrees from
+parallel with the whole lensing system.  This lends support of a
+highly inclined sheet, probably aligned to better than 1\%.
 
-
-$\-25.2\degree \pm 0.4$ to meet the upper limit $f_{D4}+\sigma_{f4}$, $\tau_4+\sigma_{\tau 4}$ and the lower limit $f_{D4}-\sigma_{f4}$,$\tau_4-\sigma_{\tau 4}$ in Table \ref{table:double_lens_compare}, which has the smallest errorbar of the differential frequency.
+%$\-25.2\degree \pm 0.4$ to meet the upper limit $f_{D4}+\sigma_{f4}$, $\tau_4+\sigma_{\tau 4}$ and the lower limit $f_{D4}-\sigma_{f4}$,$\tau_4-\sigma_{\tau 4}$ in Table \ref{table:double_lens_compare}, which has the smallest errorbar of the differential frequency.
 %table one for 1ms positions
 
 \subsubsection{Discussion of double lens model}
@@ -567,14 +585,6 @@ The values with star symbols on them are the points that we use to calculate the
 %\label{Onelens_392_422}
 %\end{figure*}
 
-\begin{figure}
-\centering
-%\epsscale{1.0}
-\includegraphics[width=1.0\linewidth, angle=0]{Theta_tau.png}
-\caption{${\theta}$ vs ${\sqrt{\tau}}$. Two separate lines through the origin were fitted to the points sampled among the $0.4$ ms group and $1$ ms group. The solid line is the fitted line of the $0.4$ ms positions, where $k=-28.43$ with an error region of $\sigma_k=0.37$. The dashed lines are the fitted lines of the $1$ ms position, where $k=-25.40$ with an error region of $\sigma_k=0.81$.
-}
-\label{thetatau}
-\end{figure}
 
 
 
@@ -636,7 +646,7 @@ position.  Three distances are unknown, equal to the number of
 observables.  Unfortunately, these measurements are degenerate, which
 can be seen as follows. From the two screens $i=1,2$, the two single
 deflection effective distance observables are
-$D_{1{\rm e}} \equiv c\tau_i/\theta_i^2=D_i^2(1/D_i+1/D_{pi})$.  A third
+$D_{i{\rm e}} \equiv c\tau_i/\theta_i^2=D_i^2(1/D_i+1/D_{pi})$.  A third
 observable effective distance is that of screen 2 using screen 1 as a
 lens, $D_{21{\rm e}}=D_1^2(1/D_1+1/D_{21})$, which is algebraically
 derivable from the first two relations:
