@@ -10,6 +10,7 @@
 \usepackage{hhline}
 \usepackage[fleqn]{amsmath}
 \usepackage{gensymb}
+\usepackage{commath}
 %\usepackage{floatrow}
 %\def\gtrsim{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
 %\renewcommand\floatpagefraction{.9}
@@ -270,10 +271,10 @@ fringe rate, delay and angular position cannot be uniquely related. To interpret
 We define the {\it effective distance} $D_{\rm e}$ as
 \begin{equation}
 D_{\rm e} \equiv \frac{2c\tau}{\theta^2}.
-%f_D  &=f\frac{\rm d\tau}{\rm dt},
+%f_D  &=f\frac{\rm d\tau}{\dif t},
 \end{equation}
 The differential frequency is related to the rate of change of delay
-as $f_D  =-f\frac{\rm d\tau}{\rm dt}$.  The effective distance
+as $f_D  =-f\frac{\rm d\tau}{\dif t}$.  The effective distance
 corresponds to the pulsar distance $D_{\rm p}$ if the screen is exactly halfway.
 In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
     s}})$ for a screen at $D_{\rm s}$.
@@ -807,10 +808,11 @@ larger future scintillation samples may constrain these models.
 In order to incline one sheet randomly to better than 1\% requires of
 order $10^4$ randomly placed sheets, i.e. many per parsec.  This sheet
 extends for $\sim$ 10 AU in projection, corresponding to a physical
-scale greater than $10^4$ AU.   These two numbers roughly agree,
+scale greater than $1000$ AU.   These two numbers roughly agree,
 leading to a physical picture of magnetic domain boundaries every
 $\sim$ 0.1 pc.  B0834+06 has had noted arcs for multiple years,
 perhaps suggesting this dominant lens plane is larger than typical.
+One might expect to reach the end of the sheet within decades.
 
 \subsection{Possible Improvements}
 
