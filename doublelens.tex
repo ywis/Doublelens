@@ -53,7 +53,8 @@ B0834+06, concluding that for this example the plasma lenses can be
 precisely modelled using the inclined sheet model \citep{2014MNRAS.442.3338P},
 resulting in two distinct lens planes.  This data strongly favours the
 grazing sheet model over turbulence as the primary source of
-pulsar scattering.  The simple 1-D structure of the lenses opens up
+pulsar scattering.  7 observed apex parameters fit the model to percent accuracy.
+The simple 1-D structure of the lenses opens up
 the possibility of using interstellar lenses as precision probes for
 pulsar lens mapping, and new opportunities for removing scattering to
 improve pulsar timing.
@@ -190,9 +191,6 @@ The mean value of $\Delta\alpha$ and $\Delta\delta$ are the weighted mean.
 %x=\sum\limits^{n=4}_{i=1}\frac{x_i}{{\sigma_i}^2},
 %\end{align*}
 %Here x is for $\Delta\alpha$ or $\Delta\delta$. 
-The angular offset of the scintillation image away from the central
-emission is calculated as
-${\theta}^2=({\Delta\alpha}\cos(\delta))^2+({\Delta\delta})^2-\sigma^2_{\Delta\alpha}-\sigma^2_{\Delta\delta}$. 
 
 
 \begin{table*}
@@ -223,7 +221,15 @@ $ \cdots$ & -43.1(4)      & 1.066(5)    & -8(3)     & -24(2)   &-185   \\
 %}
 \caption{ $0.4$ ms and $1$ ms reduced apex data. 
 The upper part of the table list the $0.4$ ms group data, while the $1$ ms group lie in the lower part of the table. 
-Observation data include the differential frequency $f_D$, time delay $\tau$ ($\tau_1$ for $0.4$ ms group and $\tau_2$ for $1$ ms group); $\Delta\alpha$ and $\Delta\delta$ are from the VLBI measurement. The methods of how to calculate the error of time delay, differential frequency and the last column time are mentioned in Section \ref{21}.}
+Observation data include the differential frequency $f_D$, time delay
+$\tau$ ($\tau_1$ for $0.4$ ms group and $\tau_2$ for $1$ ms group);
+$\Delta\alpha$ and $\Delta\delta$ are from the VLBI measurement. 
+$t_0$ is the time at constant velocity for an apex to intersect the
+origin at constant speed along the main scattering parabola.  More
+details in Section \ref{21}.
+%The methods of how to calculate the error of time delay, differential
+%frequency and the last column time are mentioned in Section \ref{21}.
+}
 % $\theta_{1\parallel}$, the angle of the $0.4$ ms group with the component in the axis defined by $\gamma$, are derived from the $\theta-\tau$ relation plotted in Figure \ref{thetata}
 \label{table:apex}
 \end{table*}
@@ -290,15 +296,21 @@ In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
 \centering
 %\epsscale{1.0}
 \includegraphics[width=1.0\linewidth, angle=0]{Theta_tau.png}
-\caption{${\theta}$ vs ${\sqrt{\tau}}$. Two separate lines through the origin were fitted to the points sampled among the $0.4$ ms group and $1$ ms group. The solid line is the fitted line of the $0.4$ ms positions, where $k=-28.43$ with an error region of $\sigma_k=0.37$. The dashed lines are the fitted lines of the $1$ ms position, where $k=-25.40$ with an error region of $\sigma_k=0.81$.
+\caption{${\theta}$ vs ${\sqrt{\tau}}$. Two separate lines through the
+  origin were fitted to the points sampled among the $0.4$ ms group
+  and $1$ ms group. The solid line is the fitted line of the $0.4$ ms
+  positions, where $D_{1\rm e}=1013$ pc with an error region of
+  $\sigma_D=27$ pc. The dashed lines are the fitted lines of the $1$ ms
+  position, where $D_{2\rm e}=1281$ pc with an error region
+  $\sigma_D=82$ pc.
 }
 \label{thetatau}
 \end{figure}
 
 
-%From this $\theta$--$\sqrt{\tau}$ relation, the effective distance can
-%be calculated as $D_{\rm e}=2c/k^2$. We find
-
+In the angular offset of the scintillation image away from the central
+emission we subtract the expected noise bias:
+${\theta}^2=({\Delta\alpha}\cos(\delta))^2+({\Delta\delta})^2-\sigma^2_{\Delta\alpha}-\sigma^2_{\Delta\delta}$. 
 We plot the $\theta$ vs square root of $\tau$ in Figure
 \ref{thetatau}. A least square fit to the distance results in
 $D_{1{\rm e}}=1023\pm 27$ pc for the  $0.4$\ ms group, which we call lens 1, and
@@ -428,12 +440,18 @@ rotation.
 
 \subsubsection{Discussion of one lens model}
 
-The $0.4$ ms group lens solution appears consistent with the premise of the inclined
-sheet lensing model \citep{2014MNRAS.442.3338P}, which predicts
-collinear positions of lensing images.
+The $0.4$ ms group lens solution appears consistent with the premise
+of the inclined sheet lensing model \citep{2014MNRAS.442.3338P}, which
+predicts collinear positions of lensing images.  The time in last
+column of Table \ref{table:apex}, which we denote as $t_0$, is
+calculated with $-2{\tau}f/{f_{D}}$, corresponds to the time required
+for the delay of an arclet to cross zero.
 
-The time in last column of Table \ref{table:apex}, which we denote as $t_0$, is calculated with $-2{\tau}f/{f_{D}}$,
-corresponds to the time required for the delay of an arclet to cross zero.
+The collinearity can be considered a postdiction of this model.  The
+precise positions of each image is random, and with 9 images no
+precision test is possible.  The predictive power of sheet model
+becomes clear in the presence of a second, off-axis, screen.  This
+will be discussed below.
 
 %Knowing time delay ${\tau}$, we can calculate the distance of the screen; knowing the angular position of point 5 and its differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation differential frequency, we can get the position of points $1$--$4$. 
 
@@ -712,9 +730,18 @@ these points, in addition to the double lenses images.
 \begin{figure}
 \centering
 \includegraphics[width=1.0\linewidth]{Reflection_angle.png}
-\caption{  ($\pi$-$\protect\angle$AHB) vs $\theta_{1\parallel}$.
+\caption{Deflection angle $\beta=\pi-\protect\angle$AHB on lens 2.  Point J denotes the expected
+  deflected to form a single deflection image, which was not
+  observed.   The small change in angle relative to the observed
+  images precludes a finite refraction cutoff, since the data spans
+  10\% bandwidth, with a 20\% change in refractive strength.  We
+  propose a swallowtail caustic as the likely origin for the
+  termination of the second lens sheet.
+%  ($\pi$-$\protect\angle$AHB) vs $\theta_{1\parallel}$.
 %vs $\theta_{\parallel}$.}
-$\beta_J$ is calculated with J as the lensed image on lens 2, when $\theta_{1\parallel}=-3.19$ mas.}
+%$\beta_J$ is calculated with J as the lensed image on lens 2, when
+%$\theta_{1\parallel}=-3.19$ mas.
+}
 \label{vtrans}
 \end{figure}
 
@@ -809,8 +836,11 @@ amplitude of the surface waves.
 We have applied the \citep{2014MNRAS.442.3338P} inclined
 sheet model to archival apex data of PSR B0834+06.  The data is well
 fit by two linear lensing screens, with nearly plane-parallel
-geometry.  This appears a natural consequence of very smooth
-reconnection sheets, and are an unlikely outcome of ISM turbulence.
+geometry.  The second screen provides a precision test with 10
+observables and 3 free parameters.  The model fits the data to a
+non-trivial 1\% on 7 points.
+This natural consequence of very smooth
+reconnection sheets is an unlikely outcome of ISM turbulence.
 These results, if extrapolated to multi-epoch observations of binary
 systems, might result in accurate distance determinations and
 opportunities for removing scattering induced timing errors.
