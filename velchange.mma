@@ -1,0 +1,76 @@
+(* velocity transformation from equatorial to galactic 
+    based on http://arxiv.org/pdf/1306.2945v2.pdf *)
+
+
+alphag=192.85948*Pi/180
+deltag=27.12825*Pi/180
+lomega=32.93192*Pi/180
+
+alpha=129.27351*Pi/180
+delta=6.17071*Pi/180
+C1=Sin[deltag]*Cos[delta]-Cos[deltag]*Sin[delta]*Cos[alpha-alphag]
+C2=Cos[deltag]*Sin[alpha-alphag]
+
+cosb=Sqrt[C1^2+C2^2]
+rotation={{C1,C2},{-C2,C1}}/cosb
+
+muequatorial={2.14,51.64}
+mugalactic=rotation.muequatorial
+
+
+GL=219.72*Pi/180
+GB=26.27*Pi/180
+(* from http://en.wikipedia.org/wiki/Stellar_kinematics km/s *)
+U=10.  (* moving away from pulsar *)
+V=5.23  (* towards l=90, results in positive apparent \mu_l at anticenter *)
+W=7.17  (* towards NGP, results in negative apparent \mu_b *)
+
+(* 1 km/sec at 625 pc is 3.1e10m/yr/(625*3.086e16) = 0.32mas/yr *)
+(* 1 km/sec at 640 pc is 3.1e10m/yr/(625*3.086e16) = 0.33mas/yr *)
+(* 1 km/sec at 394 pc is 3.1e10m/yr/(625*3.086e16) = 0.53/yr *)
+
+earth motion:
+
+observation on Nov 12, 39 days from winter solstice.
+
+Sun is at RA=15:26, dec=-18.4, earth is moving towards 
+ra=09:26, dec=15 degrees, this is 15 degrees from pulsar direction.  
+Projected velocity is 10km/s, about 3mas/yr for pulsar.
+about 2mas/yr for difference.
+
+earth motion direction = 2.47, 0.26 (radians)
+results in reflex motion of negative \mu_\delta, negative \mu_alpha for
+object to the other side of sun (i.e. b0834).
+define 
+z=sin(delta)
+x=cos(delta) sin(alpha)
+y=cos(delta) cos(alpha)
+
+
+earth motion:
+
+velalpha=2.47
+veldelta=0.26
+pulsarhat={Cos[delta] Sin[alpha],Cos[delta]Cos[alpha],Sin[delta]}
+velhat={Cos[veldelta] Sin[velalpha], Cos[veldelta] Cos[velalpha],Sin[veldelta]}
+velperp=velhat - pulsarhat*(velhat.pulsarhat)
+velperphat=velperp/Sqrt[velperp.velperp]
+
+dechat0={0,0,1}
+dec0=dechat0-(pulsarhat.dechat0)*pulsarhat(*orthogonal to pulsar, pointing up*)
+dechat=dec0/Sqrt[dec0.dec0]
+veldec=velperp.dechat
+velalpha=Sqrt[velperp.velperp-veldec^2]
+
+apparent motion of pulsar: \mu_dec=-30*0.33*0.154 = -1.52 mas/yr
+\mu_alpha=-30*0.33*0.205 = -2.03mas/yr
+of lens: \mu_dec=-30*0.53*0.154 = -2.45mas/yr
+\mu_alpha=-30*0.53*0.205 = -3.26mas/yr
+
+relative velocity of pulsar to lens:
+\mu_dec = 0.92 mas/yr
+\mu_alpha = 1.23 mas/yr
+
+mumodel={-6.07,62.48 }
+mumodelgalactic=rotation.mumodel
+
