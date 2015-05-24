@@ -17,9 +17,9 @@ rotation={{C1,C2},{-C2,C1}}/cosb
 muequatorial={2.14,51.64}
 mugalactic=rotation.muequatorial
 
-
 GL=219.72*Pi/180
 GB=26.27*Pi/180
+
 (* from http://en.wikipedia.org/wiki/Stellar_kinematics km/s *)
 U=10.  (* moving away from pulsar *)
 V=5.23  (* towards l=90, results in positive apparent \mu_l at anticenter *)
@@ -27,7 +27,7 @@ W=7.17  (* towards NGP, results in negative apparent \mu_b *)
 
 (* 1 km/sec at 625 pc is 3.1e10m/yr/(625*3.086e16) = 0.32mas/yr *)
 (* 1 km/sec at 640 pc is 3.1e10m/yr/(625*3.086e16) = 0.33mas/yr *)
-(* 1 km/sec at 394 pc is 3.1e10m/yr/(625*3.086e16) = 0.53/yr *)
+(* 1 km/sec at 394 pc is 3.1e10m/yr/(625*3.086e16) = 0.53mas/yr *)
 
 earth motion:
 
