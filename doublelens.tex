@@ -529,7 +529,7 @@ D_{1}&=393.7~{\rm pc}- 0~{\rm pc} = 393.7~{\rm pc},
 where $D_{p2}$ is the distance from the pulsar to lens 2, $D_{21}$ is the distance from lens 2 to lens 1, and $D_{1}$ is the distance from lens 1 to the observer.
 %We calculated with the distance of the screen which is calculated in the one lens model, and then move the distance of the far screen little by little to make the calculated time delay match the observation resul
 
-Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how light are being refracted on the first lens plane and the second lens plane. We specifically chose the point with $\theta_{1\parallel}$ equal to $-17.39$ mas, which is point 1' on lens 2 and point 1 on lens 1 as an example. We solve the solutions in double lens model by following equations:
+Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how light are being refracted on the first lens plane and the second lens plane. We specifically chose the point with $\theta_{1\parallel}$ equal to $-17.39$ mas, which is point 1' on lens 2 and point 1 on lens 1 as an example. We solve the solutions in double lens model using:
 \begin{equation}
 \begin{aligned}
 \frac{\rm JH}{D_{p2}}&=\frac{\rm HG}{D_{21}},\\
@@ -577,7 +577,8 @@ the nearest point in reference in Table
 for point $i=5',3'$, $j=4'$; for point $i=2'$, $j=1'$.
 % $\tau_1$ is the time delay from $0.4$ ms group, and $\tau_2$ is the time delay from respective $1$ ms group.
 
-For the error of differential frequency $f_D$, we use the following equation:
+For the error of differential frequency $f_D$, we add the error of the
+reference point to the error of each other measured point:
 \begin{equation}
 \begin{aligned}
 (\frac{\sigma_{f_i}}{f_{Di}})^2=(\frac{\sigma_{f_{Di}}}{f_{Di}})^2+(\frac{\sigma_{f_{D2}}}{f_{D2}})^2
