@@ -49,8 +49,8 @@ $^6$ ASTRON, the Netherlands Institute for Radio Astronomy, Postbus 2, 7990 AA, 
 \maketitle
 \label{firstpage}
 \begin{abstract}
-We analyse archival VLBI data of PSR
-B0834+06, concluding that for this example the plasma lenses can be
+By analysing archival VLBI data of PSR
+B0834+06, we conclude that for this example the plasma lenses can be
 precisely modelled using the inclined sheet model \citep{2014MNRAS.442.3338P},
 resulting in two distinct lens planes.  This data strongly favours the
 grazing sheet model over turbulence as the primary source of
@@ -88,7 +88,7 @@ weakest measurements for most pulsars is their direct geometric
 distance.  For some pulsars, timing parallax or VLBI parallax has
 resulted in direct distance determination.  For most pulsars, the
 distance is a major uncertainty for precision timing interpretations,
-including mass, moment of inertia\citep{2006Sci...314...97K,2012hpa..book.....L}, and
+including mass, moment of inertia \citep{2006Sci...314...97K,2012hpa..book.....L}, and
 gravitational wave direction \citep{boyle2012}.
 
 Direct VLBI observation of PSR B0834+06 shows multiple images lensed
@@ -113,7 +113,7 @@ quantify the lensing screen.
 \section{Lensing}
 
 In this section we map the data onto the grazing incidence sheet
-model.  The folded sheet model is qualitatively analogous to a
+model.  The folded sheet model is qualitatively analogous to the
 reflection of a street lamp across a lake as seen from the opposite
 shore.  In the absence of waves, exactly one image forms at the point
 where the angle of incidence is equal to the angle of reflection.  In
@@ -122,23 +122,23 @@ below the unperturbed image.  The grazing angle geometry simplifies
 the lensing geometry, effectively reducing it from a two dimensional problem to
 one dimension.  The statistics of such reflections is sometimes called
 glitter, and has many solvable
-properties\citep{LonguetHiggins1960}. 
+properties \citep{LonguetHiggins1960}. 
 A similar effect occurs when the
 observer is below the surface.  Two major distinctions arise: 1. the
 waves can deform the surface to create caustics in projection. Near
 caustics, Snell's law can lead to highly amplified refraction
 angles. 2. due to the odd image theorem, each caustic leads to two
 images.  In practice, the surface could be caused be reconnection
-sheets\citep{2015MNRAS.450.3201B}, which have finite widths to
+sheets \citep{2015MNRAS.450.3201B}, which have finite widths to
 regularize these singularities. Diffusive structures have Gaussian
 profiles, which was analysed in \citep{2012MNRAS.421L.132P}.  The
-lensing details differ for convergent (underdense) vs divergent
+lensing details differ for convergent (underdense) {\it vs} divergent
 (overdense) lenses, first considered by \citep{1998ApJ...496..253C}.
 
 The generic interstellar electron density is insufficient to deflect
 radio waves by the observed $\sim$ mas bending angles. At grazing
 incidence, Snell's law results in an enhanced bending angle, which
-formally diverges.  Magnetic discontinuities generically propagate
+formally diverges. Magnetic discontinuities generically propagate
 as transverse surface waves, whose restoring force is the change in Alfv\'en
 speed on the two sides of the discontinuity. This completes the
 analogy to waves on a lake: for sufficiently inclined sheets the waves
@@ -157,7 +157,7 @@ A large number of sheets might intersect the line of sight to any
 pulsar. Only those sufficiently inclined would lead to caustic
 formation. Empirically, some pulsar scattering appears dominated by a
 single sheet, leading to the prominent inverted
-arclets\citep{2001ApJ...549L..97S}.
+arclets \citep{2001ApJ...549L..97S}.
 
 \subsection{Archival data of B0834+06}
 \label{21}
@@ -178,21 +178,17 @@ As described in \citep{2010ApJ...708..232B}, the inverse parabolic
 arclets were fitted to positions of their apexes, resulting in a
 catalogue of apexes in each sub-band, each with delay and differential
 frequency.  As previously described, the positions of the apexes
-appears constant across sub-bands.  In this work, we first combine the
+appear constant across sub-bands.  In this work, we first combine the
 apexes across sub-bands, resulting in a single set of images.  We focus on
 the southern group with negative differential frequency: this
-grouping appears as a likely candidate for a double lensing screen
-since two groups appear distinct in both the VLBI angular positions, and the
-secondary spectra.
-We divide the apex data with negative differential frequency into two
+grouping appears as a likely candidate for a double lensing screen. However, two groups (with positive/negative differential frequency) appear distinct in both the VLBI angular positions and the secondary spectra. We divide the apex data with negative $f_D$ into two
 groups: in one group, time delay ranges from $0.1$ ms to $0.4$ ms,
 which we call $0.4$ ms group, and in the other group, time delay at
-about $1$ ms, which we call $1$ ms group.  In summary, the
+about $1$ ms, which we call $1$ ms group. In summary, the
 $0.4$ ms group contains $10$ apexes in the first two sub-bands, and $14$ apexes in the last two sub-bands; the $1$ ms group, contains $5$, $6$, $5$ and $4$ apexes in the four sub-bands subsequently, with center frequency of each band $f_{\rm band}=314.5, 322.5, 330.5$ and $ 338.5$ MHz. 
 
-We select the equivalent apexes from four sub-bands. To match the same apexes in different sub-bands, we scale the differential frequency in different sub-bands to $322.5$ MHz, by $f_D/f_{\rm band}\cdot322.5$ MHz. We map
-a total of $9$ apexes from the $0.4$ ms group, and $5$ apexes from the $1$ ms
-group. This results in an estimation
+We select the equivalent apexes from four sub-bands. To match the same apexes in different sub-bands, we scale the differential frequency in different sub-bands to $322.5$ MHz, by $f_D/f_{\rm band}\cdot322.5$ MHz. A total of $9$ apexes from the $0.4$ ms group and $5$ apexes from the $1$ ms
+group, were mapped by adjacent positions. This results in an estimation
 for the mean referenced frequency $f=322.5$ MHz and a standard deviation among four sub-bands, listed in Table
 \ref{table:apex}. The $f_D$ and $\tau$ are the mean values of the four sub-bands,
 %$\bar{x}={\sum\limits^{n=4}_{i=1}{x_i}}/{4}$, x is for $f_D$ or $\tau$.
@@ -283,7 +279,7 @@ D_{\rm e} \equiv \frac{2c\tau}{\theta^2}.
 \end{equation}
 And the differential frequency is related to the change rate of delay
 as $f_D  =-f\frac{\rm d\tau}{\dif t}$.  The effective distance
-corresponds to the pulsar distance $D_{\rm p}$ if the screen is exactly halfway.
+corresponds to the pulsar distance $D_{\rm p}$, if the screen is exactly halfway.
 In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
     s}})$ for a screen at $D_{\rm s}$.
 
@@ -317,11 +313,10 @@ In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
 \end{figure}
 
 
-When estimating the
-angular offset of each apex
-we subtract the expected noise bias to cancel noise bias:
+When estimating the angular offset of each apex,
+we subtract the expected noise bias:
 ${\theta}^2=({\Delta\alpha}\cos(\delta))^2+({\Delta\delta})^2-\sigma^2_{\Delta\alpha}-\sigma^2_{\Delta\delta}$. 
-We plot the $\theta$ vs square root of $\tau$ in Figure
+We plot the $\theta$ {\it vs} square root of $\tau$ in Figure
 \ref{thetatau}. A least square fit to the distance results in
 $D_{1{\rm e}}=1023\pm 27$ pc for the  $0.4$\ ms group, which we call lens 1, and
 $D_{2{\rm e}} = 1281 \pm 82$ pc for the $1$\ ms group, hereafter lens 2.
@@ -434,8 +429,8 @@ The relative model pulsar-screen velocity is $187.9$ km/s, with an angle $\epsil
 The $0.4$ ms group lens solution appears consistent with the premise
 of the inclined sheet lensing model \citep{2014MNRAS.442.3338P}, which
 predicts collinear positions of lensing images.  The time in last
-column of Table \ref{table:apex}, which we denote as $t_0$, is
-calculated with $-2{\tau}f/{f_{D}}$, corresponds to the time required
+column of Table \ref{table:apex}, denoted as $t_0$, is
+calculated with $-2{\tau}f/{f_{D}}$, corresponding to the time required
 for the delay of an arclet to cross zero.
 
 The collinearity can be considered a post-diction of this model.  The
@@ -472,15 +467,15 @@ caustics for 3-$\sigma$ waves, which occur two hundred times less
 often.  Thus, one expects such sheets to only form isolated caustics,
 which we expect to see occasionally.  Three free parameters describe a
 second caustic: distance, angle, and angular separation.  We fix the
-distance from the effective VLBI distance, and fit the angular
-separation and angle using the 5 delays of the $1$ ms group.
+distances from the effective VLBI distance ($D_1$ and $D_2$), and fit the angular
+separations and angles with the 5 delays of the $1$ ms group.
 
 \subsubsection{Solving the double lens model}
 %The $v_{\parallel}$ to the plane should be equal. While for the
 %calculated positions of $1$ ms apexes, they do not. 
-Apexes 1'--5' share a similar time delay, suggesting they are lensed by
+From Table \ref{table:apex}, apexes 1'--5' share a similar time delay, suggesting they are lensed by
 a common structure.
-We denote the position of the pulsar point A, position of the lensed image on lens 2 point H, position of the lensed image on lens 1 point B, position of the observer point O, perpendicular from the pulsar to line HJ point J, the perpendicular from point H to line BD point F, and the perpendicular from point B to line HJ point G, for easier discussion.
+We denote the position of the pulsar point A, positions of the lensed image on lens 2 point H, positions of the lensed image on lens 1 point B, position of the observer point O, line AJ vertical to line HJ by intersection point J, line HF vertical to line BD by intersection point F, line BG vertical to line HJ by intersection point G, for easier discussion.
 %As what Figure \ref{first_reflect} shows, AH should be perpendicular to HE, lens 2. 
 %The plane where the light was refracted should be transverse to the line that connects the pulsar and the lensed image. 
 % marked with a solid line in Figure \ref{Doublelens}.  
@@ -491,18 +486,10 @@ We denote the position of the pulsar point A, position of the lensed image on le
 
 %Therefore, we consider another model candidate: the double lens model. Respective cal%culation shows that the light is first refracted by lens 2 and then refracted by lens 1. 
 
-The first step is to calculate the position of J. We make an estimate
-of the distance of J by the $1$ ms $\theta$--$\sqrt{\tau}$ relation,
-and then we calculated the position of J by matching the time delay of
-point 4' and point 1'. Its position is marked  in 
-Figure \ref{Doublelens}.  The solid line denotes the location of lens 2,
-and by construction perpendicular to AJ in Figure 
-\ref{Doublelens}.
+The first step is to calculate the position of J. We make an estimate of the distance of J by the $1$ ms $\theta$--$\sqrt{\tau}$ relation (refer Figure \ref{thetatau}). Then we calculated the position of J by matching the time delays of point 4' and point 1', which is then marked in Figure \ref{Doublelens}. The long solid line on the right side denotes the inferred geometry of lens 2, and by construction vertical to AJ.
 %calculate the position of the far lens (lens $1$) and the near lens (lens $2$). As what has been discussed previously, the solid line is considered to be the far lens, where the positions have a larger effective distance. And the near lens is considered to be the lines that is perpendicular to the $0.4$ ms group axis. 
 
-The second step is to find the matched pairs of those two lenses. By
-inspection, we found that the 5 furthest points in $0.4$ ms group match
-naturally to the double lens images.  These five matched lines are marked with dot dash lines in Figure \ref{Doublelens} and their values are listed in the second column in Table \ref{table:double_lens_compare}. 
+The second step is to find the matched pairs of those two lenses. By inspection, we found that the 5 furthest points in $0.4$ ms group match naturally to the double lens images. These five matched lines are marked with dot dash lines in Figure \ref{Doublelens} and their values are listed in the second column in Table \ref{table:double_lens_compare}. 
 They are the located at a distance $388$ pc away from us. Here we define three distances:
 \begin{equation}
 \begin{aligned}
@@ -514,7 +501,7 @@ D_{1}&=388~{\rm pc}- 0~{\rm pc} = 388~{\rm pc},
 where $D_{p2}$ is the distance from the pulsar to lens 2, $D_{21}$ is the distance from lens 2 to lens 1, and $D_{1}$ is the distance from lens 1 to the observer.
 %We calculated with the distance of the screen which is calculated in the one lens model, and then move the distance of the far screen little by little to make the calculated time delay match the observation resul
 
-Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how light are being refracted on the first lens plane and the second lens plane. We specifically choose the points with $\theta_{1\parallel}$ equal to $-17.39$ mas, which is point 1' on lens 2 and point 1 on lens 1 as an example. We solve the solutions in double lens model using:
+Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how light are being refracted on the first lens plane and the second lens plane. We specifically choose the points with $\theta_{1\parallel}$ equal to $-17.39$ mas, which refer point 1' on lens 2 and point 1 on lens 1 as an example. Considering the velocity of the photon parallel to the lens plane before and after refraction should be equal, we solve the solutions in double lens model using:
 \begin{equation}
 \begin{aligned}
 \frac{\rm JH}{D_{p2}}&=\frac{\rm HG}{D_{21}},\\
@@ -529,8 +516,7 @@ Figure \ref{first_reflect} and Figure \ref{second_reflect} are examples of how l
 \caption{Refraction on lens 2. 
 %The x axis marks the distance in the direction that is parallel to lens 2, and the y axis marks the distance in the direction that is transverse to the lens 2. 
 A is the position of the pulsar. H is the lensed image on lens 2. B is
-the lensed image on lens 1. J is the perpendicular of A to lens 2, and
-G is the perpendicular of B to lens 2. The values are illustrated for point 1'.}
+the lensed image on lens 1. AJ $\bot$ HJ and BG $\bot$ HJ. The values are illustrated for point 1'.}
 \label{first_reflect}
 \end{figure}
 
@@ -539,10 +525,7 @@ G is the perpendicular of B to lens 2. The values are illustrated for point 1'.}
 \includegraphics[width=1.0\linewidth]{Second_reflection.png}
 \caption{Refraction on lens 1. 
 %x axis marks the distance in the direction that is parallel to the second lens, and the y axis marks the distance in the direction that is transverse to the second lens. 
-H is the lensed image on lens 2. B is the lensed image on lens 1. O is
-the position of the observer. F is the perpendicular of H to lens 2,
-and D is the perpendicular of O to lens 2. 
- As in the previous figure, the values are illustrated for point 1'. }
+H is the lensed image on lens 2. B is the lensed image on lens 1. O is the position of the observer. HF $\bot$ DF and OD $\bot$ HJ. As in the previous figure, the values are illustrated for point 1'. }
 \label{second_reflect}
 \end{figure}
 
@@ -567,8 +550,7 @@ the nearest point in reference in Table
 for point $i=5',3'$, $j=4'$; for point $i=2'$, $j=1'$.
 % $\tau_1$ is the time delay from $0.4$ ms group, and $\tau_2$ is the time delay from respective $1$ ms group.
 
-For the error of differential frequency $f_D$, we add the error of the
-reference point to the error of each other measured point:
+For the error of differential frequency $f_D$, we add the error of the reference point (point 4') to the error of each other measured point:
 \begin{equation}
 \begin{aligned}
 (\frac{\sigma_{f_i}}{f_{Di}})^2=(\frac{\sigma_{f_{Di}}}{f_{Di}})^2+(\frac{\sigma_{f_{D4'}}}{f_{D4'}})^2
@@ -580,32 +562,23 @@ and its error of the point in the fourth row in Table
 % $i=1,3,4,5$ for the subscription.
 
 \subsubsection{Comparing model results in double lens model with observations}
-Comparing $\tau$, we calculated time delay $\tau_M$ for these five
+In order to compare $\tau$, we calculate time delay $\tau_M$ for these five
 points, and list the results in Table
 \ref{table:double_lens_compare}. For points 4' and 1', they fit by
-construction since we use these to calculate the position of J; for the remaining three points, all of the calculated results are within 3-$\sigma$ of the observed time delays.
+construction since we use these to calculate the position of J; for the remaining three points, all of the results are within 3-$\sigma$ of the observed time delays.
 
-To compare differential frequency $f_D$, we need to calculate the
-velocity of the pulsar and the velocity of the lens. We take the
-lenses to be relative static, and solve for the velocity of the pulsar
-relative to the lens.  The pulsar has two velocity components, and the
-two 1-D lenses effectively determine one component each.
+To compare differential frequency $f_D$, we need to calculate the velocity of the pulsar and the velocity of the lens. We take the lenses to be relative static, and solve for the velocity of the pulsar relative to the lens (in geocentric coordinate). The pulsar has two velocity components, and the two 1-D lenses effectively determine one component each.
 %To calculate the velocity of the pulsar, we need two components, the
 %$v_{\parallel}$ in ${\parallel}$ direction, and $v_{\bot}$ in ${\bot}$
 %direction.%, which is defined in Section \ref{subsec:angularpos}. 
-For $v_{\parallel}$, we derive the velocity $175.6 \pm 2.7$ km/s from $f_D$ of the points 1 in $0.4$ ms group.  The direct
-observable is the time to crossing of each caustic, denoted $t_0$ in
-Table \ref{table:apex}. 
+For $v_{\parallel}$, we derive the velocity $175.6 \pm 2.7$ km/s from $f_D$ of point 1 in $0.4$ ms group.  The direct observable is the time to crossing of each caustic, denoted $t_0$ in Table \ref{table:apex}. 
 %For the velocity of lens 2, because it is a line, and we do not consider radial velocity, so it could only be in the direction of AJ. However, $\angle$DAJ is $82\degree$ so $v_{\%bot}$ and $v_{\rm lens2}$ are nearly degenerate. In the following discussion, we consider lens 2 to be static and only take $v_{\bot}$ into account.
 
-To calculate $v_{\bot}$, we choose the point 4', which has the smallest
-errorbar of differential frequency.
+To calculate $v_{\bot}$, we choose the point 4', which has the smallest errorbar of differential frequency.
 % In a time period of $6500$ s, the
 %$v_{\bot}$ is calculated to be $6.85$ km/s, in the direction pointing
 %from B to D, to make the calculated $f_{D2}$ match the observation $f_D$. 
-With $v_{\bot}$ to be $66.8\pm 2.8$ km/s, we find $v_{\rm tot}=187.9 \pm 2.8$ km/s, with an angle $\epsilon=4\degree.34$ west of north. This velocity represent the pulsar's relative velocity to the earth, subtracts the screen's relative velocity to the earth. The model derived and observation relative velocity (relative to the sun and relative to the Local Standard of Rest) are listed in Table \ref{Table:velocity}. The
-direction of the model velocity is marked on the top of the star in
-Figure \ref{Doublelens}.
+With $v_{\bot}$ to be $66.8\pm 2.8$ km/s, we find $v_{\rm tot}=187.9 \pm 2.8$ km/s, with an angle $\epsilon=4\degree.34$ west of north. This velocity represents the pulsar's relative velocity to the earth, subtracting the screen's relative velocity to the earth. The model derived and observation velocities (heliocentric and in Local Standard of Rest) are listed in Table \ref{Table:velocity}. The direction of the model velocity is marked on the top of the star in Figure \ref{Doublelens}.
 
 %\begin{table*}
 %\centering
@@ -663,10 +636,7 @@ only moving slowly ($\sim 30$km/s).
 %The error region of the velocity, which is determined by the error region of $f_D$ is $187.4-197.4$ km/s, the angular velocity region is $\mu_a=-4.71$-$-4.96$ mas/year and $\mu_d=61.8$-$65.1$ mas/year. 
 
 
-With this velocity of the pulsar, we calculate the differential
-frequency $f_M$ of points 5',3',2' and 1'. Results are listed in Table
-\ref{table:double_lens_compare}. The calculated results all lie in the
-3-$\sigma$ error intervals of the observed data. 
+With this velocity of the pulsar, we calculate the differential frequency $f_M$ of points 5',3',2' and 1'. Results are listed in Table \ref{table:double_lens_compare}. The calculated results all lie within the 3-$\sigma$ error intervals of the observed data. 
 
 
 
@@ -741,7 +711,7 @@ near double lens image 1, and thus only intersections with the closer
 lens plane caustic south of image 1 are double lensed.
 
 This is a generic outcome of a swallowtail
-catastrophe\citep{Arnold1990}.   In this picture, the sheet just
+catastrophe \citep{Arnold1990}. In this picture, the sheet just
 starts folding near point 5'.  North of point 5', no fold appears in
 projection.  Far south of point 5', a full fold exhibits two caustics
 emanating from the fold cusp.  Near the cusp the magnification is the
@@ -817,9 +787,9 @@ position.  Three distances are unknown, equal to the number of
 observables.  Unfortunately, these measurements are degenerate, which
 can be seen as follows. From the two screens $i=1,2$, the two single
 deflection effective distance observables are
-$D_{i{\rm e}} \equiv c\tau_i/\theta_i^2=D_i^2(1/D_i+1/D_{pi})$.  A third
+$D_{i{\rm e}} \equiv 2c\tau_i/\theta_i^2=D_i^2(1/D_i+1/D_{pi})$.  A third
 observable effective distance is that of screen 2 using screen 1 as a
-lens, $D_{21{\rm e}}=D_1^2(1/D_1+1/D_{21})$, which is algebraically
+lens, $D_{21{\rm e}}=D_1^2(1/D_1+1/D_{21})$, within the triangle that is formed by lens 1, lens 2 and the observer. That is also algebraically
 derivable from the first two relations:
 $D_{{21}{\rm e}}=D_{1{\rm e}}D_{2{\rm e}}/(D_{2{\rm e}}-D_{1{\rm e}})$.  
 
@@ -828,15 +798,15 @@ $D_{{21}{\rm e}}=D_{1{\rm e}}D_{2{\rm e}}/(D_{2{\rm e}}-D_{1{\rm e}})$.
 %and a measurement of the effective distances does not in fact add
 %additional constraints.
 
-In this archival data set the direct single lens from the further
+In this archival data set, the direct single lens from the further
 plane at position J is missing.  It would have been visible $57$ days
 earlier. The difference in time delays to image J and the double
-reflection images would allow a direct determination of the effective
+refraction images would allow a direct determination of the effective
 distance to lens plane 2.  Due to the close to 90 degree angle $\angle$DAJ
 between lenses, the effect would be about a factor of 10 ill
-conditioned.  with sufficiently precise VLBI imaging one could
+conditioned.  With sufficiently precise VLBI imaging one could
 distinguish if the double refracted images are at position B (if
-screen 1 is closer) or position H.  As described above, we interpret
+lens 1 is closer to the observer) or position H (if lens 2 is closer to the observer).  As described above, we interpret
 the effective distances to place screen 2 further away.
 
 \section{Discussions}
@@ -857,15 +827,15 @@ equilibrium, gas rotates slower as its pressure scale height
 increases, which appears consistent with the observed slightly slower
 than co-rotating motion.  The modest lens velocities also appear
 consistent with the general motion of the ISM, perhaps driven by
-galactic fountains\citep{1976ApJ...205..762S} at these latitudes above
+galactic fountains \citep{1976ApJ...205..762S} at these latitudes above
 the disk.  In the inclined sheet model, the waves move at Alfv\'enic
 speed, but due to the high inclination, will move sub percent of this
 speed in projection on the sky, and completely negligible compared to
 other sources of motion.
 
-Alternative models, for example evaporating
-clouds\citep{1998ApJ...498L.125W} or strange
-matter\citep{2013PhLB..727..357P}, do not make clear predictions.  One
+Alternative models, for example, evaporating
+clouds \citep{1998ApJ...498L.125W} or strange
+matter \citep{2013PhLB..727..357P}, do not make clear predictions.  One
 would expect higher proper motions from these freely orbiting sources,
 larger future scintillation samples may constrain these models.
 
@@ -880,8 +850,8 @@ One might expect to reach the end of the sheet within decades.
 
 A generic prediction of the inclined sheets is a change in rotation
 measure across the scattering length.  Over 1000 AU, one might expect
-a typical RM change of $10^{-3}$ rad/m$^2$.  At low frequencies, for
-example in LOFAR or GMRT, the size of the scattering screen extends
+a typical RM (rotation measure) change of $10^{-3}$ rad/m$^2$.  At low frequencies, for
+example in LOFAR (Low-Frequency Array for radio astronomy) or GMRT (Giant Metrewave Radio Telescope), the size of the scattering screen extends
 another order of magnitude in angular size, and RM changes increase to
 $\sim 0.01$, which is plausibly measurable.
 
