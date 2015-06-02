@@ -11,6 +11,8 @@
 \usepackage[fleqn]{amsmath}
 \usepackage{gensymb}
 \usepackage{commath}
+\usepackage{deluxetable} 
+\usepackage{float}
 %\usepackage{floatrow}
 %\def\gtrsim{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
 %\renewcommand\floatpagefraction{.9}
@@ -110,6 +112,37 @@ screens.  The precise model confirms the one dimensional nature, and
 thus the small number of parameters that
 quantify the lensing screen. 
 
+
+\section{VLBI astrometry}
+
+PSR B0834+06 was observed 8 times with the Very Long Baseline Array (VLBA) between 2009 May and 2011 January.  Four 16~MHz bands spread across the frequency range 1406 -- 1692 MHz were sampled with 2 bit quantization in both circular polarizations, giving a total data rate of 512 Mbps per antenna.  The primary phase calibrator was J0831+0429, which is separated from the target by 2.1 degrees, but the target field also included an in-beam calibrator source J083646.4+061108, which is separated from PSR B0834+06 by only 5\arcmin.  The cycle time between primary phase calibrator and target field was 5 minutes, and the total duration of each observation was 4 hours.
+
+Standard astrometric data reduction techniques were applied \citep[e.g.,][]{deller12b,deller13a}, using a phase calibration solution interval of 4 minutes for the in-beam calibrator source J083646.4+061108.  J083646.4+061108 is weak (flux density $\sim$4 mJy) and its brightness varied on the level of tens of percent.  The faintness leads to noisy solutions, and the variability indicates that source structure evolution (which would be translate to offsets in the fitted target position) could be present.  Together, these two effects lead to reduce astrometric precision compared to that usually obtained with VLBI astrometry using in-beam calibration, and the results presented here could be improved upon if the observations were repeated using the wider bandwidths and higher sensitivity now available with the VLBA, potentially in conjunction with additional in-beam background sources.
+
+While a straightforward fit to the astrometric observables yields a pulsar distance with a formal error $<$1\%, the reduced $\chi^2$ of this fit is $\sim$40, indicating that the formal position errors greatly underestimate the true position errors, and that systematic effects such as the calibrator effects discussed above as well as residual ionospheric errors dominate.  Accordingly, the astrometric parameters and their errors were instead obtained by bootstrap sampling \citep{efron91a}.  These results are presented in Table~\ref{tab:vlbi}.
+
+\begin{deluxetable}{ll}
+%\tabletypesize{\footnotesize}
+\tablecaption{Fitted and derived astrometric parameters for PSR B0834+06.}
+\tablewidth{0pt}
+\startdata
+Reference right ascension (J2000)\tablenotemark{a}
+							&  08:37:5.644606(9)\\
+Reference declination (J2000)\tablenotemark{a}
+							&  06:10:15.4047(1)\\
+Position epoch (MJD)			& 55200 \\
+$\mu_{\mathrm{R.A.}}$ (mas yr$^{-1}$)	& 2.16(19) \\
+$\mu_{\mathrm{Dec}}$	(mas yr$^{-1}$) & 51.64(13)  \\
+Parallax (mas)	 				& 1.63(15) \\
+Distance (pc)					& 620(60) \\
+$v_{\mathrm T}$ (km s$^{-1}$)	& 150(15)
+\enddata
+\tablenotetext{a}{The errors quoted here are from the astrometric fit only and do not include the $\sim$1 mas position uncertainty transferred from the in--beam calibrator's absolute position.}
+\label{tab:vlbi}
+\end{deluxetable}
+
+
+
 \section{Lensing}
 
 In this section we map the data onto the grazing incidence sheet
@@ -138,7 +171,7 @@ lensing details differ for convergent (underdense) {\it vs} divergent
 The generic interstellar electron density is insufficient to deflect
 radio waves by the observed $\sim$ mas bending angles. At grazing
 incidence, Snell's law results in an enhanced bending angle, which
-formally diverges. Magnetic discontinuities generically propagate
+formally diverges.  Magnetic discontinuities generically propagate
 as transverse surface waves, whose restoring force is the change in Alfv\'en
 speed on the two sides of the discontinuity. This completes the
 analogy to waves on a lake: for sufficiently inclined sheets the waves
@@ -174,7 +207,7 @@ $\Delta\alpha$ and relative declination $\Delta\delta$.
 %$, error of $\Delta\alpha$ $\sigma_{\alpha}$ and error of
 %$\Delta\delta$ $\sigma_{\delta}$. 
 Data of each apex are collected from four dual circular polarization $8$ MHz wide sub-bands spanning the frequency range $310.5$--$342.5$ MHz. 
-As described in \citep{2010ApJ...708..232B}, the inverse parabolic
+As described in \citet{2010ApJ...708..232B}, the inverse parabolic
 arclets were fitted to positions of their apexes, resulting in a
 catalogue of apexes in each sub-band, each with delay and differential
 frequency.  As previously described, the positions of the apexes
@@ -184,7 +217,7 @@ the southern group with negative differential frequency: this
 grouping appears as a likely candidate for a double lensing screen. However, two groups (with positive/negative differential frequency) appear distinct in both the VLBI angular positions and the secondary spectra. We divide the apex data with negative $f_D$ into two
 groups: in one group, time delay ranges from $0.1$ ms to $0.4$ ms,
 which we call $0.4$ ms group, and in the other group, time delay at
-about $1$ ms, which we call $1$ ms group. In summary, the
+about $1$ ms, which we call $1$ ms group.  In summary, the
 $0.4$ ms group contains $10$ apexes in the first two sub-bands, and $14$ apexes in the last two sub-bands; the $1$ ms group, contains $5$, $6$, $5$ and $4$ apexes in the four sub-bands subsequently, with center frequency of each band $f_{\rm band}=314.5, 322.5, 330.5$ and $ 338.5$ MHz. 
 
 We select the equivalent apexes from four sub-bands. To match the same apexes in different sub-bands, we scale the differential frequency in different sub-bands to $322.5$ MHz, by $f_D/f_{\rm band}\cdot322.5$ MHz. A total of $9$ apexes from the $0.4$ ms group and $5$ apexes from the $1$ ms
@@ -429,8 +462,8 @@ The relative model pulsar-screen velocity is $187.9$ km/s, with an angle $\epsil
 The $0.4$ ms group lens solution appears consistent with the premise
 of the inclined sheet lensing model \citep{2014MNRAS.442.3338P}, which
 predicts collinear positions of lensing images.  The time in last
-column of Table \ref{table:apex}, denoted as $t_0$, is
-calculated with $-2{\tau}f/{f_{D}}$, corresponding to the time required
+column of Table \ref{table:apex}, which we denote as $t_0$, is
+calculated with $-2{\tau}f/{f_{D}}$, corresponds to the time required
 for the delay of an arclet to cross zero.
 
 The collinearity can be considered a post-diction of this model.  The
@@ -781,8 +814,8 @@ these points, in addition to the double lensed images.
 \subsection{Distance Degeneracies}
 \label{sec:degeneracy}
 With two lens screens, the number of observables increases: in
-principle one could observe both single refraction delays and angular
-positions, as well as the double refraction delay and angular
+principle one could observe both single reflection delays and angular
+positions, as well as the double reflection delay and angular
 position.  Three distances are unknown, equal to the number of
 observables.  Unfortunately, these measurements are degenerate, which
 can be seen as follows. From the two screens $i=1,2$, the two single
@@ -906,6 +939,7 @@ of the ionized ISM outside the galactic plane.
 
 We thank NSERC for support. We acknowledge helpful discussions with
 Peter Goldreich and M. van Kerkwijk. Siqi Liu thank the useful discussion with Robert Main and JD Emberson on improving the expression of the content.
+The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc.
 
 
 \newcommand{\araa}{ARA\&A}   % Annual Review of Astronomy and Astrophys.
