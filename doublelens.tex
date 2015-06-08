@@ -324,10 +324,10 @@ In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
 \caption{${\theta}$ vs ${\sqrt{\tau}}$. Two separate lines through the
   origin were fitted to the points sampled among the $0.4$ ms group
   and $1$ ms group. The solid line is the fitted line of the $0.4$ ms
-  positions, where $D_{1\rm e}=1023$ pc with an error region of
-  $\sigma_D=27$ pc. The dashed lines are the fitted lines of the $1$ ms
-  position, where $D_{2\rm e}=1281$ pc with an error region
-  $\sigma_D=82$ pc.
+  positions, where $D_{1\rm e}=1044$ pc with an error region of
+  $\sigma_D=22$ pc. The dashed lines are the fitted lines of the $1$ ms
+  position, where $D_{2\rm e}=1252$ pc with an error region
+  $\sigma_D=49$ pc.
 }
 \label{thetatau}
 \end{figure}
@@ -338,8 +338,8 @@ we subtract the expected noise bias:
 ${\theta}^2=({\Delta\alpha}\cos(\delta))^2+({\Delta\delta})^2-\sigma^2_{\Delta\alpha}-\sigma^2_{\Delta\delta}$. 
 We plot the $\theta$ {\it vs} square root of $\tau$ in Figure
 \ref{thetatau}. A least square fit to the distance results in
-$D_{1{\rm e}}=1023\pm 27$ pc for the  $0.4$\ ms group, which we call lens 1, and
-$D_{2{\rm e}} = 1281 \pm 82$ pc for the $1$\ ms group, hereafter lens 2.
+$D_{1{\rm e}}=1044\pm 22$ pc for the  $0.4$\ ms group, which we call lens 1 (point 9 is exempted for it exceeds the $3-\sigma$ region of the group), and
+$D_{2{\rm e}} = 1252 \pm 49$ pc for the $1$\ ms group, hereafter lens 2.
 The errors, and uncertainties on the error, precludes a definitive
 interpretation of the apparent difference in distance.  At face value, 
 this indicates that the lens 2 is closer to the pulsar, and we will
@@ -355,12 +355,12 @@ consequences of alternate interpretations in Section \ref{sec:degeneracy}.
 %possible, but it nevertheless illustrates a robust interpretation of
 %the data.
 The pulsar distance was directly measured using VLBI parallax to be
-$D_{\rm p} = 625 \pm 59$ pc.  
+$D_{\rm p} = 620 \pm 60$ pc.  
 %For modelling purposes, we will use
 %$D_{\rm p} = 640$ pc, consistent with the direct measurement.  
-We take $D_{1{\rm e}}=1023$ pc,  and the distance of lens 1 $D_{1}$,
-where $0.4$ ms group scintillation points are refracted, as $388$
-pc. Similarly, for $1$ ms apexes, the distance of lens 2 is taken as $420$ pc,
+We take $D_{1{\rm e}}=1044$ pc,  and the distance of lens 1 $D_{1}$,
+where $0.4$ ms group scintillation points are refracted, as $389$
+pc. Similarly, for $1$ ms apexes, the distance of lens 2 is taken as $415$ pc,
 slightly closer to the pulsar.
 %From time delay $\tau$ and the angular position of the pulsar, we obtained the effective distance of the pulsar as follows: 
 %for $0.4$ ms group, $D_{\rm e}=1017\pm2.8$\ pc; 
@@ -513,9 +513,9 @@ The second step is to find the matched pairs of those two lenses. By inspection,
 They are the located at a distance $388$ pc away from us. Here we define three distances:
 \begin{equation}
 \begin{aligned}
-D_{p2}&=625~{\rm pc}-420{\rm pc} =205~{\rm pc},\\
-D_{21}&=420~{\rm pc}-391~{\rm pc} =29~{\rm pc},\\
-D_{1}&=391~{\rm pc}- 0~{\rm pc} = 391~{\rm pc}, 
+D_{p2}&=620~{\rm pc}-415{\rm pc} =205~{\rm pc},\\
+D_{21}&=415~{\rm pc}-389~{\rm pc} =26~{\rm pc},\\
+D_{1}&=389~{\rm pc}- 0~{\rm pc} = 389~{\rm pc}, 
 \end{aligned} 
 \end{equation}
 where $D_{p2}$ is the distance from the pulsar to lens 2, $D_{21}$ is the distance from lens 2 to lens 1, and $D_{1}$ is the distance from lens 1 to the observer.
@@ -626,15 +626,14 @@ With $v_{\bot}$ to be $67.3\pm 2.8$ km/s, we find $v_{\rm tot}=186.3 \pm 2.8$ km
 
 \begin{table*}
 \centering
-\begin{tabular}{c|cccc}
+\begin{tabular}{c|cccccc}
 \hline
-Parameter & $\mu_{\alpha*}$(mas/year) & $\mu_{\delta}$(mas/year) &
-$\mu_{l*}$(mas/year) & $\mu_b$ (mas/year)\\
+Parameter & $\mu_{\alpha*}$(mas/year) & $\mu_{\delta}$(mas/year) & $\mu_{l*}$(mas/year) & $\mu_b$ (mas/year) & $v_{l*}$ (km/s) & $v_b$ (km/s) \\
 \hline
-model pulsar-screen velocity & $-6.11 \pm 0.95$  & $62.43 \pm 0.95$  & $-56.59$ & 21.89 \\
+model pulsar-screen velocity & $-6.11 \pm 0.95$  & $62.43 \pm 0.95$  & $-58.02$ & 21.63 &  0 & 0\\
 %VLBI pulsar proper motion & $2.14 \pm 0.21$ & $51.64\pm 0.13$ &$45.32\pm 0.49$ %& $46.51 \pm 0.20$\\
-VLBI pulsar proper motion & $2.14 \pm 0.21$ & $51.64 \pm 0.13$ & $-46.68$ & 27.98\\
-Screen motion & $\cdots$ & $\cdots$  & 10.53 & 6.09 \\
+VLBI pulsar proper motion & $2.16 \pm 0.19$ & $51.64 \pm 0.13$ & $-46.69$ & 28.02 & -137.24 & 82.34 \\
+Screen motion & $\cdots$ & $\cdots$  & 10.27 & 7.83 & 18.94 & 14.44\\
 %pulsar proper motion (relative to earth) & $-7.52$ &  $53.5$ & $28.99$  & $52.1$ \\
 %l=45.3157,44.8243,45.8071
 %b=46.5138,46.3109,46.7166
@@ -643,7 +642,7 @@ Screen motion & $\cdots$ & $\cdots$  & 10.53 & 6.09 \\
 \caption{Summary of velocities in double lens model. The velocities
 listed in equatorial coodinates are the relative velocity in
 heliocentric system, while the velocities in galactic coordinates are
-the relative velocities in LSR (Local Standard of Rest). The screen is
+the relative velocities in LSR (Local Standard of Rest). $\mu_{\alpha*}=\Delta_\alpha*\cos(\delta)/t$ and $\mu_{l*}=\Delta_l*\cos(b)/t$, for we moved the center position from $(\alpha,\delta)$ or $(l,b)$ to (0,0). The screen is
 only moving slowly ($\sim 30$km/s).
 % Galactic proper motion are listed relative to LSR.
 }
