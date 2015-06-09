@@ -265,9 +265,10 @@ We estimate the error of time delay $\tau$, differential frequency
 $f_D$, $\Delta\alpha$ and $\Delta\delta$  listed in Table
 \ref{table:apex} from their band-to-band variance:
 \begin{equation}
-\sigma^2_{\rm \tau, f_D,\Delta\alpha, \Delta\delta} = \frac{1}{n(n-1)}\sum^{4}_{i=1}(x_i-\bar{x})^2,
+\sigma^2_{\rm \tau, f_D,\Delta\alpha, \Delta\delta} = \frac{1}{n}\sum^{4}_{i=1}\frac{(x_i-\bar{x})^2}{n-1},
 \end{equation}
-and n is the number of sub-bands.
+and n is the number of sub-bands. The outer $1/n$ accounts for the expected
+variance of a mean of $n$ numbers.
 % This is also how we calculate the sample error of $\Delta\alpha$ and $\Delta\delta$, marked with errorbars in Figure \ref{Doublelens}.
 
 %For the circles in Figure \ref{Doublelens}, they are calculated by following equation:
