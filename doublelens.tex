@@ -137,9 +137,10 @@ reflection of a street lamp across a lake as seen from the opposite
 shore, as what is shown in Figure \ref{fig:sheetgeom}.
 
 \begin{figure*}
+\vspace{-1.5in}
 \centerline{\epsfig{file=sheetgeom.eps,width=7.5in}}
-\vspace{-6in}
-\caption{Lensing geometry. The earth is on the left and the pulsar is on the right. A section of the (crumpled) scattering sheet is shown in the middle as the solid line. It might be a plasma underdensity or overdensity of constance thickness. The dashed line shows the unperturbed light path. The dotted line shows the path of an iamge by a fold singularity of the prjected sheet. The long-dashed line shows the position of the sheet in the absence of waves. The inclination between this sheet and the line of sight is $\alpha$, in this plot $1/8$, chosen to exaggerate the effect for visual clarity and to reduce the computational cost. In practice, we envision values closer to $10\e{-3}$.
+\vspace{-7.5in}
+\caption{Lensing geometry. The earth is on the left and the pulsar is on the right. A section of the (crumpled) scattering sheet is shown in the middle as the solid line. It might be a plasma underdensity or overdensity of constance thickness. The dashed line shows the unperturbed light path. The dotted line shows the path of an iamge by a fold singularity of the prjected sheet. The long-dashed line shows the position of the sheet in the absence of waves. The inclination between this sheet and the line of sight is $\alpha$, in this plot $1/8$, chosen to exaggerate the effect for visual clarity and to reduce the computational cost. In practice, we envision values closer to $10\e{-3}$. See \citet{2014MNRAS.442.3338P}.
 }
 \label{fig:sheetgeom}
 \end{figure*}
@@ -186,7 +187,7 @@ A large number of sheets might intersect the line of sight to any
 pulsar. Only those sufficiently inclined would lead to caustic
 formation. Empirically, some pulsar scattering appears dominated by a
 single sheet, leading to the prominent inverted
-arclets \citet{2001ApJ...549L..97S}.
+arclets \citep{2001ApJ...549L..97S}.
 
 \subsection{Archival data of B0834+06}
 \label{21}
@@ -260,7 +261,7 @@ label & $\theta_{\parallel}$(mas) & $f_D$(mHz) & $\tau$(ms)  & $\Delta\alpha$(ma
 The upper part of the table list the $0.4$ ms group data, while the $1$ ms group lie in the lower part of the table. 
 Observation data include the differential frequency $f_D$, time delay
 $\tau$ ($\tau_1$ for $0.4$ ms group and $\tau_2$ for $1$ ms group);
-$\Delta\alpha$ and $\Delta\delta$ are from the VLBI measurement. 
+$\Delta\alpha$ and $\Delta\delta$ are from the VLBI measurement (there is only one matched position for point 1, thus no error). 
 $t_0$ is the time at constant velocity for an apex to intersect the
 origin at constant speed along the main scattering parabola.  More
 details in Section \ref{21} and Section \ref{222}.
@@ -347,7 +348,7 @@ we subtract the expected noise bias:
 ${\theta}^2=({\Delta\alpha}\cos(\delta))^2+({\Delta\delta})^2-\sigma^2_{\Delta\alpha}-\sigma^2_{\Delta\delta}$. 
 We plot the $\theta$ {\it vs} square root of $\tau$ in Figure
 \ref{thetatau}. A least square fit to the distance results in
-$D_{1{\rm e}}=1044\pm 22$ pc for the  $0.4$\ ms group, which we call lens 1 (point 9 is exempted for it exceeds the $3-\sigma$ region of the group), and
+$D_{1{\rm e}}=1044\pm 22$ pc for the  $0.4$\ ms group, which we call lens 1 (point 1 is exempted for there is no error for that point, thus we cannot obtain the weighted mean for that point), and
 $D_{2{\rm e}} = 1252 \pm 49$ pc for the $1$\ ms group, hereafter lens 2.
 The errors, and uncertainties on the error, precludes a definitive
 interpretation of the apparent difference in distance.  At face value, 
@@ -651,7 +652,7 @@ Screen motion & $\cdots$ & $\cdots$  & 9.76 & 5.79 & 18.00 & 10.68\\
 \caption{Summary of velocities in double lens model. The velocities
 listed in equatorial coodinates are the relative velocity in
 heliocentric system, while the velocities in galactic coordinates are
-the relative velocities in LSR (Local Standard of Rest). $\mu_{\alpha*}=\Delta\alpha\cos(\delta)/t$ and $\mu_{l*}=\Delta l\cos(b)/t$, for we moved the center position from $(\alpha,\delta)$ or $(l,b)$ to (0,0). The screen is
+the relative velocities in LSR (Local Standard of Rest). $\mu_{\alpha*}=\Delta\alpha\cos(\delta)/t$ and $\mu_{l*}=\Delta l\cos(b)/t$, for we moved the center position from $(\Delta\alpha,\Delta\delta)$ or $(l,b)$ to (0,0). $v_{l*}$ and $v_b$ are the linear velocities relative to the LSR. The screen is
 only moving slowly ($\sim 21$ km/s).
 % Galactic proper motion are listed relative to LSR.
 }
@@ -684,7 +685,7 @@ label&$\theta_{\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau}$(ms)  & $\
 %}
 \caption{Comparison of time delay $\tau$ and the differential
   frequency $f_D$ of the observation and the model fitting result in the
-  double lens model. $\theta_{1\parallel}$ denotes the angular offsets
+  double lens model. $\theta_{\parallel}$ denotes the angular offsets
   of the corresponding images at lens 1. 
 %$\theta_{2\parallel}$ is the angle of the $1$ ms group with the component in the axis defined by $\gamma$. 
 The values with star symbols on them are the points that we use to
@@ -847,6 +848,7 @@ Standard astrometric data reduction techniques were applied \citep[e.g.,][]{dell
 While a straightforward fit to the astrometric observables yields a pulsar distance with a formal error $<$1\%, the reduced $\chi^2$ of this fit is $\sim$40, indicating that the formal position errors greatly underestimate the true position errors, and that systematic effects such as the calibrator effects discussed above as well as residual ionospheric errors dominate.  Accordingly, the astrometric parameters and their errors were instead obtained by bootstrap sampling \citep{efron91a}.  These results are presented in Table~\ref{tab:vlbi}.
 
 \begin{table}
+\caption{Fitted and derived astrometric parameters for PSR B0834+06.}
 \begin{threeparttable}
 \begin{tabular}{ll}
 %\begin{minipage}{126mm}
@@ -868,7 +870,6 @@ $v_{\mathrm T}$ (km s$^{-1}$)	& 150(15)\\
 %\enddata
 \hline
 \end{tabular}
-\caption{Fitted and derived astrometric parameters for PSR B0834+06.}
 \begin{tablenotes}
 \item[a]{The errors quoted here are from the astrometric fit only and do not include the $\sim$1 mas position uncertainty transferred from the in--beam calibrator's absolute position.}
 \end{tablenotes}
@@ -889,7 +890,7 @@ the differential frequency, and not sensitive to details of this
 model. B10 derived similar motions.  This
 motion is in broad agreement with direct VLBI proper motion
 measurement, requiring the lens to be moving slowly compared to the
-pulsar proper motion or the LSR.  The lens is $\sim$ 200 pc above the
+pulsar proper motion or the LSR.  The lens is $\sim~200$ pc above the
 galactic disk.  Matter can either be in pressure equilibrium, or in
 free-fall, or some combination thereof.  In free fall, one expects
 substantial motions.  These data rule out retrograde or radially
