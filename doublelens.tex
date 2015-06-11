@@ -134,15 +134,25 @@ quantify the lensing screen.
 In this section we map the data onto the grazing incidence sheet
 model.  The folded sheet model is qualitatively analogous to the
 reflection of a street lamp across a lake as seen from the opposite
-shore, as what is shown in Figure \ref{fig:sheetgeom}.
+shore, the geometry of the light path is shown in Figure \ref{fig:sheetgeom}.
 
 \begin{figure*}
 \vspace{-1.5in}
 \centerline{\epsfig{file=sheetgeom.eps,width=7.5in}}
 \vspace{-7.5in}
-\caption{Lensing geometry. The earth is on the left and the pulsar is on the right. A section of the (crumpled) scattering sheet is shown in the middle as the solid line. It might be a plasma underdensity or overdensity of constance thickness. The dashed line shows the unperturbed light path. The dotted line shows the path of an iamge by a fold singularity of the prjected sheet. The long-dashed line shows the position of the sheet in the absence of waves. The inclination between this sheet and the line of sight is $\alpha$, in this plot $1/8$, chosen to exaggerate the effect for visual clarity and to reduce the computational cost. In practice, we envision values closer to $10\e{-3}$. See \citet{2014MNRAS.442.3338P}.
+\caption{Lensing geometry (reproduced from \citet{2014MNRAS.442.3338P}). See text for details.
 }
 \label{fig:sheetgeom}
+\end{figure*}
+
+For analogy, we made a photography Figure \ref{fig:water_reflection} by the side of Ontario Lake, to show how the light are being reflected by the light of the buildings in downtown Toronto.
+
+\begin{figure*}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\linewidth, angle=0]{water_reflection.JPG}
+\caption{The water reflections of the buildings on the shore. The water reflection of a single light source lie in a straight line. Because the light sources are not close to the edge, we cannot see a separation to the edge, due to the critical angle of reflection.}
+\label{fig:water_reflection}
 \end{figure*}
 
 In the absence of waves, exactly one image forms at the point
@@ -311,7 +321,15 @@ And the differential frequency is related to the rate of change of delay
 as $f_D  =-f\frac{\rm d\tau}{\dif t}$.  The effective distance
 corresponds to the pulsar distance $D_{\rm p}$, if the screen is exactly halfway.
 In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
-    s}})$ for a screen at $D_{\rm s}$.
+    s}})$ for a screen at $D_{\rm s}$. Figure \ref{fig:Single_degeneracy} shows two sets of $D_p$, $D_s$ with one $D_e$.
+
+\begin{figure*}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\linewidth, angle=0]{single_degeneracy.png}
+\caption{A single reflected light path showing the distance degeneracy. O denotes the observer; A and A' are denote the positions of the pulsar; D and D' denote the positions of the reflected images on the ISM. When $D_p=640~pc$, the light path is A-D-O; when $D_p=1240~pc$, the light path is A'-D'-O. They share the same time delay, angular offset and effective distance. }
+\label{fig:Single_degeneracy}
+\end{figure*}
 
 
 %analysis of the effective distance follows:
@@ -820,7 +838,23 @@ $D_{i{\rm e}} \equiv 2c\tau_i/\theta_i^2=D_i^2(1/D_i+1/D_{pi})$.  A third
 observable effective distance is that of screen 2 using screen 1 as a
 lens, $D_{21{\rm e}}=D_1^2(1/D_1+1/D_{21})$, within the triangle that is formed by lens 1, lens 2 and the observer. That is also algebraically
 derivable from the first two relations:
-$D_{{21}{\rm e}}=D_{1{\rm e}}D_{2{\rm e}}/(D_{2{\rm e}}-D_{1{\rm e}})$.  
+$D_{{21}{\rm e}}=D_{1{\rm e}}D_{2{\rm e}}/(D_{2{\rm e}}-D_{1{\rm e}})$. The light path is shown in Figure \ref{fig:double_degeneracy}.
+
+\begin{figure*}
+\centering
+\includegraphics[width=1.0\linewidth]{double_degeneracy.png}
+\caption{The geometry of the distance degeneracy of double reflected light path. O denotes the observer; A and A' denote the positions of the pulsar; H and H' denote the positions for the first reflected images; B and B' denote the positions of the second reflected images. When $D_p=640~pc$, the light path is A-H-B-O; when $D_p=1240~pc$, the light path is A'-H'-B'-O. H and H' share the same angular offset, and effective distance. B and B' share the same angular offset and effective distance.}
+\label{fig:double_degeneracy}
+\end{figure*}
+
+A 3D version light path is displayed in Figure \ref{fig:3D_image}
+\begin{figure}
+\centering
+\includegraphics[width=1.0\linewidth]{3D_image.png}
+\caption{A 3D version of light path when light is double reflected. Four planes are the plane of the pulsar, plane of lens 1, plane of lens 2 and the observer plane. Light goes from A (pulsar) to the first reflected image D, and then the second reflected image H and then the observer O.}
+\label{fig:3D_image}
+\end{figure}
+
 
 %This means that the distance
 %to all subsequent lens screens can be inferred from time delays alone,
