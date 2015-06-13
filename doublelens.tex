@@ -11,7 +11,6 @@
 \usepackage[fleqn]{amsmath}
 \usepackage{gensymb}
 \usepackage{commath}
-\usepackage{deluxetable} 
 \usepackage{float}
 \usepackage[flushleft]{threeparttable}
 %\usepackage{floatrow}
@@ -135,7 +134,28 @@ quantify the lensing screen.
 In this section we map the data onto the grazing incidence sheet
 model.  The folded sheet model is qualitatively analogous to the
 reflection of a street lamp across a lake as seen from the opposite
-shore.  In the absence of waves, exactly one image forms at the point
+shore, the geometry of the light path is shown in Figure \ref{fig:sheetgeom}.
+
+\begin{figure*}
+\vspace{-1.5in}
+\centerline{\epsfig{file=sheetgeom.eps,width=7.5in}}
+\vspace{-7.5in}
+\caption{Lensing geometry (reproduced from \citet{2014MNRAS.442.3338P} Figure 1). See text for details.
+}
+\label{fig:sheetgeom}
+\end{figure*}
+
+For analogy, we made a photography Figure \ref{fig:water_reflection} by the side of Ontario Lake, to show how the light are being reflected by the light of the buildings in downtown Toronto.
+
+\begin{figure*}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\linewidth, angle=0]{water_reflection.JPG}
+\caption{The water reflections of the buildings on the shore. The water reflection of a single light source lie in a straight line. Because the light sources are not close to the edge, we cannot see a separation to the edge, due to the critical angle of reflection. Photo taken by Michael Williams.}
+\label{fig:water_reflection}
+\end{figure*}
+
+In the absence of waves, exactly one image forms at the point
 where the angle of incidence is equal to the angle of reflection.  In
 the presence of waves, one generically sees a line of images above and
 below the unperturbed image.  The grazing angle geometry simplifies
@@ -177,7 +197,7 @@ A large number of sheets might intersect the line of sight to any
 pulsar. Only those sufficiently inclined would lead to caustic
 formation. Empirically, some pulsar scattering appears dominated by a
 single sheet, leading to the prominent inverted
-arclets \citet{2001ApJ...549L..97S}.
+arclets \citep{2001ApJ...549L..97S}.
 
 \subsection{Archival data of B0834+06}
 \label{21}
@@ -228,12 +248,12 @@ for the mean referenced frequency $f=322.5$ MHz and a standard deviation among f
 \hline
 label & $\theta_{\parallel}$(mas) & $f_D$(mHz) & $\tau$(ms)  & $\Delta\alpha$(mas) & $\Delta\delta$(mas) & $t_0$(days)\\
 \hline
-1& $-17.22$   & $-26.1(4)$    & 0.3743(6)         & 6.2(3)    & $-11.9(3)$      & $-107$                               \\
+1& $-17.22$   & $-26.1(4)$    & 0.3743(6)         & 6.2    & $-11.9$      & $-107$                               \\
 2& $-16.36$  & $-24.9(4)$      & 0.3378(3)         & 8.0(4)  & $-14.5(8)$      &$-101$                                \\
 3& $-16.08$   & $-24.6(4)$       & 0.327(3)   & 7.2(6)  & $-13.9(4)$       & $-99.0$                                \\
-4& $-14.45$   & $-22.3(5)$      & 0.2633(3)    & 6.1(3)  & $-13.1(7)$     & $-88.1$                                \\
+4& $-14.45$   & $-22.3(5)$      & 0.2633(3)    & 6.1(4)  & $-13.1(7)$     & $-88.1$                                \\
 5& $-13.68$ & $-21.2(6)$        & 0.236(2)    & 5.1(4)  & $-12.7(5)$      & $-83.3$                                \\
-6& $-13.27$ & $-20.4(5)$      & 0.222(3)     & 5.8(3)  & $-11.8(1)$    & $-81.4$                                \\
+6& $-13.27$ & $-20.4(5)$      & 0.222(3)     & 5.8(4)  & $-11.8(1)$    & $-81.4$                                \\
 7& $-12.21$   & $-18.9(2)$      & 0.188(2)   & 5.5(6) & $-10.8(6)$      & $-74.2$                        \\
 8& $-10.58$   & $-16.8(3)$      & 0.1412(9)  & 3.9(6) & $-10.0(4)$      & $-62.8$                                \\
 9& $-8.18$   & $-12.9(2)$      & 0.0845(5) & 2.8(3)  & $-8.6(4)$      & $-48.7$                                
@@ -251,7 +271,7 @@ label & $\theta_{\parallel}$(mas) & $f_D$(mHz) & $\tau$(ms)  & $\Delta\alpha$(ma
 The upper part of the table list the $0.4$ ms group data, while the $1$ ms group lie in the lower part of the table. 
 Observation data include the differential frequency $f_D$, time delay
 $\tau$ ($\tau_1$ for $0.4$ ms group and $\tau_2$ for $1$ ms group);
-$\Delta\alpha$ and $\Delta\delta$ are from the VLBI measurement. 
+$\Delta\alpha$ and $\Delta\delta$ are from the VLBI measurement (there is only one matched position for point 1, thus no error). 
 $t_0$ is the time at constant velocity for an apex to intersect the
 origin at constant speed along the main scattering parabola.  More
 details in Section \ref{21} and Section \ref{222}.
@@ -267,6 +287,7 @@ $f_D$, $\Delta\alpha$ and $\Delta\delta$  listed in Table
 \begin{equation}
 \sigma^2_{\rm \tau, f_D,\Delta\alpha, \Delta\delta} = \frac{1}{n}\sum^{4}_{i=1}\frac{(x_i-\bar{x})^2}{n-1},
 \end{equation}
+and n is the number of sub-bands. The outer $1/n$ accounts for the expected variance of a mean of $n$ numbers.
 % This is also how we calculate the sample error of $\Delta\alpha$ and $\Delta\delta$, marked with errorbars in Figure \ref{Doublelens}.
 
 %For the circles in Figure \ref{Doublelens}, they are calculated by following equation:
@@ -300,7 +321,15 @@ And the differential frequency is related to the rate of change of delay
 as $f_D  =-f\frac{\rm d\tau}{\dif t}$.  The effective distance
 corresponds to the pulsar distance $D_{\rm p}$, if the screen is exactly halfway.
 In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
-    s}})$ for a screen at $D_{\rm s}$.
+    s}})$ for a screen at $D_{\rm s}$. Figure \ref{fig:Single_degeneracy} shows two sets of $D_p$, $D_s$ with one $D_e$.
+
+\begin{figure*}
+\centering
+%\epsscale{1.0}
+\includegraphics[width=1.0\linewidth, angle=0]{single_degeneracy.png}
+\caption{A single refracted light path showing the distance degeneracy. O denotes the observer; A and A' are denote the positions of the pulsar; D and D' denote the positions of the reflected images on the interstellar medium. When $D_p=620~$pc, the light path is A-D-O, which is marked with solid lines; when $D_p=1240~$pc, the light path is A'-D'-O, marked with dot dashed lines. They share the same time delay, angular offset and effective distance. }
+\label{fig:Single_degeneracy}
+\end{figure*}
 
 
 %analysis of the effective distance follows:
@@ -337,7 +366,7 @@ we subtract the expected noise bias:
 ${\theta}^2=({\Delta\alpha}\cos(\delta))^2+({\Delta\delta})^2-\sigma^2_{\Delta\alpha}-\sigma^2_{\Delta\delta}$. 
 We plot the $\theta$ {\it vs} square root of $\tau$ in Figure
 \ref{thetatau}. A least square fit to the distance results in
-$D_{1{\rm e}}=1044\pm 22$ pc for the  $0.4$\ ms group, which we call lens 1 (point 9 is exempted for it exceeds the $3-\sigma$ region of the group), and
+$D_{1{\rm e}}=1044\pm 22$ pc for the  $0.4$\ ms group, which we call lens 1 (point 1 is exempted for there is no error for that point, thus we cannot obtain the weighted mean for that point), and
 $D_{2{\rm e}} = 1252 \pm 49$ pc for the $1$\ ms group, hereafter lens 2.
 The errors, and uncertainties on the error, precludes a definitive
 interpretation of the apparent difference in distance.  At face value, 
@@ -641,7 +670,7 @@ Screen motion & $\cdots$ & $\cdots$  & 9.76 & 5.79 & 18.00 & 10.68\\
 \caption{Summary of velocities in double lens model. The velocities
 listed in equatorial coodinates are the relative velocity in
 heliocentric system, while the velocities in galactic coordinates are
-the relative velocities in LSR (Local Standard of Rest). $\mu_{\alpha*}=\Delta\alpha\cos(\delta)/t$ and $\mu_{l*}=\Delta l\cos(b)/t$, for we moved the center position from $(\alpha,\delta)$ or $(l,b)$ to (0,0). The screen is
+the relative velocities in LSR (Local Standard of Rest). $\mu_{\alpha*}=\Delta\alpha\cos(\delta)/t$ and $\mu_{l*}=\Delta l\cos(b)/t$, for we moved the center position from $(\Delta\alpha,\Delta\delta)$ or $(l,b)$ to (0,0). $v_{l*}$ and $v_b$ are the linear velocities relative to the LSR. The screen is
 only moving slowly ($\sim 21$ km/s).
 % Galactic proper motion are listed relative to LSR.
 }
@@ -674,7 +703,7 @@ label&$\theta_{\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau}$(ms)  & $\
 %}
 \caption{Comparison of time delay $\tau$ and the differential
   frequency $f_D$ of the observation and the model fitting result in the
-  double lens model. $\theta_{1\parallel}$ denotes the angular offsets
+  double lens model. $\theta_{\parallel}$ denotes the angular offsets
   of the corresponding images at lens 1. 
 %$\theta_{2\parallel}$ is the angle of the $1$ ms group with the component in the axis defined by $\gamma$. 
 The values with star symbols on them are the points that we use to
@@ -809,7 +838,23 @@ $D_{i{\rm e}} \equiv 2c\tau_i/\theta_i^2=D_i^2(1/D_i+1/D_{pi})$.  A third
 observable effective distance is that of screen 2 using screen 1 as a
 lens, $D_{21{\rm e}}=D_1^2(1/D_1+1/D_{21})$, within the triangle that is formed by lens 1, lens 2 and the observer. That is also algebraically
 derivable from the first two relations:
-$D_{{21}{\rm e}}=D_{1{\rm e}}D_{2{\rm e}}/(D_{2{\rm e}}-D_{1{\rm e}})$.  
+$D_{{21}{\rm e}}=D_{1{\rm e}}D_{2{\rm e}}/(D_{2{\rm e}}-D_{1{\rm e}})$. The light path is shown in Figure \ref{fig:double_degeneracy}.
+
+\begin{figure*}
+\centering
+\includegraphics[width=1.0\linewidth]{double_degeneracy.png}
+\caption{The geometry of the distance degeneracy of double refracted light path. O denotes the observer; A and A' denote the positions of the pulsar; H and H' denote the positions for the first refracted images; B and B' denote the positions of the second refracted images. When $D_p=620~$pc, the light path is A-H-B-O, marked with solid lines; when $D_p=1240~$pc, the light path is A'-H'-B'-O, marked with dash dotted lines. H and H' share the same angular offset, and effective distance. B and B' share the same angular offset, marked with long dash line on the top, and effective distance; H and H' share the same angular offset, marked with long dash line on the bottem, and effective distance.}
+\label{fig:double_degeneracy}
+\end{figure*}
+
+A 3D version light path is displayed in Figure \ref{fig:3D_image}
+\begin{figure*}
+\centering
+\includegraphics[width=1.0\linewidth]{3D_image.png}
+\caption{A 3D version of light path when light is double refracted. Two planes from left to right are the plane of lens 1, and the plane of lens 2. Light goes from A (pulsar) to the first refracted image H on lens 2, and then the second refracted image H on lens 1, and finally the observer O. Dash dotted lines show the light path of single deflected light path (A-D-O). And the cross points denote the places where the un-defelected light go through the interstellar medium. Note that AJ $\bot$ HJ, and AD $\bot$ BD.}
+\label{fig:3D_image}
+\end{figure*}
+
 
 %This means that the distance
 %to all subsequent lens screens can be inferred from time delays alone,
@@ -837,6 +882,7 @@ Standard astrometric data reduction techniques were applied \citep[e.g.,][]{dell
 While a straightforward fit to the astrometric observables yields a pulsar distance with a formal error $<$1\%, the reduced $\chi^2$ of this fit is $\sim$40, indicating that the formal position errors greatly underestimate the true position errors, and that systematic effects such as the calibrator effects discussed above as well as residual ionospheric errors dominate.  Accordingly, the astrometric parameters and their errors were instead obtained by bootstrap sampling \citep{efron91a}.  These results are presented in Table~\ref{tab:vlbi}.
 
 \begin{table}
+\caption{Fitted and derived astrometric parameters for PSR B0834+06.}
 \begin{threeparttable}
 \begin{tabular}{ll}
 %\begin{minipage}{126mm}
@@ -858,7 +904,6 @@ $v_{\mathrm T}$ (km s$^{-1}$)	& 150(15)\\
 %\enddata
 \hline
 \end{tabular}
-\caption{Fitted and derived astrometric parameters for PSR B0834+06.}
 \begin{tablenotes}
 \item[a]{The errors quoted here are from the astrometric fit only and do not include the $\sim$1 mas position uncertainty transferred from the in--beam calibrator's absolute position.}
 \end{tablenotes}
@@ -879,7 +924,7 @@ the differential frequency, and not sensitive to details of this
 model. B10 derived similar motions.  This
 motion is in broad agreement with direct VLBI proper motion
 measurement, requiring the lens to be moving slowly compared to the
-pulsar proper motion or the LSR.  The lens is $\sim$ 200 pc above the
+pulsar proper motion or the LSR.  The lens is $\sim~200$ pc above the
 galactic disk.  Matter can either be in pressure equilibrium, or in
 free-fall, or some combination thereof.  In free fall, one expects
 substantial motions.  These data rule out retrograde or radially
@@ -967,7 +1012,7 @@ of the ionized ISM outside the galactic plane.
 \section{Acknowledgements}
 
 We thank NSERC for support. We acknowledge helpful discussions with
-Peter Goldreich and M. van Kerkwijk. Siqi Liu thank the useful discussion with Robert Main and JD Emberson on improving the expression of the content.
+Peter Goldreich and M. van Kerkwijk. We thank Michael Williams for taking the water reflection photo.  Siqi Liu thank the useful discussion with Robert Main and JD Emberson on improving the expression of the content. 
 The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc.
 
 
