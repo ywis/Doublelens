@@ -235,7 +235,7 @@ GBT (GB), Arecibo (AR), Lovell and Westerbork (WB) telescopes.  The GB-AR and AR
 baselines are close to orthogonal and of comparable lengths, resulting
 in relatively isotropic astrometric positions.
 Information from each identified apex includes delay $\tau$,
-delay rate (differential frequency $f_D$), relative Right Ascension
+delay rate (differential frequency $f_{\rm D}$), relative Right Ascension
 $\Delta\alpha$ and relative declination $\Delta\delta$.
 %$, error of $\Delta\alpha$ $\sigma_{\alpha}$ and error of
 %$\Delta\delta$ $\sigma_{\delta}$. 
@@ -247,17 +247,17 @@ frequency.  As previously described, the positions of the apexes
 appear constant across sub-bands.  In this work, we first combine the
 apexes across sub-bands, resulting in a single set of images.  We focus on
 the southern group with negative differential frequency: this
-grouping appears as a likely candidate for a double lensing screen. However, two groups (with positive/negative differential frequency) appear distinct in both the VLBI angular positions and the secondary spectra. We divide the apex data with negative $f_D$ into two
+grouping appears as a likely candidate for a double lensing screen. However, two groups (with positive/negative differential frequency) appear distinct in both the VLBI angular positions and the secondary spectra. We divide the apex data with negative $f_{\rm D}$ into two
 groups: in one group, time delay ranges from $0.1$ ms to $0.4$ ms,
 which we call $0.4$ ms group, and in the other group, time delay at
 about $1$ ms, which we call $1$ ms group.  In summary, the
 $0.4$ ms group contains $10$ apexes in the first two sub-bands, and $14$ apexes in the last two sub-bands; the $1$ ms group, contains $5$, $6$, $5$ and $4$ apexes in the four sub-bands subsequently, with center frequency of each band $f_{\rm band}=314.5, 322.5, 330.5$ and $ 338.5$ MHz. 
 
-We select the equivalent apexes from four sub-bands. To match the same apexes in different sub-bands, we scale the differential frequency in different sub-bands to $322.5$ MHz, by $f_D (322.5/f_{\rm band})$ MHz. A total of $9$ apexes from the $0.4$ ms group and $5$ apexes from the $1$ ms
+We select the equivalent apexes from four sub-bands. To match the same apexes in different sub-bands, we scale the differential frequency in different sub-bands to $322.5$ MHz, by $f_{\rm D} (322.5/f_{\rm band})$ MHz. A total of $9$ apexes from the $0.4$ ms group and $5$ apexes from the $1$ ms
 group, were mapped. This results in an estimation
 for the mean referenced frequency $f=322.5$ MHz and a standard
 deviation among the sub-bands, listed in Table
-\ref{table:apex}. The $f_D$, $\tau$, $\Delta\alpha$ and $\Delta\delta$
+\ref{table:apex}. The $f_{\rm D}$, $\tau$, $\Delta\alpha$ and $\Delta\delta$
 are the mean values of $n$ sub-bands
 ($n=3$ for points 4 to 6, and 4 for the rest points), listed
 in Table \ref{table:apex}. 
@@ -276,7 +276,7 @@ in Table \ref{table:apex}.
 %\resizebox{1cm}{!}{
 \begin{tabular}{c|llllll}
 \hline
-label & $\theta_{\parallel}$(mas) & $f_D$(mHz) & $\tau$(ms)  & $\Delta\alpha$(mas) & $\Delta\delta$(mas) & $t_0$(d)\\
+label & $\theta_{\parallel}$(mas) & $f_{\rm D}$(mHz) & $\tau$(ms)  & $\Delta\alpha$(mas) & $\Delta\delta$(mas) & $t_0$(d)\\
 \hline
 1& $-17.22$   & $-26.1(4)$    & 0.3743(6)         & 6.2    & $-11.9$      & $-107$                               \\
 2& $-16.36$  & $-24.9(4)$      & 0.3378(3)         & 8.0(4)  & $-14.5(8)$      &$-101$                                \\
@@ -299,7 +299,7 @@ label & $\theta_{\parallel}$(mas) & $f_D$(mHz) & $\tau$(ms)  & $\Delta\alpha$(ma
 %}
 \caption{ $0.4$ ms and $1$ ms reduced apex data. 
 The upper part of the table list the $0.4$ ms group data, while the $1$ ms group lie in the lower part of the table. 
-Observation data include the differential frequency $f_D$, time delay
+Observation data include the differential frequency $f_{\rm D}$, time delay
 $\tau$ ($\tau_1$ for $0.4$ ms group and $\tau_2$ for $1$ ms group);
 $\Delta\alpha$ and $\Delta\delta$ are from the VLBI measurement (there is only one matched position for point 1, thus no error). 
 $t_0$ is the time at constant velocity for an apex to intersect the
@@ -312,10 +312,10 @@ details in Section \ref{21} and Section \ref{222}.
 \label{table:apex}
 \end{table*}
 We estimate the error of time delay $\tau$, differential frequency
-$f_D$, $\Delta\alpha$ and $\Delta\delta$  listed in Table
+$f_{\rm D}$, $\Delta\alpha$ and $\Delta\delta$  listed in Table
 \ref{table:apex} from their band-to-band variance:
 \begin{equation}
-\sigma^2_{\rm \tau, f_D,\Delta\alpha, \Delta\delta} = \frac{1}{n}\sum^{n}_{i=1}\frac{(x_i-\bar{x})^2}{n-1},
+\sigma^2_{\rm \tau, f_{\rm D},\Delta\alpha, \Delta\delta} = \frac{1}{n}\sum^{n}_{i=1}\frac{(x_i-\bar{x})^2}{n-1},
 \end{equation}
 and $n$ is the number of sub-bands. The outer $1/n$ accounts for the expected variance of a mean of $n$ numbers.
 % This is also how we calculate the sample error of $\Delta\alpha$ and $\Delta\delta$, marked with errorbars in Figure \ref{Doublelens}.
@@ -345,13 +345,13 @@ fringe rate, delay and angular position cannot be uniquely related. To interpret
 We define the {\it effective distance} $D_{\rm e}$ as
 \begin{equation}
 D_{\rm e} \equiv \frac{2c\tau}{\theta^2}.
-%f_D  &=f\frac{\rm d\tau}{\dif t},
+%f_{\rm D}  &=f\frac{\rm d\tau}{\dif t},
 \end{equation}
 The differential frequency is related to the rate of change of delay
-as $f_D  =-f\frac{\rm d\tau}{\dif t}$.  The effective distance
+as $f_{\rm D}  =-f\frac{\rm d\tau}{\dif t}$.  The effective distance
 corresponds to the pulsar distance $D_{\rm p}$, if the screen is exactly halfway.
 In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
-    s}})$ for a screen at $D_{\rm s}$.  Fig. \ref{fig:Singledegeneracy} shows two sets of $D_p$ and $D_s$ with common $D_e$.
+    s}})$ for a screen at $D_{\rm s}$.  Fig. \ref{fig:Singledegeneracy} shows two sets of $D_{\rm p}$ and $D_{\rm s}$ with common $D_{\rm e}$.
 
 \begin{figure*}
 \centering
@@ -363,7 +363,7 @@ In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
 $O$ denotes the observer; $A$ and $A'$ are denote the positions of the
 pulsar; $D$ and $D'$ denote the positions of the reflected images on the
 interstellar medium. The un-primed geometry corresponds to a pulsar
-distance $D_p = |AO| = 620$pc, while the primed geometry has twice the
+distance $D_{\rm p} = |AO| = 620$pc, while the primed geometry has twice the
 pulsar distance.}
 \label{fig:Singledegeneracy}
 \end{figure*}
@@ -694,7 +694,7 @@ the nearest point in reference in Table
 for point $i=5',3'$, $j=4'$; for point $i=2'$, $j=1'$.
 % $\tau_1$ is the time delay from $0.4$ ms group, and $\tau_2$ is the time delay from respective $1$ ms group.
 
-For the error of differential frequency $f_D$, we add the error of the reference point (point 4') to the error of each other measured point:
+For the error of differential frequency $f_{\rm D}$, we add the error of the reference point (point 4') to the error of each other measured point:
 \begin{equation}
 \begin{aligned}
 (\frac{\sigma_{f_i}}{f_{Di}})^2=(\frac{\sigma_{f_{Di}}}{f_{Di}})^2+(\frac{\sigma_{f_{D4'}}}{f_{D4'}})^2
@@ -711,11 +711,11 @@ points, and list the results in Table
 \ref{table:double_lens_compare}. For points 4' and 1', they fit by
 construction since we use these to calculate the position of $J$; for the remaining three points, all of the results are within 3-$\sigma$ of the observed time delays.
 
-To compare differential frequency $f_D$, we need to calculate the velocity of the pulsar and the velocity of the lens. We take the lenses to be relative static, and solve the velocity of the pulsar relative to the lens (in geocentric coordinate). The pulsar has two velocity components, and the two 1-D lenses effectively determine one component each.
+To compare differential frequency $f_{\rm D}$, we need to calculate the velocity of the pulsar and the velocity of the lens. We take the lenses to be relative static, and solve the velocity of the pulsar relative to the lens (in geocentric coordinate). The pulsar has two velocity components, and the two 1-D lenses effectively determine one component each.
 %To calculate the velocity of the pulsar, we need two components, the
 %$v_{\parallel}$ in ${\parallel}$ direction, and $v_{\bot}$ in ${\bot}$
 %direction.%, which is defined in Section \ref{subsec:angularpos}. 
-For $v_{\parallel}$, we derive the velocity $172.4 \pm 2.4$ km $\rm s^{-1}$ from $f_D$ of point $1$ in $0.4$ ms group.  The direct observable is the time to crossing of each caustic, denoted $t_0$ in Table \ref{table:apex}. 
+For $v_{\parallel}$, we derive the velocity $172.4 \pm 2.4$ km $\rm s^{-1}$ from $f_{\rm D}$ of point $1$ in $0.4$ ms group.  The direct observable is the time to crossing of each caustic, denoted $t_0$ in Table \ref{table:apex}. 
 %For the velocity of lens 2, because it is a line, and we do not consider radial velocity, so it could only be in the direction of AJ. However, $\angle$DAJ is $82\degree$ so $v_{\%bot}$ and $v_{\rm lens2}$ are nearly degenerate. In the following discussion, we consider lens 2 to be static and only take $v_{\bot}$ into account.
 
 To calculate $v_{\bot}$, we choose the point 4', which has the smallest errorbar of differential frequency.
@@ -797,7 +797,7 @@ With this velocity of the pulsar, we calculate the differential frequency $f_{\r
 %\resizebox{\linewidth}{!}{
 \begin{tabular}{c|llllllll}
 \hline
-label&$\theta_{\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau}$(ms)  & $\tau_{\rm M}$(ms) & $f_D$(mHz)  &$\sigma_{f}$(mHz)      &  $f_{\rm M}$(mHz)& $t_1$(d) \\ \hline
+label&$\theta_{\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau}$(ms)  & $\tau_{\rm M}$(ms) & $f_{\rm D}$(mHz)  &$\sigma_{f}$(mHz)      &  $f_{\rm M}$(mHz)& $t_1$(d) \\ \hline
 1'& $-17.22$  &  1.0663     &0.0050    & 1.0663*        & $-43.08$    &0.84   & $-42.26$           & $-78$\\
  2'& $-16.36$  &    1.0370     &0.0059    & 1.0362       & $-41.27$    & 0.88   & $-41.04$          & $-73$\\ 
 3'& $-16.08$  &   1.005    &0.011   & 1.027          & $-40.17$    &   0.87     & $-40.64$          & $-72$\\ 
@@ -807,7 +807,7 @@ label&$\theta_{\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau}$(ms)  & $\
 \end{tabular}
 %}
 \caption{Comparison of time delay $\tau$ and the differential
-  frequency $f_D$ of the observation and the model fitting result in the
+  frequency $f_{\rm D}$ of the observation and the model fitting result in the
   double lens model. $\theta_{\parallel}$ denotes the angular offsets
   of the corresponding images at lens 1. 
 %$\theta_{2\parallel}$ is the angle of the $1$ ms group with the component in the axis defined by $\gamma$. 
@@ -820,7 +820,7 @@ the point that we use to calculate the transverse velocity of the pulsar $v_{\bo
 
 The reduced ${\chi}^2$ for time delay $\tau$ is $1.5$
 for $3$ degrees of freedom
-and $2.2$ for $f_D$ for $4$ degrees of freedom.  This is consistent with the model.
+and $2.2$ for $f_{\rm D}$ for $4$ degrees of freedom.  This is consistent with the model.
 
 %However, if the lines describing lens 1 are not parallel, there is
 %still possibility that the differential frequency lie within the error
@@ -833,6 +833,30 @@ caustics are parallel.  Using the lag error range of double lensed point 4 (the 
 constrained), we find a 1-$\sigma$ allowed angle of 0.4 degrees from
 parallel with the whole lensing system.  This lends support of a
 highly inclined sheet, probably aligned to better than 1 per cent.
+
+\begin{table}
+\caption{Parameters for double lens model}
+\begin{threeparttable}
+\begin{tabular}{ll}
+\hline
+$D_{1\rm e}$  & 
+Effective Distance of $0.4$ group data\\
+$D_{2\rm e}$ 
+	&  Effective Distance of $1$ ms group data\\
+$D_1$ 		&  Distance of lens 1 \\
+$D_2$	& Distance of lens 2 \\
+$\gamma$ &  Scattering axis angle of $0.4$ ms group\tnote{a} \\
+$\epsilon$	& Angle of the velocity of the pulsar \tnote{a}\\
+\hline
+\end{tabular}
+
+\begin{tablenotes}
+\item[a]{The angle is measured relative to the declination axis and east is the positive direction.}
+\end{tablenotes}
+\label{tab:parameters}
+\end{threeparttable}
+%\end{minipage}
+\end{table}
 
 %$\-25.2\degree \pm 0.4$ to meet the upper limit $f_{D4}+\sigma_{f4}$, $\tau_4+\sigma_{\tau 4}$ and the lower limit $f_{D4}-\sigma_{f4}$,$\tau_4-\sigma_{\tau 4}$ in Table \ref{table:double_lens_compare}, which has the smallest errorbar of the differential frequency.
 %table one for 1ms positions
@@ -920,7 +944,7 @@ these points, in addition to the double lensed images.
 \caption{Deflection angle $\beta=\pi-\protect\angle$AHB on lens 2.  Point $J$ denotes the expected position to form a single refraction image, which was not
   observed.   The small change in angle relative to the observed
   images precludes a finite refraction cut-off, since the data spans
-  10 per cents bandwidth, with a 20 per cents change in refractive strength.  We
+  10 per cent bandwidth, with a 20 per cent change in refractive strength.  We
   propose a swallowtail caustic as the likely origin for the
   termination of the second lens sheet.
 %  ($\pi$-$\protect\angle$AHB) vs $\theta_{1\parallel}$.
@@ -1118,7 +1142,7 @@ We have applied the \citep{2014MNRAS.442.3338P} inclined sheet model
 to archival apex data of PSR B0834+06.  The data is well fit by two
 linear lensing screens, with nearly plane-parallel geometry.  The
 second screen provides a precision test with 10 observables (5 time delays and 5 differential frequencies) and 3 free
-parameters.  The model fits the data to non-trivial percent accuracy
+parameters (the marked points in Table \ref{table:double_lens_compare}).  The model fits the data to non-trivial percent accuracy
 on each of 7 data points.  This natural consequence of very smooth
 reconnection sheets is an unlikely outcome of ISM turbulence.  These
 results, if extrapolated to multi-epoch observations of binary
