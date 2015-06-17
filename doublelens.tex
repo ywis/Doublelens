@@ -332,8 +332,31 @@ and $n$ is the number of sub-bands. The outer $1/n$ accounts for the expected va
 \subsubsection{Distance to the lens}
 In the absence of a lens model, the
 fringe rate, delay and angular position cannot be uniquely related. To interpret the data, we adopt the lensing model of
-\citet{2014MNRAS.442.3338P}.  In this model, the lensing is due to projected fold caustics of a thin sheet closely aligned to the line of sight. 
+\citet{2014MNRAS.442.3338P}.  In this model, the lensing is due to projected fold caustics of a thin sheet closely aligned to the line of sight. We will list the parameters in this lens model in Table \ref{tab:parameters}.
 
+\begin{table}
+\caption{Parameters for double lens model}
+\begin{threeparttable}
+\begin{tabular}{cl}
+\hline
+$D_{1\rm e}$  & 
+Effective Distance of $0.4$ group data\\
+$D_{2\rm e}$ 
+	&  Effective Distance of $1$ ms group data\\
+$D_1$ 		&  Distance of lens 1 \\
+$D_2$	& Distance of lens 2 \\
+$\gamma$ &  Scattering axis angle of $0.4$ ms group\tnote{a} \\
+$\epsilon$	& Angle of the velocity of the pulsar \tnote{a}\\
+\hline
+\end{tabular}
+
+\begin{tablenotes}
+\item[a]{The angle is measured relative to the longitude and east is the positive direction.}
+\end{tablenotes}
+\label{tab:parameters}
+\end{threeparttable}
+%\end{minipage}
+\end{table}
 %How the distance of the pulsar $D_p$ and the time delay $\tau$ and angular offset $\theta$ are matched, and how velocity and the differential frequency $f_D$ are matched, are related by the following equations:
 
 
@@ -353,10 +376,10 @@ corresponds to the pulsar distance $D_{\rm p}$, if the screen is exactly halfway
 In general, $D_{\rm e}={D_{\rm p} D_{\rm s}}/({D_{\rm p} - D_{\rm
     s}})$ for a screen at $D_{\rm s}$.  Fig. \ref{fig:Singledegeneracy} shows two sets of $D_{\rm p}$ and $D_{\rm s}$ with common $D_{\rm e}$.
 
-\begin{figure*}
+\begin{figure}
 \centering
 %\epsscale{1.0}
-\hspace*{-1in}\includegraphics[width=9in]{single_degeneracy.pdf}
+\hspace*{-0.4in}\includegraphics[width=3.9in]{single_degeneracy.pdf}
 \caption{A single refracted light path showing the distance
   degeneracy.  The primed and un-primed geometries result in the same
   observables: delay $\tau$ and angle $\theta$.
@@ -366,7 +389,7 @@ interstellar medium. The un-primed geometry corresponds to a pulsar
 distance $D_{\rm p} = |AO| = 620$pc, while the primed geometry has twice the
 pulsar distance.}
 \label{fig:Singledegeneracy}
-\end{figure*}
+\end{figure}
 
 
 %analysis of the effective distance follows:
@@ -648,8 +671,8 @@ where $D_{p2}$ is the distance from the pulsar to lens 2, $D_{21}$ is the distan
 Fig. \ref{first_reflect} and Fig. \ref{second_reflect} are examples of how light is refracted on the first lens plane and the second lens plane. We specifically choose the point with $\theta_{\parallel}=-17.22$ mas, which refer point 1' on lens 2 as an example. Considering the velocity of the photon parallel to the lens plane before and after refraction should be equal, we solve the solutions in double lens model using:
 \begin{equation}
 \begin{aligned}
-\frac{\rm JH}{D_{p2}}&=\frac{\rm HG}{D_{21}},\\
-\frac{\rm FB}{D_{21}}&=\frac{\rm BD}{D_{1}}.
+\frac{JH}{D_{\rm p2}}&=\frac{HG}{D_{21}},\\
+\frac{FB}{D_{21}}&=\frac{BD}{D_{1}}.
 \end{aligned}
 \end{equation}
 
@@ -834,29 +857,7 @@ constrained), we find a 1-$\sigma$ allowed angle of 0.4 degrees from
 parallel with the whole lensing system.  This lends support of a
 highly inclined sheet, probably aligned to better than 1 per cent.
 
-\begin{table}
-\caption{Parameters for double lens model}
-\begin{threeparttable}
-\begin{tabular}{ll}
-\hline
-$D_{1\rm e}$  & 
-Effective Distance of $0.4$ group data\\
-$D_{2\rm e}$ 
-	&  Effective Distance of $1$ ms group data\\
-$D_1$ 		&  Distance of lens 1 \\
-$D_2$	& Distance of lens 2 \\
-$\gamma$ &  Scattering axis angle of $0.4$ ms group\tnote{a} \\
-$\epsilon$	& Angle of the velocity of the pulsar \tnote{a}\\
-\hline
-\end{tabular}
 
-\begin{tablenotes}
-\item[a]{The angle is measured relative to the declination axis and east is the positive direction.}
-\end{tablenotes}
-\label{tab:parameters}
-\end{threeparttable}
-%\end{minipage}
-\end{table}
 
 %$\-25.2\degree \pm 0.4$ to meet the upper limit $f_{D4}+\sigma_{f4}$, $\tau_4+\sigma_{\tau 4}$ and the lower limit $f_{D4}-\sigma_{f4}$,$\tau_4-\sigma_{\tau 4}$ in Table \ref{table:double_lens_compare}, which has the smallest errorbar of the differential frequency.
 %table one for 1ms positions
