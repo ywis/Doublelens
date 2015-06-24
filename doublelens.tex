@@ -61,7 +61,7 @@ pulsar scattering.
 %percent accuracy.
 This model can reproduce the parameters of the observed diffractive scintillation to per cent accuracy.   
 Comparison with VLBI proper motion results in a
-direct measure of the ionized ISM screen.  The results are consistent
+direct measure of velocity of the ionized ISM screen.  The results are consistent
 with motions expected in the local galaxy.
 The simple 1-D structure of the lenses opens up
 the possibility of using interstellar lenses as precision probes for
@@ -100,8 +100,8 @@ gravitational wave direction \citep{boyle2012}.
 
 Direct VLBI observation of PSR B0834+06 shows multiple images lensed
 by the interstellar plasma.  Combining the angular positions and
-scintillation delays, the authors published the derived effective
-distance \citep{2010ApJ...708..232B} (hereafter B10) of $1168\pm 23$ pc
+scintillation delays, the authors \citep{2010ApJ...708..232B} (hereafter B10) published the derived effective
+distance (defined in Section \ref{21}) of $1168\pm 23$ pc
 for apexes on the main scattering axis.
 %, and $1121\pm 59$ pc for $1$ ms apexes.  
 This represents a precise
@@ -191,7 +191,7 @@ lensing details differ for convergent (under-dense) vs divergent
 
 
 
-The generic interstellar electron density is insufficient to deflect
+The typical interstellar electron density is insufficient to deflect
 radio waves by the observed $\sim$ mas bending angles. At grazing
 incidence, Snell's law results in an enhanced bending angle, which
 formally diverges.  Magnetic discontinuities generically propagate
@@ -210,9 +210,9 @@ than the Fresnel scale, the two images become effectively
 indistinguishable. 
 The geometry of the inclined refractive lens is shown in Fig. \ref{fig:sheetgeom}.
 \begin{figure*}
-\vspace{-1.0in}
+\vspace{-0.5in}
 \centerline{\epsfig{file=sheetgeom.eps,width=7.5in}}
-\vspace{-7.5in}
+\vspace{-6.0in}
 \caption{Refractive lensing geometry 
 (reproduced from \citet{2014MNRAS.442.3338P}
   fig. 1).  The pulsar is on the right, observer on the left.  Each
@@ -287,7 +287,7 @@ label & $\theta_{\parallel}$(mas) & $f_{\rm D}$(mHz) & $\tau$(ms)  & $\Delta\alp
 2& $-16.36$  & $-24.9(4)$      & 0.3378(3)         & 8.0(4)  & $-14.5(8)$      &$-101$                                \\
 3& $-16.08$   & $-24.6(4)$       & 0.327(3)   & 7.2(6)  & $-13.9(4)$       & $-99.0$                                \\
 4& $-14.45$   & $-22.3(5)$      & 0.2633(3)    & 6.1(4)  & $-13.1(7)$     & $-88.1$                                \\
-5& $-13.68$ & $-21.2(6)$        & 0.236(2)    & 5.1(4)  & $-12.7(5)$      & $-83.3$                                \\
+5& $-13.68$ & $-21.6(6)$        & 0.236(2)    & 5.1(4)  & $-12.7(5)$      & $-83.3$                                \\
 6& $-13.27$ & $-20.4(5)$      & 0.222(3)     & 5.8(4)  & $-11.8(1)$    & $-81.4$                                \\
 7& $-12.21$   & $-18.9(2)$      & 0.188(2)   & 5.5(6) & $-10.8(6)$      & $-74.2$                        \\
 8& $-10.58$   & $-16.8(3)$      & 0.1412(9)  & 3.9(6) & $-10.0(4)$      & $-62.8$                                \\
@@ -739,7 +739,7 @@ points, and list the results in Table
 \ref{table:double_lens_compare}. For points 4' and 1', they fit by
 construction since we use these to calculate the position of $J$; for the remaining three points, all of the results are within 3-$\sigma$ of the observed time delays.
 
-To compare differential frequency $f_{\rm D}$, we need to calculate the velocity of the pulsar and the velocity of the lens. We take the lenses to be relative static, and solve the velocity of the pulsar relative to the lens (in geocentric coordinate). The pulsar has two velocity components, and the two 1-D lenses effectively determine one component each.
+To compare differential frequency $f_{\rm D}$, we need to calculate the velocity of the pulsar and the velocity of the lens. We take the lenses to be static, and solve the velocity of the pulsar relative to the lens (in geocentric coordinate). The pulsar has two velocity components, and the two 1-D lenses effectively determine one component each.
 %To calculate the velocity of the pulsar, we need two components, the
 %$v_{\parallel}$ in ${\parallel}$ direction, and $v_{\bot}$ in ${\bot}$
 %direction.%, which is defined in Section \ref{subsec:angularpos}. 
@@ -750,9 +750,8 @@ To calculate $v_{\bot}$, we choose the point 4', which has the smallest errorbar
 % In a time period of $6500$ s, the
 %$v_{\bot}$ is calculated to be $6.85$ km/s, in the direction pointing
 %from B to D, to make the calculated $f_{D2}$ match the observation $f_D$. 
-This gibes a value of  $67.9\pm 2.8$ km $\rm s^{-1}$ for $v_{\perp}$, and gives $v_{\rm
-  tot}=185.3 \pm 3.3$ km $\rm s^{-1}$, with an angle
-$\phi=-3\degree.7$, which is west of north. This represents the
+This gives a value of  $67.9\pm 2.8$ km $\rm s^{-1}$ for $v_{\perp}$,  with an angle
+$\phi=-3\degree.7 \pm 0\degree.8$ west of north. This represents the
 pulsar-screen velocity relative to the earth.  We can further
 transform this into the local standard of rest (LSR) frame to
 interpret the velocities in a galactic context.
@@ -1107,7 +1106,7 @@ A generic prediction of the inclined sheets is a change in rotation
 measure across the scattering length.  Over 1000 AU, one might expect
 a typical RM (rotation measure) change of $10^{-3}$ rad/m$^2$.  At low frequencies, for
 example in LOFAR\footnote{http://www.lofar.org/} or GMRT\footnote{http://gmrt.ncra.tifr.res.in/}, the size of the scattering screen extends
-another order of magnitude in angular size, and RM changes increase to
+another order of magnitude in angular size, and RM in different lensed images are different, increasing to
 $\sim 0.01$, which is plausibly measurable.
 
 \subsection{Possible Improvements}
