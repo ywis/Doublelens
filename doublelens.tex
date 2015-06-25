@@ -256,7 +256,13 @@ grouping appears as a likely candidate for a double lensing screen. However, two
 groups: in one group, time delay ranges from $0.1$ ms to $0.4$ ms,
 which we call $0.4$ ms group; and in the other group, time delay at
 about $1$ ms, which we call $1$ ms group.  In summary, the
-$0.4$ ms group contains $10$ apexes in the first two sub-bands, and $14$ apexes in the last two sub-bands; the $1$ ms group, contains $5$, $6$, $5$ and $4$ apexes in the four sub-bands subsequently, with center frequency of each band $f_{\rm band}=314.5, 322.5, 330.5$ and $ 338.5$ MHz. 
+$0.4$ ms group contains $10$ apexes in the first two sub-bands, and $14$ apexes in the last two sub-bands; the $1$ ms group, contains $5$, $6$, $5$ and $4$ apexes in the four sub-bands subsequently, with center frequency of each band $f_{\rm band}=314.5, 322.5, 330.5$ and $ 338.5$ MHz.  An illustration of the positions of the apexes is listed in Fig. \ref{fig:apex_pos}.
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{apex_pos.pdf}
+\caption{Distribution of the apex positions in the sub-band centring at 314.5 MHz. The apexes that belong to 1 ms group and the apexes that belong to 0.4 ms group are marked out separately.}
+\label{fig:apex_pos}
+\end{figure}
 
 We select the equivalent apexes from four sub-bands. To match the same apexes in different sub-bands, we scale the differential frequency in different sub-bands to $322.5$ MHz, by $f_{\rm D} (322.5/f_{\rm band})$ MHz. A total of $9$ apexes from the $0.4$ ms group and $5$ apexes from the $1$ ms
 group, were mapped. This results in an estimation
@@ -743,14 +749,16 @@ To compare differential frequency $f_{\rm D}$, we need to calculate the velocity
 %To calculate the velocity of the pulsar, we need two components, the
 %$v_{\parallel}$ in ${\parallel}$ direction, and $v_{\bot}$ in ${\bot}$
 %direction.%, which is defined in Section \ref{subsec:angularpos}. 
-For $v_{\parallel}$, we derive the velocity $172.4 \pm 2.4$ km $\rm s^{-1}$ from $f_{\rm D}$ of point $1$ in $0.4$ ms group.  The direct observable is the time to crossing of each caustic, denoted $t_0$ in Table \ref{table:apex}. 
+For $v_{\parallel}$, we derive the velocity $172.4 \pm 2.4$ km $\rm s^{-1}$, 
+which is $58.7$ mas/yr in geocentric system, 
+from $f_{\rm D}$ of point $1$ in $0.4$ ms group.  The direct observable is the time to crossing of each caustic, denoted $t_0$ in Table \ref{table:apex}. 
 %For the velocity of lens 2, because it is a line, and we do not consider radial velocity, so it could only be in the direction of AJ. However, $\angle$DAJ is $82\degree$ so $v_{\%bot}$ and $v_{\rm lens2}$ are nearly degenerate. In the following discussion, we consider lens 2 to be static and only take $v_{\bot}$ into account.
 
 To calculate $v_{\bot}$, we choose the point 4', which has the smallest errorbar of differential frequency.
 % In a time period of $6500$ s, the
 %$v_{\bot}$ is calculated to be $6.85$ km/s, in the direction pointing
 %from B to D, to make the calculated $f_{D2}$ match the observation $f_D$. 
-This gives a value of  $67.9\pm 2.8$ km $\rm s^{-1}$ for $v_{\perp}$,  with an angle
+This gives a value of  $67.9\pm 2.8$ km $\rm s^{-1}$ for $v_{\perp}$,  which is $21.4$ mas/yr in geocentric system, with an angle
 $\phi=-3\degree.7 \pm 0\degree.8$ west of north. This represents the
 pulsar-screen velocity relative to the earth.  We can further
 transform this into the local standard of rest (LSR) frame to
@@ -1147,8 +1155,15 @@ We have applied the inclined sheet model \citep{2014MNRAS.442.3338P}
 to archival apex data of PSR B0834+06.  The data is well fit by two
 linear lensing screens, with nearly plane-parallel geometry.  The
 second screen provides a precision test with 10 observables (5 time delays and 5 differential frequencies) and 3 free
-parameters (the marked points in Table \ref{table:double_lens_compare}).  The model fits the data to non-trivial percent accuracy
-on each of 7 data points.  This natural consequence of very smooth
+parameters (the marked points in Table \ref{table:double_lens_compare}).  The model fits the data to 2.4 percent accuracy
+on each of 7 data points, see Fig. \ref{fig:tau-fD}.  
+\begin{figure}
+\centering
+\includegraphics[width=1.0\linewidth, angle=0]{tau-fD.pdf}
+\caption{Illustration of percentage of how well the data are fit.}
+\label{fig:tau-fD}
+\end{figure}
+This natural consequence of very smooth
 reconnection sheets is an unlikely outcome of ISM turbulence.  These
 results, if extrapolated to multi-epoch observations of binary
 systems, might result in accurate distance determinations and
