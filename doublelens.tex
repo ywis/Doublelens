@@ -1148,8 +1148,21 @@ A generic prediction of the inclined sheets is a change in rotation
 measure across the scattering length.  Over 1000 AU, one might expect
 a typical RM (rotation measure) change of $10^{-3}$ rad/m$^2$.  At low frequencies, for
 example in LOFAR\footnote{http://www.lofar.org/} or GMRT\footnote{http://gmrt.ncra.tifr.res.in/}, the size of the scattering screen extends
-another order of magnitude in angular size, and RM in different lensed images are different, increasing to
-$\sim 0.01$, which is plausibly measurable.
+another order of magnitude in angular size, and the RM in different
+lensed images are different, increasing to 
+$\sim 0.01$, which is plausibly measurable.  Even for an unpolarized
+source, the left and right circularly polarized (LCP, RCP) dynamic spectra will
+be slightly different.  Usually a secondary spectrum (SS) is formed by
+Fourier transforming the dynamic spectrum and multiplying by its
+complex conjugate.  To measure the RM, one multiplies the Fourier
+transform of the LCP dynamic spectrum by the complex conjugate of the
+RCP Fourier transform.  This will display a phase gradient along the doppler
+frequency axis.  In the SS, each pixel is the sum of correlations of
+pairs of scattering points with corrsponding lag and doppler
+velocity.  The velocity is typically linear in the pair separation,
+which is also the case for differential RM.   This statistic is
+identical to the cross gate secondary spectrum as applied in
+\citet{2014MNRAS.440L..36P}. 
 
 \subsection{Possible Improvements}
 
