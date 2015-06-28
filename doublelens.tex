@@ -251,8 +251,10 @@ Data of each apex are collected from four dual circular polarization $8$ MHz wid
 As described in B10, the inverse parabolic
 arclets were fitted to positions of their apexes, resulting in a
 catalogue of apexes in each sub-band, each with delay and differential
-frequency.  As previously described, the positions of the apexes
-appear constant across sub-bands.  In this work, we first combine the
+frequency.  
+%As previously described, the positions of the apexes
+%appear constant across sub-bands.  
+In this work, we first combine the
 apexes across sub-bands, resulting in a single set of images.  We focus on
 the southern group with negative differential frequency: this
 grouping appears as a likely candidate for a double-lensing screen. However, two groups (with positive/negative differential frequency) appear distinct in both the VLBI angular positions and the secondary spectra. We divide the apex data with negative $f_{\rm D}$ into two
@@ -291,7 +293,7 @@ in Table \ref{table:apex}.
 %\resizebox{1cm}{!}{
 \begin{tabular}{c|llllll}
 \hline
-label & $\theta_{\parallel}$(mas) & $f_{\rm D}$(mHz) & $\tau$(ms)  & $\Delta\alpha$(mas) & $\Delta\delta$(mas) & $t_0$(d)\\
+label & $\theta_{\parallel}$(mas) & $f_{\rm D}$(mHz) & $\tau$(ms)  & $\Delta\alpha$(mas) & $\Delta\delta$(mas) & $t_0$(day)\\
 \hline
 1& $-17.22$   & $-26.1(4)$    & 0.3743(6)         & 6.2    & $-11.9$      & $-107$                               \\
 2& $-16.36$  & $-24.9(4)$      & 0.3378(3)         & 8.0(4)  & $-14.5(8)$      &$-101$                                \\
@@ -490,7 +492,7 @@ rotation.
 %\epsscale{1.0}
 \includegraphics[width=7.5in]{Double_lens_xy.pdf}
 \caption{Angular positions of $0.4$ ms and $1$ ms group data in one-lens model and double-lens model.  
-The axes represent the relative transverse distance to the un-refracted pulsar in Right Ascension (calculated by $x= d\Delta \alpha \cos(\delta)$ with $d$ represent the distance of the object to the observer) and declination (calculated by $y=d\Delta \delta $) directions, on a 2D plane that is transverse to the line of sight. 
+The axes represent the relative transverse distance to the un-refracted pulsar in Right Ascension (calculated by $x= \Delta \alpha \cos(\delta)D_i$ with $D_i$ represent the distance of the object to the observer: for point $A$, $D_i=D_{\rm p}$; for points $H$ and $J$, $D_i=D_2$; for points $B$ and $D$, $D_i=D_1$.) and declination (calculated by $y=\Delta \delta D_i$) directions, on a 2D plane that is transverse to the line of sight. 
 On the left side, the points marked with letter $D$ labelled from 1 to 9, are the derived
 positions from the time delays of $0.4$ ms group in 
 one-lens
@@ -681,7 +683,7 @@ By inspection, we found that the 5 furthest points in $0.4$ ms group match natur
 %\resizebox{\linewidth}{!}{
 \begin{tabular}{c|llllllll}
 \hline
-label&$\theta_{\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau}$(ms)  & $\tau_{\rm M}$(ms) & $f_{\rm D}$(mHz)  &$\sigma_{f}$(mHz)      &  $f_{\rm M}$(mHz)& $t_1$(d) \\ \hline
+label&$\theta_{\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau}$(ms)  & $\tau_{\rm M}$(ms) & $f_{\rm D}$(mHz)  &$\sigma_{f}$(mHz)      &  $f_{\rm M}$(mHz)& $t_1$(day) \\ \hline
 1'& $-17.22$  &  1.0663     &0.0050    & 1.0663*        & $-43.08$    &0.84   & $-42.26$           & $-78$\\
  2'& $-16.36$  &    1.0370     &0.0059    & 1.0362       & $-41.27$    & 0.88   & $-41.04$          & $-73$\\ 
 3'& $-16.08$  &   1.005    &0.011   & 1.027          & $-40.17$    &   0.87     & $-40.64$          & $-72$\\ 
@@ -917,11 +919,13 @@ superposition of two caustics, leading to enhanced lensing and higher
 likelihood of being observed.  
 
 We denote $t_1$ the time for the lensed image on lens 2 to move from point
-$H$ to point $J$. From our calculation, $t_1=59$ d earlier the
-single lensed pulsar image  $J$ would have appeared overlayed on
-pre-image $H_5$ of point
-5'; and $t_1=78$ d 
-before 2005 November 12, it overlayed on $H_1$. The
+$H$ to point $J$. From our calculation, we predict that on 2005 September 14, which is 59 days before the observation, the lensed image would have appeared overlayed on point $H_5$; and on 2005 August 26, which is 78 days before the observation, the lensed image would have appeared overlayed on point $H_1$.
+%$t_1=59$ d earlier the
+%single lensed pulsar image  $J$ would have appeared overlayed on
+%pre-image $H_5$ of point
+%5'; and $t_1=78$ d 
+%before 2005 November 12, it overlayed on $H_1$. 
+The
 model predicts the presence of a singly-lensed image refracted at
 these points, in addition to the doubly-lensed images.
 
