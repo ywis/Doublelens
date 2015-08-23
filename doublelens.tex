@@ -221,7 +221,7 @@ for each wave inflection.  The two geometric images in each caustic are
 separated by the characteristic width of the sheet. If this is smaller
 than the Fresnel scale, the two images become effectively
 indistinguishable. 
-The geometry of the inclined refractive lens is shown in Fig. \ref{fig:sheetgeom}.
+The geometry of the inclined refractive lens is shown in Fig. \ref{fig:sheetgeom}.  
 \begin{figure*}
 %\vspace{-0.5in}
 %\centerline{\epsfig{file=sheetgeom.eps,width=7.5in}}
@@ -237,8 +237,14 @@ The geometry of the inclined refractive lens is shown in Fig. \ref{fig:sheetgeom
 }
 \label{fig:sheetgeom}
 \end{figure*}
-
-
+The enlarged structure of the light path near point D ripple is illustrated in Fig. \ref{fig:refractionD}.
+\begin{figure*}
+\vspace{-0.8in}
+\includegraphics[width=1.0\textwidth, angle=0]{refraction.pdf}
+\caption{The refraction of the light near point D.  The black lines are the light paths.  The shaded region mark the interstellar medium.  The angles obey the Snell's Law $\sin(\alpha_1)/\sin(\alpha_2)=\sin(\alpha_4)/\sin(\alpha_3)=n_{\rm ISM}/n_{\rm void}.$
+}
+\label{fig:refractionD}
+\end{figure*}
 
 A large number of sheets might intersect the line of sight to any
 pulsar.  Only those sufficiently inclined would lead to caustic
@@ -381,14 +387,16 @@ $D_{2\rm e}$
 	&  Effective Distance of $1$ ms group data\\
 $D_1$ 		&  Distance of lens 1 \\
 $D_2$	& Distance of lens 2 \\
-$\gamma$ &  Scattering axis angle of $0.4$ ms group\tnote{a} \\
-$\phi$	& Angle of the velocity of the pulsar\tnote{a}\\
+$\alpha_i$ & Angles of incidence and refraction near point D\tnote{a}\\
+$\gamma$ &  Scattering axis angle of $0.4$ ms group\tnote{b} \\
+$\phi$	& Angle of the velocity of the pulsar\tnote{b}\\
 $\theta$ & Angular offset of the object \\
 \hline
 \end{tabular}
 
 \begin{tablenotes}
-\item[a]{The angle is measured relative to the longitude and east is the positive direction.}
+\item[a]{i=1,2,3,4.  1 and 3 are for the incidence angles, while 2 and 4 are for the refraction angles.}
+\item[b]{The angle is measured relative to the longitude and east is the positive direction.}
 \end{tablenotes}
 \label{tab:parameters}
 \end{threeparttable}
