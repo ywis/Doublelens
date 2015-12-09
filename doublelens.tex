@@ -51,12 +51,14 @@ $^6$ ASTRON, the Netherlands Institute for Radio Astronomy, Postbus 2, 7990 AA, 
 \maketitle
 \label{firstpage}
 \begin{abstract}
-Our analysis of archival VLBI data of PSR 0834+06 reveals 
-that its scintillation properties can be precisely modelled using the inclined sheet model \citep{2014MNRAS.442.3338P}, 
-resulting in two distinct lens planes.  
-These data strongly favour the
-grazing sheet model over turbulence as the primary source of
-pulsar scattering.  
+%Our analysis of archival VLBI data of PSR 0834+06 reveals 
+%that its scintillation properties can be precisely modelled using the inclined sheet model \citep{2014MNRAS.442.3338P}, 
+%resulting in two distinct lens planes.  
+We test the inclined sheet pulsar scintillation model \citep{2014MNRAS.442.3338P} against archival VLBI data on PSR 0834+06 and show that its scintillation properties can be precisely reproduced by a model in which refraction occurs on two distinct lens planes.
+%These data strongly favour the
+%grazing sheet model over turbulence as the primary source of
+%pulsar scattering.  
+These data strongly favour a model in which grazing-incidence refraction instead of diffraction off turbulent structures is the primary source of pulsar scattering.
 %7 observed apex parameters fit the model to
 %percent accuracy.
 This model can reproduce the parameters of the observed diffractive
@@ -91,9 +93,11 @@ Pulsars: individual (B0834+06) -- scattering -- waves -- magnetic: reconnection 
 \section{Introduction}
 
 Pulsars have long provided a rich source of astrophysical information
-due to their compact emission and predictable timing. One of the
+due to their compact emission and predictable timing.  
+One of the
 least well-constrained parameters for most pulsars is their 
-distance.  For some pulsars, timing parallax or VLBI parallax has
+distance.  
+For some pulsars, timing or VLBI parallax has
 resulted in direct distance determination.  
 For most pulsars, the
 distance is a major uncertainty for precision timing interpretations,
@@ -116,11 +120,12 @@ allow a breaking of this degeneracy \citep{2014MNRAS.442.3338P}. One
 potential limitation is the precision to which the lensing model can
 be understood.  
 
-In this paper, we examine the geometric nature of the lensing screens.
+In this paper, we examine the geometric nature of the lensing screens.  
+The first hints
+of a single-plane collinear-dominated structure had been realized in \citet{2001ApJ...549L..97S}. 
 In B10, VLBI astrometric mapping directly demonstrated the highly
-collinear nature of a single dominant lensing structure.  First hints
-of single plane collinear dominated structure had been realized in
-\citet{2001ApJ...549L..97S}.   While the nature of these structures
+collinear nature of a single dominant lensing structure.    
+While the nature of these structures
 is already mysterious, for this pulsar, in particular, the puzzle is compounded by an offset group
 of lenses whose radiation arrive delayed by 1-ms relative to the bulk of the pulsar flux.  The mysterious nature of the
 lensing questions any conclusions drawn from scintillometry as a
@@ -133,10 +138,11 @@ screens.  The precise model fits the one dimensional nature of the scattering ge
 thus the small number of parameters that
 quantify the lensing screen. 
 
-The paper is structured as follows. Section \ref{sec:lensing}
-is an overview of the inclined sheet lensing model and its application to data.
+The paper is structured as follows.  
 Section \ref{sec:astrometry} presents new VLBI proper motion and
-distance measurements to this pulsar.
+distance measurements to this pulsar.  
+Section \ref{sec:lensing}
+is an overview of the inclined sheet lensing model and its application to data.
 Section \ref{sec:discussions} describes the interpretation of the
 lensing geometry and possible improvements on the observation.   
 We conclude in Section \ref{sec:conclusions}.
@@ -144,8 +150,9 @@ We conclude in Section \ref{sec:conclusions}.
 \section{VLBI astrometry}
 \label{sec:astrometry}
 
-The model kinematics can be compared to direct measurements of pulsar
-proper motion to infer the absolute motion of the lensing screen.
+%The model kinematics can be compared to direct measurements of pulsar
+%proper motion to infer the absolute motion of the lensing screen.
+In order to eliminate the degeneracies inherent in lens modelling, we undertook an astrometric VLBI program to measure the distance and transverse velocity of PSR B0834+06.
 
 PSR B0834+06 was observed 8 times with the Very Long Baseline Array (VLBA), under the project code BB269, between 2009 May and 2011 January.  Four 16~MHz bands spread across the frequency range 1406 -- 1692 MHz were sampled with 2 bit quantization in both circular polarizations, giving a total data rate of 512 Mbps per antenna.  The primary phase calibrator was J0831+0429, which is separated from the target by 2.1 degrees, but the target field also included an in-beam calibrator source J083646.4+061108, which is separated from PSR B0834+06 by only 5 \arcmin.  The cycle time between primary phase calibrator and target field was 5 minutes, and the total duration of each observation was 4 hours.
 
@@ -200,7 +207,7 @@ $v_{\mathrm T}$ (km s$^{-1}$)	& 150(15)\\
 
 \section{Lensing}
 \label{sec:lensing}
-In this section, we map the archival data of PSR 0834+06 onto the grazing incidence sheet
+In this section, we map the archival VLBI data of PSR 0834+06 onto the grazing incidence sheet
 model.  The folded sheet model is qualitatively analogous to the
 reflection of a light across a lake as seen from the opposite
 shore.
@@ -349,12 +356,21 @@ in Fig. \ref{fig:apex_pos}, in band centred at $330.5$ MHz.  The $1$-ms and $0.4
 \begin{figure}
 \centering
 \includegraphics[width=\linewidth]{apex_pos_Nov26.pdf}
-\caption{Distribution of the apex positions in the sub-band centred at
-  $330.5$ MHz.  The apexes that belong to the $1$-ms and $0.4$-ms groups are marked.}
+\caption{
+%Distribution of the apex positions in the sub-band centred at
+%  $330.5$ MHz.  
+A schematic of the distribution of a subset of apex positions in the secondary spectrum of the scintillations in the sub-band centred on $330.5$ MHz.
+The apexes that belong to the $1$-ms and $0.4$-ms groups are marked.}
 \label{fig:apex_pos}
 \end{figure}
 
-We select the equivalent apexes from four sub-bands.  To match the same apexes in different sub-bands, we scale the differential frequency in different sub-bands to $322.5$ MHz, by $f_{\rm D} (322.5/f_{\rm band})$ MHz.  A total of $9$ apexes from the $0.4$-ms group and $5$ apexes from the $1$-ms
+We select the equivalent apexes from four sub-bands.  To match the same apexes in different sub-bands, we scale the differential frequency in different sub-bands to $322.5$ MHz.  We use Eq. \ref{f_Dref},
+\begin{equation}
+f_{\rm D ref}=f_{\rm D} (322.5~{\rm MHz}/f_{\rm band}),
+\label{f_Dref}
+\end{equation}
+where $f_{\rm D ref}$ is the re-scaled differential frequency centred at $322.5$ MHz, $f_D$ is the original differential frequency of each apex, $f_{\rm band}$ is the center frequency of each sub-bands.  
+ A total of $9$ apexes from the $0.4$-ms group and $5$ apexes from the $1$-ms
 group, are mapped.  
 This is displayed
 with the mean referenced frequency $f=322.5$ MHz and a standard
@@ -414,13 +430,18 @@ details in Section \ref{21} and Section \ref{222}.
 % $\theta_{1\parallel}$, the angle of the $0.4$ ms group with the component in the axis defined by $\gamma$, are derived from the $\theta-\tau$ relation plotted in Figure \ref{thetata}
 \label{table:apex}
 \end{table*}
-We estimate the error of time delay $\tau$, differential frequency
-$f_{\rm D}$, $\Delta\alpha$ and $\Delta\delta$  listed in Table
-\ref{table:apex} from their band-to-band variance:
+We estimate :
 \begin{equation}
-\sigma^2_{\rm \tau, f_{\rm D},\Delta\alpha, \Delta\delta} = \frac{1}{n}\sum^{n}_{i=1}\frac{(x_i-\bar{x})^2}{n-1},
+\sigma^2_{\rm band} = \frac{1}{n-1}\sum^{n}_{i=1}{(x_i-\bar{x})^2}
 \end{equation}
-and $n$ is the number of sub-bands. The outer $1/n$ accounts for the expected variance of a mean of $n$ numbers.
+\begin{equation}
+\sigma^2_{\rm apex} = \frac{1}{n}\frac{1}{n-1}\sum^{n}_{i=1}{(x_i-\bar{x})^2},
+\end{equation}
+and $n$ is the number of sub-bands.  
+For each apex, the error of time delay $\tau$, differential frequency
+$f_{\rm D}$, $\Delta\alpha$ and $\Delta\delta$  are listed in Table
+\ref{table:apex} from their band-to-band variance.
+% The outer $1/n$ accounts for the expected variance of a mean of $n$ numbers.
 % This is also how we calculate the sample error of $\Delta\alpha$ and $\Delta\delta$, marked with errorbars in Figure \ref{Doublelens}.
 
 %For the circles in Figure \ref{Doublelens}, they are calculated by following equation:
@@ -552,13 +573,15 @@ consequences of alternate interpretations in Section \ref{sec:degeneracy}.
 %distances. In the first case, no direct distance measurement is
 %possible, but it nevertheless illustrates a robust interpretation of
 %the data.
-The pulsar distance was directly measured using VLBI parallax to be
-$D_{\rm p} = 620 \pm 60$ pc, described in more detail in Section \ref{sec:astrometry}.  
+As shown in Section \ref{sec:astrometry}, 
+the pulsar distance has been independently measured to be
+$D_{\rm p} = 620 \pm 60$ pc.
 %For modelling purposes, we will use
 %$D_{\rm p} = 640$ pc, consistent with the direct measurement.  
 % We take $D_{1{\rm e}}=1044$ pc,  and the distance of % lens 1 $D_{1}$,
 % where $0.4$ ms group scintillation points are refracted, as $389$
-$D_{1}$ equals  $389$ pc, the distance of lens 1 where $0.4$-ms group scintillation points are refracted, as we take $D_{1{\rm e}}=1044$ pc.
+%$D_{1}$ equals  $389$ pc, the distance of lens 1 where $0.4$-ms group scintillation points are refracted
+The distance of lens 1, where the group of scintillation points with $0.4$-ms delays are refracted, is $D_1 = 389$ pc, as we take $D_{1{\rm e}}=1044$ pc.
 Similarly, for $1$-ms apexes, the distance of lens 2 is taken as $D_2=415$ pc,
 slightly closer to the pulsar.
 %From time delay $\tau$ and the angular position of the pulsar, we obtained the effective distance of the pulsar as follows: 
@@ -571,7 +594,7 @@ slightly closer to the pulsar.
 For the $0.4$-ms group, we adopt the geometry from
 B10, assigning these points along line $AD$ as
 shown in Fig. \ref{Doublelens} based solely on their delay, which is
-the best-measured observable.  The line $AD$ is taken as a
+the best-measured observable.  The sky-projected direction of the line $AD$ is taken as a
 fixed angle of $\gamma=-25\degree.2$ east north.  We use this axis
 to define the ${\parallel}$ direction; then the ${\bot}$ direction is rotated $90\degree$ clockwise.  
 
@@ -579,7 +602,7 @@ to define the ${\parallel}$ direction; then the ${\bot}$ direction is rotated $9
 \begin{figure*}
 \centering
 %\epsscale{1.0}
-\includegraphics[width=7.5in]{Double_lens_xy.pdf}
+\includegraphics[width=7.5in]{Double_lens_xy_Dec8.pdf}
 \caption{Positions of $0.4$-ms and $1$-ms group data in the single-refraction model and double-refraction model.  
 The axes represent the relative transverse distances to the un-refracted pulsar in right ascension (calculated by $x= \Delta \alpha \cos(\delta)D_i$ with $D_i$ represent the distance of the object to the observer: for point $A$, $D_i=D_{\rm p}$; for points $H$ and $J$, $D_i=D_2$; for points $B$ and $D$, $D_i=D_1$.) and declination (calculated by $y=\Delta \delta D_i$) directions, on a 2-D plane that is transverse to the line of sight. 
 On the left side, the points marked with letter $D$ labelled from 1 to 9, are the derived
@@ -692,8 +715,9 @@ Furthermore, in this scenario, referring to Fig. 5 in B10, the loci of the arcle
 \subsection{Double-refraction model}
 \label{doublelensmodel}
 
-The apparent offset of the $1$-ms group can be explained by a second lens
-screen.  The small number of apexes at $1$-ms suggests that the second
+The apparent offset of the $1$-ms group can be explained by refraction through two lens
+screens.  
+The small number of apexes at $1$-ms suggests that the second
 lens screen involves a single caustic at a different distance.  One
 expects each lens to re-image the full set of first scatterings,
 resulting in a number of apparent images equal to the product of
@@ -744,8 +768,8 @@ Two planes from left to right are the plane of lens 1,
   and the plane of lens 2.   
 Light (the blue solid line) goes from $A$ (pulsar) to the first
   refracted point $H$ on lens 2 (line $HJ$, magenta dash dotted line), and
-  then the second refracted point $D$, the image we observe, on lens 1
-  (line $BD$, cyan dash dotted line), and finally the observer $O$.  The green solid line show the light path of singly-deflected light path
+  then the second refracted point $B$, the image we observe, on lens 1
+  (line $BD$, cyan dash dotted line), and finally the observer $O$.  The green solid line shows the light path of singly-deflected light path
   ($A-D-O$).  
   The crosses ($A_1$ on plane 1, and $A_2$ on 
   plane 2) denote intersection of the un-deflected light through the
@@ -791,7 +815,7 @@ label&$\theta_{\parallel}$ (mas)  & $\tau_2$(ms) & $\sigma_{\rm \tau}$(ms)  & $\
   double-refraction model.  $\theta_{\parallel}$ denotes the angular offsets
   of the corresponding images at lens 1. 
 %$\theta_{2\parallel}$ is the angle of the $1$ ms group with the component in the axis defined by $\gamma$. 
-The values with star symbols on them are the points that we use to
+The values with asterisks on them are the points that we use to
 calculate the position of $J$ and the point with a $\dagger$ symbol is
 the point that we use to calculate the transverse velocity of the
 pulsar $v_{\bot}$.  They agree with data by construction.  The last
@@ -1181,14 +1205,16 @@ measurement, requiring the lens to be moving slowly compared to the
 pulsar proper motion or the LSR.  The lens is $\sim200$ pc above the
 Galactic disk.  Matter can either be in pressure equilibrium, or in
 free-fall, or some combination thereof.  In free fall, one expects
-substantial motions.  These data rule out retrograde or radially
-Galactic orbits: the lens is co-rotating with the Galaxy.  In pressure
+substantial motions.  
+These data rule out retrograde or radially
+Galactic orbits and indicate that the lens is co-rotating with the Galaxy.  In pressure
 equilibrium, gas rotates slower as its pressure scale height
 increases, which appears consistent with the observed slightly slower
 than co-rotating motion.  The modest lens velocities also appear
 consistent with the general motion of the ISM, perhaps driven by
 Galactic fountains \citep{1976ApJ...205..762S} at these latitudes above
-the disk.  In the inclined sheet model, the waves move at Alfv\'enic
+the disk.  
+In the inclined sheet model, the waves move at Alfv\'enic
 speed, but due to the high inclination, will move less than one percent of this
 speed in projection on the sky, and thus be completely negligible compared to
 other sources of motion.
