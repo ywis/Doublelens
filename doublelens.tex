@@ -432,12 +432,12 @@ details in Section \ref{21} and Section \ref{222}.
 \end{table*}
 We estimate :
 \begin{equation}
-\sigma^2_{\rm band} = \frac{1}{n-1}\sum^{n}_{i=1}{(x_i-\bar{x})^2}
+\sigma^2_{\rm band} = \frac{1}{n-1}\sum^{n}_{i=1}{(x_i-\bar{x})^2},
 \end{equation}
 \begin{equation}
-\sigma^2_{\rm apex} = \frac{1}{n}\frac{1}{n-1}\sum^{n}_{i=1}{(x_i-\bar{x})^2},
+\sigma^2_{\rm apex} = \frac{\sigma^2_{\rm band}}{n},
 \end{equation}
-and $n$ is the number of sub-bands.  
+where the $\sigma_{\rm band}$ is the standard deviation of each sub-bands, the $\sigma_{\rm band}$ is the error of the mean of $n$ sub-bands and $n$ is the number of sub-bands.  
 For each apex, the error of time delay $\tau$, differential frequency
 $f_{\rm D}$, $\Delta\alpha$ and $\Delta\delta$  are listed in Table
 \ref{table:apex} from their band-to-band variance.
