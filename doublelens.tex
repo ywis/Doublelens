@@ -257,8 +257,9 @@ A similar effect occurs when the
 observer is below the surface.  Two major distinctions arise: 1. the
 waves can deform the surface to create caustics in projection. Near
 caustics, Snell's law can lead to highly amplified refraction
-angles \citep{2006ApJ...640L.159G}.  2. due to the odd image theorem, each caustic leads to two
-images.  In an astrophysical context, the surface could be related to
+angles \citep{2006ApJ...640L.159G}.  2. due to the odd image theorem, each caustic leads to two additional
+images, more specifically, $\rm 1(original)+2\times n(additional~images~for~n~caustics)=2n+1$ (total images we observe is odd).  
+In an astrophysical context, the surface could be related to
 magnetic reconnection 
 sheets \citep{2015MNRAS.450.3201B}, which have finite widths to
 regularize these singularities.  Diffusive structures have Gaussian
@@ -320,6 +321,7 @@ pulsar.  Only those sufficiently inclined would lead to caustic
 formation.  Empirically, some pulsars show scattering that appears to be dominated by a
 single sheet, leading to the prominent inverted
 arclets in the secondary spectrum of the scintillations \citep{2001ApJ...549L..97S}.
+The secondary spectrum analysis, specifically, $P(f_\nu,f_t) = |S^{\dagger}(f_\nu,f_t)|^2$, which $\dagger$ stands for the 2-D Fourier transform, $f_\nu$ is the conjugate frequency and $f_t$ is the conjugate time.  $S(\nu,t)$ is the measurement of flux density as a function of frequency and time, which maps the information of the differential time and differential frequency of different rays of the pulsar \citep{hill2003pulsar,walker2004interpretation,cordes2006theory}.
 
 \subsection{Archival data of B0834+06}
 \label{21}
@@ -373,7 +375,7 @@ f_{\rm D ref}=f_{\rm D} (322.5~{\rm MHz}/f_{\rm band}),
 \label{f_Dref}
 \end{equation}
 where $f_{\rm D ref}$ is the re-scaled differential frequency centred at $322.5$ MHz, $f_D$ is the original differential frequency of each apex, $f_{\rm band}$ is the center frequency of each sub-bands.  
- A total of $9$ apexes from the $0.4$-ms group and $5$ apexes from the $1$-ms
+The the radio frequency scaling of the arc apex positions and arc curvature are illustrated in \citet{hill2003pulsar}.  A total of $9$ apexes from the $0.4$-ms group and $5$ apexes from the $1$-ms
 group, are mapped.  
 This is displayed
 with the mean referenced frequency $f=322.5$ MHz and a standard
@@ -688,6 +690,7 @@ The relative model pulsar-screen velocity is $185.3$ km $\rm s^{-1}$, with an an
 
 \subsubsection{Discussion of single-refraction model}
 \label{222}
+
 The $0.4$-ms group lens solution appears consistent with the premise
 of the inclined sheet lensing model \citep{2014MNRAS.442.3338P}, which
 predicts collinear positions of lensing images.  The time in the last
@@ -702,9 +705,9 @@ becomes clear in the presence of a second, off-axis screen, which will be discus
 
 \subsubsection{Why is the $1$-ms feature simply not single scattering due to a second screen?}
 Scattering from a second, highly inclined screen would result in a second parabolic arc in the secondary spectrum, which go through the same origin but with different curvature.  
-We can conclude from Fig. \ref{fig:apex_pos} that this does not agree with our observation result.
+We can conclude from Fig. \ref{fig:apex_pos} that this does not agree with the data.
 
-Furthermore, in this scenario, referring to Fig. 5 in B10, the loci of the arclets on the sky should point back to the pulsar (the origin), according to \citet{2014MNRAS.442.3338P}, which also does not agree with the observation result.
+Furthermore, in this scenario, referring to Fig. 5 in B10, the loci of the arclets on the sky should point back to the pulsar (the origin), according to \citet{2014MNRAS.442.3338P}, which also does not agree with the observation results.
 %Knowing time delay ${\tau}$, we can calculate the distance of the screen; knowing the angular position of point 5 and its differential frequency ${f_D}$, we can get the velocity of the pulsar; knowing the velocity and observation differential frequency, we can get the position of points $1$--$4$. 
 
 %\begin{figure}
@@ -1111,14 +1114,14 @@ the caustic, the lensed flux can become very high.  The 1-ms group is
 about a factor of 4 fainter than the 0.4-ms group.  The high flux of
 the second caustic suggests it to be relatively wide, perhaps a
 fraction of an AU.  Due to the odd image theorem, one generically
-expects two distinct set of double lensed arcs.  We only see one
+expects two distinct sets of double lensed arcs.  We only see one
 (generically the outer one), which places an upper bound on the
 brightness of the inner image.  In a divergent
 lens\citep{1998ApJ...496..253C}, the inner image is generically much
 fainter, so perhaps this is not surprising.  For a convergent Gaussian lens,
 the two images are of similar brightness, but a more cuspy profile
 will also result in a faint inner image.  In gravitational lensing,
-the odd image theorem is rarely seem to hold, which is generally thought to be
+the odd image theorem is rarely seen to hold, which is generally thought to be
 due to one lens being very faint.
 
 One can try to estimate the chance of accidental agreement between
@@ -1147,7 +1150,7 @@ parabola and the data points, as shown by dotted lines.  This results
 in about 10$^{-3}$, suggesting that the model is unlikely to be an
 accidental fit.  
 
-It might be a good supplementary to conduct a multi-screen simulation that provides ray tracing through a large number of inclined sheets.  By adjusting the parameters, we can test the possibility of multi-refractions.  However, this is obviously beyond the scope of the current paper.
+It might be a good supplementary study to conduct a multi-screen simulation that provides ray tracing through a large number of inclined sheets.  By adjusting the parameters, we can test the possibility of multi-refractions.  However, this is obviously beyond the scope of the current paper.
 
 \subsection{Distance degeneracies}
 \label{sec:degeneracy}
@@ -1218,7 +1221,7 @@ consistent with the general motion of the ISM, perhaps driven by
 Galactic fountains \citep{1976ApJ...205..762S} at these latitudes above
 the disk.  
 In the inclined sheet model, the waves move at Alfv\'enic
-speed, but due to the high inclination, will move less than one percent of this
+speed, but due to the high inclination, they will move less than one percent of this
 speed in projection on the sky, and thus be completely negligible compared to
 other sources of motion.
 
@@ -1286,13 +1289,13 @@ Ultimately, the precision of the lensing results would be limited by
 the fidelity of the lensing model.  In the inclined sheet model, the
 images move along fold caustics.  The straightness of these caustics
 depends on the inclination angle, which in turn depends on the
-amplitude of the surface waves.  This analysis concludes a high degree
+amplitude of the surface waves.  This analysis indicates a high degree
 of inclination, and thus high fidelity for geometric pulsar studies.
 
 \section{Conclusions}
 \label{sec:conclusions}
 We have applied the inclined sheet model \citep{2014MNRAS.442.3338P} 
-to archival apex data of PSR B0834+06.  The data is well-fit by two
+to archival apex data of PSR B0834+06.  The data are well-fit by two
 linear lensing screens, with nearly planar geometry.  The
 second screen provides a precision test with 10 observables (5 time delays and 5 differential frequencies) and 3 free
 parameters (the marked points in Table \ref{table:double_lens_compare}).  The model fits the data to $\sim$ percent accuracy
