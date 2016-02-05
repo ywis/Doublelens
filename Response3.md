@@ -1,6 +1,6 @@
-Dear Prof. Stinebring,
+Dear Editor,
 
-Thanks for the careful review. We have made modifications according to your comments.
+Thanks for coordinating and careful editing. We have made modifications according to Prof. Stinebring's comments as follows:
 
 * Introduction to secondary spectrum analysis is added to the last paragraph in page 3 with the required references added. Hill et al. (2003) which gives reference for the radio scaling is also added to the following content of equation 1.
 
